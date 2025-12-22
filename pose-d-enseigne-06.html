@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -191,10 +191,10 @@
                 <h3>Pourquoi faire appel à un professionnel pour la pose d’enseigne ?</h3>
                 <p>
                     La <strong>pose d’enseigne</strong> demande une expertise technique et une parfaite maîtrise des
-                    règles de sécurité, notamment en hauteur. Notre <strong>installateur d’enseigne</strong> prend en
+                    règles de securite, notamment en hauteur. Notre <strong>installateur d’enseigne</strong> prend en
                     charge tous types de projets, y compris la <strong>pose d’enseignes lumineuses</strong>, de
                     <strong>rampes lumineuses</strong> ou encore de <strong>panneaux publicitaires</strong>. Grâce à
-                    notre expérience, nous assurons des installations solides, durables et esthétiques sur tout type de
+                    notre experience, nous assurons des installations solides, durables et esthetiques sur tout type de
                     façade.
                 </p>
 
@@ -210,11 +210,11 @@
                 <h3>Quel est le prix pour poser une enseigne lumineuse ?</h3>
                 <p>
                     Le <strong>prix de pose d’une enseigne lumineuse</strong> varie selon les dimensions, le type
-                    d’éclairage, la complexité de l’installation et l’emplacement. Pour un tarif précis dans les
-                    <strong>Alpes-Maritimes (06)</strong>, contactez notre équipe au <strong><a href="tel:+33497148939"
+                    d’eclairage, la complexite de l’installation et l’emplacement. Pour un tarif precis dans les
+                    <strong>Alpes-Maritimes (06)</strong>, contactez notre equipe au <strong><a href="tel:+33497148939"
                             title="prix pose enseigne lumineuse 06">04 97 14 89 39</a></strong> ou demandez votre <a
                         href="devis-pose-enseigne-06.html" title="devis pose enseigne commerciale 06"><strong>devis
-                            gratuit personnalisé</strong></a>.
+                            gratuit personnalise</strong></a>.
                 </p>
             </div>
         </section>
@@ -222,37 +222,34 @@
         <h2>CONTACTEZ - NOUS</h2>
         <div class="form-container">
             <div class="image-container">
-                <img src="logo.jpg" alt="entreprise cordiste Saint-André">
+                <img src="logo.jpg" alt="entreprise cordiste Saint-Andre">
             </div>
-            <form action="https://formsubmit.co/formulaire@webprime.fr" method="POST" onsubmit="return validateForm()">
+            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
                 <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
-                    <input type="text" id="website" name="website" autocomplete="off">
+                    <input type="text" id="website" name="_gotcha" autocomplete="off">
                 </div>
 
                 <input type="hidden" name="_captcha" value="true">
-                <input type="hidden" name="_next" value="https://cordiste-06.com/">
-                <input type="hidden" name="_cc" value="contacts@quali-corde.com">
-                <input type="hidden" name=" from" value="Quali Corde Sud">
-                <input type="hidden" name="_subject" value="Formulaire">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
-
+                                                                                                
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="nom" required>
 
-                <label for="tel">Téléphone :</label>
-                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+                <label for="tel">Telephone :</label>
+                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
                 <label for="services">Services :</label>
                 <select id="services" name="services" required>
                     <option value="NETTOYAGE">NETTOYAGE</option>
                     <option value="PEINTURE">PEINTURE</option>
-                    <option value="MAÇONNERIE">MAÇONNERIE</option>
+                    <option value="MACONNERIE">MACONNERIE</option>
                     <option value="INDUSTRIE">INDUSTRIE</option>
-                    <option value="SECURITE">SÉCURITÉ</option>
-                    <option value="ÉVÉNEMENTIEL">ÉVÉNEMENTIEL</option>
+                    <option value="SECURITE">SECURITE</option>
+                    <option value="EVENEMENTIEL">EVENEMENTIEL</option>
                     <option value="ANTI-NUISIBLE">ANTI-NUISIBLE</option>
                     <option value="URGENCE">URGENCE</option>
                     <option value="AUTRE">AUTRE</option>
@@ -268,7 +265,7 @@
     <footer>
         <div id="contact">
 
-            <h5>NOS RÉSEAUX SOCIAUX</h5>
+            <h5>NOS RESEAUX SOCIAUX</h5>
             <div class="reseau-contact">
                 <a href="https://www.linkedin.com/company/quali-corde-sud?trk=public_post_reshare_feed-actor-image"
                     target="_blank" title="linkedin-cordiste"> Linkedin -</a>
@@ -289,8 +286,8 @@
                     title="services Cordiste 06">contacts@quali-corde.com</a></p>
 
             <div class="liens-wp">
-                <h6>&copy; Copyright 2025 - Site réalisé par <a href="https://webprime.fr/" target="_blank">webprime</a>
-                    - <a href="mentions-legales.html" target="_blank">mentions légales</a>.
+                <h6>&copy; Copyright 2025 - Site realise par <a href="https://webprime.fr/" target="_blank">webprime</a>
+                    - <a href="mentions-legales.html" target="_blank">mentions legales</a>.
                 </h6>
             </div>
         </div>
@@ -340,28 +337,40 @@
         });
     </script>
     <script>
-        function validateForm() {
-            var name = document.getElementById("name").value.trim();
-            var tel = document.getElementById("tel").value.trim();
-            var services = document.getElementById("services").value.trim();
-            var comments = document.getElementById("comments").value.trim();
-            if (name === "" || tel === "" || services === "" || comments === "") {
-                alert("Champs obligatoires.");
-                return false;
+        async function submitToWebPrime(e) {
+        e.preventDefault();
+        var form = document.getElementById('contactForm');
+        var btn = form.querySelector('button[type="submit"]');
+        var originalText = btn.textContent;
+
+        // Anti-spam honeypot check
+        if (form._gotcha && form._gotcha.value) return false;
+
+        btn.textContent = 'Envoi en cours...';
+        btn.disabled = true;
+
+        try {
+            var formData = new FormData(form);
+            var response = await fetch('https://webprime.app/webhook/contact/a0dbffb8afffbd140c7c09cb7d2c09e30a8e36bb44f78f4fcd0f5e49af523630', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                // Redirection apres succes
+                window.location.href = 'https://cordiste-06.com/';
+            } else {
+                alert('Erreur lors de l\'envoi. Veuillez reessayer.');
+                btn.textContent = originalText;
+                btn.disabled = false;
             }
-            var telPattern = /^((0[1679])|(\+33[1679]))\d{8}$/;
-            if (!telPattern.test(tel)) {
-                alert("Veuillez entrer un numéro de téléphone valide.");
-                return false;
-            }
-            var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
-            var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
-            if (linkPattern.test(comments) || scriptPattern.test(comments)) {
-                alert("Pas autorisé.");
-                return false;
-            }
-            return true;
+        } catch (error) {
+            alert('Erreur de connexion. Veuillez reessayer.');
+            btn.textContent = originalText;
+            btn.disabled = false;
         }
+        return false;
+    }
     </script>
 </body>
 

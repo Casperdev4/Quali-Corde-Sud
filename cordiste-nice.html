@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -242,35 +242,32 @@
             <div class="image-container">
                 <img src="logo.jpg" alt="entreprise cordiste Nice">
             </div>
-            <form action="https://formsubmit.co/formulaire@webprime.fr" method="POST" onsubmit="return validateForm()">
+            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
                 <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
-                    <input type="text" id="website" name="website" autocomplete="off">
+                    <input type="text" id="website" name="_gotcha" autocomplete="off">
                 </div>
 
                 <input type="hidden" name="_captcha" value="true">
-                <input type="hidden" name="_next" value="https://cordiste-06.com/">
-                <input type="hidden" name="_cc" value="contacts@quali-corde.com">
-                <input type="hidden" name=" from" value="Quali Corde Sud">
-                <input type="hidden" name="_subject" value="Formulaire">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
-
+                                                                                                
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="nom" required>
 
-                <label for="tel">Téléphone :</label>
-                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+                <label for="tel">Telephone :</label>
+                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
                 <label for="services">Services :</label>
                 <select id="services" name="services" required>
                     <option value="NETTOYAGE">NETTOYAGE</option>
                     <option value="PEINTURE">PEINTURE</option>
-                    <option value="MAÇONNERIE">MAÇONNERIE</option>
+                    <option value="MACONNERIE">MACONNERIE</option>
                     <option value="INDUSTRIE">INDUSTRIE</option>
-                    <option value="SECURITE">SÉCURITÉ</option>
-                    <option value="ÉVÉNEMENTIEL">ÉVÉNEMENTIEL</option>
+                    <option value="SECURITE">SECURITE</option>
+                    <option value="EVENEMENTIEL">EVENEMENTIEL</option>
                     <option value="ANTI-NUISIBLE">ANTI-NUISIBLE</option>
                     <option value="URGENCE">URGENCE</option>
                     <option value="AUTRE">AUTRE</option>
@@ -292,7 +289,7 @@
             <p><strong class="strong-color"><a href="nettoyage-vitre-hauteur-06.html"
                         title="nettoyage vitre en hauteur Nice">NETTOYAGE DE VITRE</a></strong></p>
             <h3>À Nice, nous assurons le nettoyage de vitres en hauteur sur tous types de bâtiments : immeubles,
-                bureaux, hôtels ou locaux commerciaux. Nos cordistes formés interviennent rapidement, pour vous garantir
+                bureaux, hôtels ou locaux commerciaux. Nos cordistes formes interviennent rapidement, pour vous garantir
                 des vitrages impeccables et une parfaite transparence.</h3>
             <a class="bouton3" href="tel:+33497148939" title="nettoyage vitre en hauteur Nice">CONTACTEZ - NOUS</a>
         </div>
@@ -302,8 +299,8 @@
                 <img src="peinture-en-hauteur-06.webp" alt="peinture en hauteur Nice" loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="peinture-en-hauteur-06.html"
                             title="peinture en hauteur Nice">RAVALEMENT – Maçonnerie & Peinture</a></strong></p>
-                <h3>À Nice, nous redonnons tout leur éclat à vos façades avec nos prestations de ravalement, peinture et
-                    maçonnerie en hauteur. Nos cordistes interviennent sans échafaudage pour un rendu rapide et durable,
+                <h3>À Nice, nous redonnons tout leur eclat à vos façades avec nos prestations de ravalement, peinture et
+                    maçonnerie en hauteur. Nos cordistes interviennent sans echafaudage pour un rendu rapide et durable,
                     tout en limitant les nuisances pour les riverains.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="peinture en hauteur Nice">CONTACTEZ - NOUS</a>
             </div>
@@ -312,9 +309,9 @@
             <div class="nosservices2">
                 <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo Nice" loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="nettoyage-de-silo-06.html"
-                            title="nettoyage de silo industriel Nice">nettoyage silo granulés</a></strong></p>
-                <h3>À Nice, nous intervenons pour la maintenance et l’inspection de vos silos et équipements industriels
-                    en hauteur. Nos cordistes spécialisés assurent des interventions rapides et sûres, même dans les
+                            title="nettoyage de silo industriel Nice">nettoyage silo granules</a></strong></p>
+                <h3>À Nice, nous intervenons pour la maintenance et l’inspection de vos silos et equipements industriels
+                    en hauteur. Nos cordistes specialises assurent des interventions rapides et sûres, même dans les
                     environnements industriels les plus complexes.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="nettoyage de silo industriel Nice">CONTACTEZ - NOUS</a>
             </div>
@@ -323,21 +320,21 @@
             <div class="nosservices3">
                 <img src="ligne-de-vie-toiture-06.webp" alt="installation ligne de vie toiture Nice" loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="installation-ligne-de-vie-06.html"
-                            title="pose de ligne de vie Nice">SÉCURITÉ – Lignes de vie & Filets</a></strong></p>
-                <h3>À Nice, nous installons des dispositifs de sécurité pour le travail en hauteur : lignes de vie,
-                    filets de sécurité et points d’ancrage. Nos solutions sur-mesure répondent à toutes les exigences
-                    réglementaires pour garantir la sécurité de vos équipes.</h3>
+                            title="pose de ligne de vie Nice">SECURITE – Lignes de vie & Filets</a></strong></p>
+                <h3>À Nice, nous installons des dispositifs de securite pour le travail en hauteur : lignes de vie,
+                    filets de securite et points d’ancrage. Nos solutions sur-mesure repondent à toutes les exigences
+                    reglementaires pour garantir la securite de vos equipes.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="pose de ligne de vie Nice">CONTACTEZ - NOUS</a>
             </div>
         </section>
         <section>
             <div class="nosservices2">
-                <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="poseur de filet de sécurité Nice" loading="lazy" decoding="async">
+                <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="poseur de filet de securite Nice" loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="pose-filet-de-securite-06.html"
                             title="pose de filet anti chute Nice">URGENCE – Purge, Bâchage & Filets</a></strong></p>
-                <h3>À Nice, nos équipes interviennent en urgence pour sécuriser vos bâtiments après un sinistre, une
-                    chute de matériaux ou des intempéries. Purge de façades, bâchage et pose de filets de protection
-                    sont réalisés dans les meilleurs délais, en toute sécurité.</h3>
+                <h3>À Nice, nos equipes interviennent en urgence pour securiser vos bâtiments après un sinistre, une
+                    chute de materiaux ou des intemperies. Purge de façades, bâchage et pose de filets de protection
+                    sont realises dans les meilleurs delais, en toute securite.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="pose de filet anti chute Nice">CONTACTEZ - NOUS</a>
             </div>
         </section>
@@ -345,9 +342,9 @@
             <div class="nosservices2">
                 <img src="pose-d-enseigne-06.jpg.jpg" alt="poseur d enseigne Nice" loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="pose-d-enseigne-06.html"
-                            title="poseur enseigne Nice">ÉVÉNEMENTIEL – Enseignes & Animations</a></strong></p>
-                <h3>À Nice, nous assurons la pose en hauteur de vos enseignes, banderoles et éléments événementiels. Nos
-                    cordistes garantissent une intervention rapide et soignée pour un rendu professionnel, même dans les
+                            title="poseur enseigne Nice">EVENEMENTIEL – Enseignes & Animations</a></strong></p>
+                <h3>À Nice, nous assurons la pose en hauteur de vos enseignes, banderoles et elements evenementiels. Nos
+                    cordistes garantissent une intervention rapide et soignee pour un rendu professionnel, même dans les
                     sites les plus complexes du centre-ville ou en façade de grand bâtiment.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="poseur enseigne Nice">CONTACTEZ - NOUS</a>
             </div>
@@ -357,9 +354,9 @@
                 <img src="filet-anti-pigeon.jpg.jpg" alt="prix pose pic anti pigeon Nice" loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="pose-filet-anti-pigeon-06.html"
                             title="installation pic anti pigeon Nice">ANTI-NUISIBLE – Pics & Filets de protection</a></strong></p>
-                <h3>À Nice, nous protégeons vos bâtiments contre les nuisibles grâce à la pose de pics et filets en
+                <h3>À Nice, nous protegeons vos bâtiments contre les nuisibles grâce à la pose de pics et filets en
                     hauteur. Nos solutions sont discrètes et efficaces pour empêcher durablement les intrusions de
-                    pigeons et autres nuisibles, en respectant l’esthétique de vos façades.</h3>
+                    pigeons et autres nuisibles, en respectant l’esthetique de vos façades.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="installation pic anti pigeon Nice">CONTACTEZ - NOUS</a>
             </div>
         </section>
@@ -368,11 +365,11 @@
                 <img src="soudure-a-l-arc-06.jpg.jpg" alt="soudure à l arc Nice" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="maintenance-eolienne-06.html"
-                            title="maintenance eolienne Nice">AUTRES – Éolien, Soudure,
-                            Électricité...</a></strong></p>
-                <h3>À Nice, nous réalisons également tous types de travaux techniques en hauteur : maintenance éolienne,
-                    interventions électriques, soudures spécifiques… Nos cordistes expérimentés interviennent avec
-                    précision, pour répondre à vos besoins les plus exigeants.</h3>
+                            title="maintenance eolienne Nice">AUTRES – Eolien, Soudure,
+                            Electricite...</a></strong></p>
+                <h3>À Nice, nous realisons egalement tous types de travaux techniques en hauteur : maintenance eolienne,
+                    interventions electriques, soudures specifiques… Nos cordistes experimentes interviennent avec
+                    precision, pour repondre à vos besoins les plus exigeants.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="maintenance eolienne Nice">CONTACTEZ - NOUS</a>
             </div>
         </div>
@@ -382,13 +379,13 @@
                         <p><a href="nettoyage-de-silo-06.html"
                                 title="nettoyage des silos Nice"><strong>INDUSTRIE (silos &
                                     maintenance)</strong></a>
-                            : À Nice, nous réalisons l’entretien, la maintenance et l’inspection en hauteur de vos silos
-                            et installations industrielles. Nos cordistes interviennent en toute sécurité pour garantir
-                            la performance et la longévité de vos équipements, même en accès complexe.
+                            : À Nice, nous realisons l’entretien, la maintenance et l’inspection en hauteur de vos silos
+                            et installations industrielles. Nos cordistes interviennent en toute securite pour garantir
+                            la performance et la longevite de vos equipements, même en accès complexe.
                         </p>
                     </div>
                     <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo farine silos Nice" class="pcimgindex2"
-                        title="nettoyage silo granulés Nice" loading="lazy" decoding="async">
+                        title="nettoyage silo granules Nice" loading="lazy" decoding="async">
                 </div>
             </section>
             <section>
@@ -397,10 +394,10 @@
                         title="pose ligne de vie toiture Nice" loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="installation-ligne-de-vie-06.html"
-                                title="installation ligne de vie toiture Nice"><strong>Installation de SÉCURITÉ – Lignes
+                                title="installation ligne de vie toiture Nice"><strong>Installation de SECURITE – Lignes
                                     de vie & Filets</strong></a>
                             : À Nice, nous installons lignes de vie, filets antichute et points d’ancrage sur toutes
-                            structures neuves ou rénovées. Nos solutions assurent la sécurité de vos équipes pour tous
+                            structures neuves ou renovees. Nos solutions assurent la securite de vos equipes pour tous
                             travaux en hauteur dans le respect des normes.
                         </p>
                     </div>
@@ -414,7 +411,7 @@
                                     hauteur</strong></a>
                             : À Nice, nous intervenons pour le nettoyage de vos vitres en hauteur sur tout type de
                             bâtiment. Nos cordistes accèdent aux vitrages les plus inaccessibles pour un rendu
-                            impeccable, rapide et sécurisé.
+                            impeccable, rapide et securise.
                         </p>
                     </div>
                     <img src="nettoyage-vitre-en-hauteur-06.webp" alt="nettoyage vitres Nice"
@@ -423,14 +420,14 @@
             </section>
             <section>
                 <div class="nosservicespc">
-                    <img src="peinture-en-hauteur-06.webp" alt="rénovation peinture en hauteur Nice" class="pcimgindex"
+                    <img src="peinture-en-hauteur-06.webp" alt="renovation peinture en hauteur Nice" class="pcimgindex"
                         title="peinture en hauteur Nice" loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="peinture-en-hauteur-06.html"
                                 title="entreprise peinture cordiste Nice"><strong>RAVALEMENT –
                                     Maçonnerie & Peinture</strong></a>
-                            : À Nice, nous réalisons vos travaux de ravalement, peinture et maçonnerie en hauteur. Nos
-                            cordistes garantissent un travail rapide et sécurisé sans échafaudage, pour sublimer
+                            : À Nice, nous realisons vos travaux de ravalement, peinture et maçonnerie en hauteur. Nos
+                            cordistes garantissent un travail rapide et securise sans echafaudage, pour sublimer
                             durablement vos façades.
                         </p>
                     </div>
@@ -442,12 +439,12 @@
                         <p><a href="pose-filet-de-securite-06.html"
                                 title="pose filet de protection Nice"><strong>URGENCE – Purge, Bâchage &
                                     Filets</strong></a>
-                            : À Nice, nous intervenons en urgence pour sécuriser vos bâtiments après sinistres ou chutes
-                            de matériaux. Nos cordistes effectuent purges, bâchages et poses de filets de protection
-                            avec une réactivité optimale.
+                            : À Nice, nous intervenons en urgence pour securiser vos bâtiments après sinistres ou chutes
+                            de materiaux. Nos cordistes effectuent purges, bâchages et poses de filets de protection
+                            avec une reactivite optimale.
                         </p>
                     </div>
-                    <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="prix pose de filet de protection anti chute Nice" class="pcimgindex2"
+                    <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="prix pose de filet de protection anti chute Nice" class="pcimgindex2"
                         title="pose filet de securite Nice" loading="lazy" decoding="async">
                 </div>
             </section>
@@ -457,10 +454,10 @@
                         title="installateur d enseignes lumineuses Nice" loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="pose-d-enseigne-06.html"
-                                title="installateur d enseigne Nice"><strong>ÉVÉNEMENTIEL –
+                                title="installateur d enseigne Nice"><strong>EVENEMENTIEL –
                                     Enseignes & Animations</strong></a>
-                            : À Nice, nous assurons la pose en hauteur de vos enseignes, banderoles et décors
-                            événementiels. Nos cordistes garantissent un rendu soigné et sécurisé, même en environnement
+                            : À Nice, nous assurons la pose en hauteur de vos enseignes, banderoles et decors
+                            evenementiels. Nos cordistes garantissent un rendu soigne et securise, même en environnement
                             urbain complexe.
                         </p>
                     </div>
@@ -472,9 +469,9 @@
                         <p><a href="pose-filet-anti-pigeon-06.html"
                                 title="pose de filet anti pigeon Nice"><strong>ANTI-NUISIBLE – Pics &
                                     Filets de protection</strong></a>
-                            : À Nice, nous protégeons vos bâtiments en hauteur contre les nuisibles en installant pics
+                            : À Nice, nous protegeons vos bâtiments en hauteur contre les nuisibles en installant pics
                             anti-pigeons et filets de protection. Nos solutions sont discrètes, efficaces et respectent
-                            l’esthétique de vos façades.
+                            l’esthetique de vos façades.
                         </p>
                     </div>
                     <img src="filet-anti-pigeon.jpg.jpg" alt="pose de pics anti pigeons Nice"
@@ -488,36 +485,36 @@
                         title="entreprise de maintenance eolienne Nice" loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="maintenance-eolienne-06.html"
-                                title="electricien Nice"><strong>AUTRES – Éolien, Soudure,
-                                    Électricité...</strong></a>
-                            : À Nice, nous réalisons vos travaux techniques en hauteur : maintenance éolienne,
-                            interventions électriques, soudures complexes… Nos cordistes expérimentés vous garantissent
-                            un service de qualité, sécurisé et sur mesure.
+                                title="electricien Nice"><strong>AUTRES – Eolien, Soudure,
+                                    Electricite...</strong></a>
+                            : À Nice, nous realisons vos travaux techniques en hauteur : maintenance eolienne,
+                            interventions electriques, soudures complexes… Nos cordistes experimentes vous garantissent
+                            un service de qualite, securise et sur mesure.
                         </p>
                     </div>
                 </div>
             </section>
 
             <div class="aloooooo1">
-                <h2>UNE ÉQUIPE DE CORDISTES EXPÉRIMENTÉS ET UN MATÉRIEL HAUTEMENT SPÉCIALISÉ</h2>
+                <h2>UNE EQUIPE DE CORDISTES EXPERIMENTES ET UN MATERIEL HAUTEMENT SPECIALISE</h2>
                 <hr>
                 <p>
-                    À Nice, notre entreprise de cordistes repose sur une équipe qualifiée dans les travaux en hauteur,
-                    équipée de matériel professionnel dernière génération. Nous intervenons sur tous types de bâtiments,
-                    même les plus complexes d’accès, pour réaliser des prestations telles que le nettoyage de vitres, la
-                    peinture extérieure, le lavage de façades ou la pose de lignes de vie. Grâce à notre maîtrise des
+                    À Nice, notre entreprise de cordistes repose sur une equipe qualifiee dans les travaux en hauteur,
+                    equipee de materiel professionnel dernière generation. Nous intervenons sur tous types de bâtiments,
+                    même les plus complexes d’accès, pour realiser des prestations telles que le nettoyage de vitres, la
+                    peinture exterieure, le lavage de façades ou la pose de lignes de vie. Grâce à notre maîtrise des
                     accès
-                    par corde, nous assurons des interventions rapides, sécurisées et conformes aux normes en vigueur.
+                    par corde, nous assurons des interventions rapides, securisees et conformes aux normes en vigueur.
                 </p>
             </div>
             <section>
                 <div id="devis">
                     <h2>DES TARIFS</h2>
-                    <h3>ADAPTÉS À VOS BESOINS</h3>
+                    <h3>ADAPTES À VOS BESOINS</h3>
                     <p>
-                        Nos services de travaux en hauteur à Nice allient qualité professionnelle et tarifs étudiés. Que
+                        Nos services de travaux en hauteur à Nice allient qualite professionnelle et tarifs etudies. Que
                         vous ayez besoin d’un nettoyage, d’un chantier de peinture ou d’une intervention de
-                        sécurisation,
+                        securisation,
                         nous vous proposons un devis gratuit, clair et rapide, sans aucun engagement.
                     </p>
                     <a class="deviiiiiiiiiiiiiiiis" href="devis-cordiste-06.html" title="prix cordiste">DEVIS
@@ -528,51 +525,51 @@
                 <h2>POURQUOI CHOISIR CORDISTE 06 À NICE ?</h2>
                 <hr>
                 <p>
-                    Faire appel à <strong>Cordiste 06</strong> à Nice, c’est s’assurer l’expertise d’une équipe réactive
+                    Faire appel à <strong>Cordiste 06</strong> à Nice, c’est s’assurer l’expertise d’une equipe reactive
                     et
-                    passionnée. Reconnus dans tout le département pour notre maîtrise des travaux en hauteur, nous
-                    intervenons avec sérieux pour le nettoyage de façades, la peinture extérieure, l’entretien de vitres
+                    passionnee. Reconnus dans tout le departement pour notre maîtrise des travaux en hauteur, nous
+                    intervenons avec serieux pour le nettoyage de façades, la peinture exterieure, l’entretien de vitres
                     et
-                    la mise en sécurité des toitures. Nous vous accompagnons à chaque étape, du diagnostic à la
-                    réalisation
+                    la mise en securite des toitures. Nous vous accompagnons à chaque etape, du diagnostic à la
+                    realisation
                     finale, dans un esprit de transparence et de rigueur.
                 </p>
             </div>
             <div class="aloooooo1">
-                <h2>DES CONTRATS SUR MESURE POUR UNE TRANQUILLITÉ DURABLE</h2>
+                <h2>DES CONTRATS SUR MESURE POUR UNE TRANQUILLITE DURABLE</h2>
                 <img src="note.webp" alt="cordiste travaux en hauteur" loading="lazy" decoding="async">
                 <h3>INTERVENTIONS PONCTUELLES</h3>
                 <img src="note.webp" alt="cordiste entretien façade" loading="lazy" decoding="async">
-                <h3>ENTRETIEN PROGRAMMÉ</h3>
+                <h3>ENTRETIEN PROGRAMME</h3>
                 <p>
-                    À Nice, nous vous proposons des contrats personnalisés pour une gestion sereine de vos bâtiments en
-                    hauteur. Que vous ayez besoin d’une intervention ponctuelle (nettoyage, peinture, sécurisation) ou
+                    À Nice, nous vous proposons des contrats personnalises pour une gestion sereine de vos bâtiments en
+                    hauteur. Que vous ayez besoin d’une intervention ponctuelle (nettoyage, peinture, securisation) ou
                     d’un
-                    entretien programmé, <strong>Cordiste 06</strong> s’engage sur la qualité, les délais et les tarifs.
+                    entretien programme, <strong>Cordiste 06</strong> s’engage sur la qualite, les delais et les tarifs.
                     Nos
-                    formules flexibles s’adaptent à vos exigences, qu’il s’agisse de sites privés ou professionnels.
+                    formules flexibles s’adaptent à vos exigences, qu’il s’agisse de sites prives ou professionnels.
                 </p>
             </div>
             <div class="aloooooo1">
                 <h2>VOTRE PARTENAIRE DE CONFIANCE POUR LES TRAVAUX EN HAUTEUR</h2>
                 <hr>
                 <p>
-                    Basé dans les Alpes-Maritimes, <strong>Cordiste 06</strong> intervient à Nice pour tout type de
+                    Base dans les Alpes-Maritimes, <strong>Cordiste 06</strong> intervient à Nice pour tout type de
                     travaux
                     en hauteur, en urgence ou sur rendez-vous. Nous accompagnons aussi bien les particuliers que les
-                    professionnels avec des prestations encadrées par des contrats clairs et sans surprise.
+                    professionnels avec des prestations encadrees par des contrats clairs et sans surprise.
                 </p>
                 <p>
-                    Nos cordistes interviennent sur les zones difficiles d’accès pour réaliser le nettoyage de vitres,
+                    Nos cordistes interviennent sur les zones difficiles d’accès pour realiser le nettoyage de vitres,
                     la
                     peinture de façades, ou encore la pose de lignes de vie. Grâce à notre expertise en accès par corde,
                     nous intervenons là où les nacelles ne peuvent pas aller.
                 </p>
                 <p>
-                    <strong>Disponible 7j/7, 24h/24, même les jours fériés</strong>, Cordiste 06 garantit à Nice des
-                    interventions efficaces, sécurisées et conformes aux réglementations en vigueur. Nous assurons
-                    également
-                    des contrats d’entretien réguliers pour une tranquillité sur le long terme.
+                    <strong>Disponible 7j/7, 24h/24, même les jours feries</strong>, Cordiste 06 garantit à Nice des
+                    interventions efficaces, securisees et conformes aux reglementations en vigueur. Nous assurons
+                    egalement
+                    des contrats d’entretien reguliers pour une tranquillite sur le long terme.
                 </p>
             </div>
             <a class="bouton3" href="tel:+33497148939" title="prix nettoyage vitre en hauteur">CONTACTEZ - NOUS</a>
@@ -580,7 +577,7 @@
     <footer>
         <div id="contact">
 
-            <h5>NOS RÉSEAUX SOCIAUX</h5>
+            <h5>NOS RESEAUX SOCIAUX</h5>
             <div class="reseau-contact">
                 <a href="https://www.linkedin.com/company/quali-corde-sud?trk=public_post_reshare_feed-actor-image"
                     target="_blank" title="linkedin-cordiste"> Linkedin -</a>
@@ -601,8 +598,8 @@
                     title="entreprise cordiste 06">contacts@quali-corde.com</a></p>
 
             <div class="liens-wp">
-                <h6>&copy; Copyright 2025 - Site réalisé par <a href="https://webprime.fr/" target="_blank">webprime</a>
-                    - <a href="mentions-legales.html" target="_blank">mentions légales</a>.
+                <h6>&copy; Copyright 2025 - Site realise par <a href="https://webprime.fr/" target="_blank">webprime</a>
+                    - <a href="mentions-legales.html" target="_blank">mentions legales</a>.
                 </h6>
             </div>
         </div>
@@ -682,28 +679,40 @@
         });
     </script>
     <script>
-        function validateForm() {
-            var name = document.getElementById("name").value.trim();
-            var tel = document.getElementById("tel").value.trim();
-            var services = document.getElementById("services").value.trim();
-            var comments = document.getElementById("comments").value.trim();
-            if (name === "" || tel === "" || services === "" || comments === "") {
-                alert("Champs obligatoires.");
-                return false;
+        async function submitToWebPrime(e) {
+        e.preventDefault();
+        var form = document.getElementById('contactForm');
+        var btn = form.querySelector('button[type="submit"]');
+        var originalText = btn.textContent;
+
+        // Anti-spam honeypot check
+        if (form._gotcha && form._gotcha.value) return false;
+
+        btn.textContent = 'Envoi en cours...';
+        btn.disabled = true;
+
+        try {
+            var formData = new FormData(form);
+            var response = await fetch('https://webprime.app/webhook/contact/a0dbffb8afffbd140c7c09cb7d2c09e30a8e36bb44f78f4fcd0f5e49af523630', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                // Redirection apres succes
+                window.location.href = 'https://cordiste-06.com/';
+            } else {
+                alert('Erreur lors de l\'envoi. Veuillez reessayer.');
+                btn.textContent = originalText;
+                btn.disabled = false;
             }
-            var telPattern = /^((0[1679])|(\+33[1679]))\d{8}$/;
-            if (!telPattern.test(tel)) {
-                alert("Veuillez entrer un numéro de téléphone valide.");
-                return false;
-            }
-            var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
-            var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
-            if (linkPattern.test(comments) || scriptPattern.test(comments)) {
-                alert("Pas autorisé.");
-                return false;
-            }
-            return true;
+        } catch (error) {
+            alert('Erreur de connexion. Veuillez reessayer.');
+            btn.textContent = originalText;
+            btn.disabled = false;
         }
+        return false;
+    }
     </script>
 </body>
 

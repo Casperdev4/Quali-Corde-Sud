@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -242,35 +242,32 @@
             <div class="image-container">
                 <img src="logo.jpg" alt="entreprise cordiste Carros">
             </div>
-            <form action="https://formsubmit.co/formulaire@webprime.fr" method="POST" onsubmit="return validateForm()">
+            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
                 <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
-                    <input type="text" id="website" name="website" autocomplete="off">
+                    <input type="text" id="website" name="_gotcha" autocomplete="off">
                 </div>
 
                 <input type="hidden" name="_captcha" value="true">
-                <input type="hidden" name="_next" value="https://cordiste-06.com/">
-                <input type="hidden" name="_cc" value="contacts@quali-corde.com">
-                <input type="hidden" name=" from" value="Quali Corde Sud">
-                <input type="hidden" name="_subject" value="Formulaire">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
-
+                                                                                                
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="nom" required>
 
-                <label for="tel">Téléphone :</label>
-                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+                <label for="tel">Telephone :</label>
+                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
                 <label for="services">Services :</label>
                 <select id="services" name="services" required>
                     <option value="NETTOYAGE">NETTOYAGE</option>
                     <option value="PEINTURE">PEINTURE</option>
-                    <option value="MAÇONNERIE">MAÇONNERIE</option>
+                    <option value="MACONNERIE">MACONNERIE</option>
                     <option value="INDUSTRIE">INDUSTRIE</option>
-                    <option value="SECURITE">SÉCURITÉ</option>
-                    <option value="ÉVÉNEMENTIEL">ÉVÉNEMENTIEL</option>
+                    <option value="SECURITE">SECURITE</option>
+                    <option value="EVENEMENTIEL">EVENEMENTIEL</option>
                     <option value="ANTI-NUISIBLE">ANTI-NUISIBLE</option>
                     <option value="URGENCE">URGENCE</option>
                     <option value="AUTRE">AUTRE</option>
@@ -291,7 +288,7 @@
                 decoding="async">
             <p><strong class="strong-color"><a href="nettoyage-vitre-hauteur-06.html"
                         title="nettoyage vitre en hauteur Carros">NETTOYAGE DE VITRE</a></strong></p>
-            <h3>À Carros, notre équipe de cordistes réalise le nettoyage de vos vitres en hauteur avec soin et sécurité.
+            <h3>À Carros, notre equipe de cordistes realise le nettoyage de vos vitres en hauteur avec soin et securite.
                 Nous intervenons sur tous types de bâtiments, pour des vitrages impeccables et durables.</h3>
             <a class="bouton3" href="tel:+33497148939" title="nettoyage vitre en hauteur Carros">CONTACTEZ - NOUS</a>
         </div>
@@ -301,8 +298,8 @@
                 <img src="peinture-en-hauteur-06.webp" alt="peinture en hauteur Carros" loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="peinture-en-hauteur-06.html"
                             title="peinture en hauteur Carros">RAVALEMENT – Maçonnerie & Peinture</a></strong></p>
-                <h3>À Carros, embellissez et protégez vos façades grâce à nos services de ravalement, peinture et
-                    maçonnerie en hauteur. Nos cordistes travaillent rapidement et sans échafaudage pour un rendu
+                <h3>À Carros, embellissez et protegez vos façades grâce à nos services de ravalement, peinture et
+                    maçonnerie en hauteur. Nos cordistes travaillent rapidement et sans echafaudage pour un rendu
                     optimal.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="peinture en hauteur Carros">CONTACTEZ - NOUS</a>
             </div>
@@ -312,9 +309,9 @@
                 <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo Carros" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="nettoyage-de-silo-06.html"
-                            title="nettoyage de silo industriel Carros">nettoyage silo granulés</a></strong></p>
-                <h3>À Carros, nous intervenons pour l’entretien de vos silos et équipements industriels. Nos techniciens
-                    cordistes assurent des prestations rapides et sécurisées pour le bon fonctionnement de vos
+                            title="nettoyage de silo industriel Carros">nettoyage silo granules</a></strong></p>
+                <h3>À Carros, nous intervenons pour l’entretien de vos silos et equipements industriels. Nos techniciens
+                    cordistes assurent des prestations rapides et securisees pour le bon fonctionnement de vos
                     installations.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="nettoyage de silo industriel Carros">CONTACTEZ - NOUS</a>
             </div>
@@ -323,19 +320,19 @@
             <div class="nosservices3">
                 <img src="ligne-de-vie-toiture-06.webp" alt="installation ligne de vie toiture Carros" loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="installation-ligne-de-vie-06.html"
-                            title="pose de ligne de vie Carros">SÉCURITÉ – Lignes de vie & Filets</a></strong></p>
-                <h3>À Carros, pour garantir la sécurité de vos équipes, nous installons lignes de vie, filets et points
-                    d’ancrage adaptés. Interventions conformes aux normes en vigueur, sur tout type de structure.</h3>
+                            title="pose de ligne de vie Carros">SECURITE – Lignes de vie & Filets</a></strong></p>
+                <h3>À Carros, pour garantir la securite de vos equipes, nous installons lignes de vie, filets et points
+                    d’ancrage adaptes. Interventions conformes aux normes en vigueur, sur tout type de structure.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="pose de ligne de vie Carros">CONTACTEZ - NOUS</a>
             </div>
         </section>
         <section>
             <div class="nosservices2">
-                <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="poseur de filet de sécurité Carros" loading="lazy" decoding="async">
+                <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="poseur de filet de securite Carros" loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="pose-filet-de-securite-06.html"
                             title="pose de filet anti chute Carros">URGENCE – Purge, Bâchage & Filets</a></strong></p>
-                <h3>À Carros, en cas d’urgence (intempéries, chutes de matériaux…), nous intervenons rapidement pour
-                    sécuriser vos bâtiments : purge, bâchage et pose de filets en hauteur, avec réactivité et
+                <h3>À Carros, en cas d’urgence (intemperies, chutes de materiaux…), nous intervenons rapidement pour
+                    securiser vos bâtiments : purge, bâchage et pose de filets en hauteur, avec reactivite et
                     savoir-faire.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="pose de filet anti chute Carros">CONTACTEZ - NOUS</a>
             </div>
@@ -344,10 +341,10 @@
             <div class="nosservices2">
                 <img src="pose-d-enseigne-06.jpg.jpg" alt="poseur d enseigne Carros" loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="pose-d-enseigne-06.html"
-                            title="poseur enseigne Carros">ÉVÉNEMENTIEL – Enseignes & Animations</a></strong>
+                            title="poseur enseigne Carros">EVENEMENTIEL – Enseignes & Animations</a></strong>
                 </p>
-                <h3>À Carros, nous assurons l’installation en hauteur de vos enseignes et supports événementiels. Nos
-                    cordistes garantissent un montage soigné et sécurisé, même sur les sites complexes.</h3>
+                <h3>À Carros, nous assurons l’installation en hauteur de vos enseignes et supports evenementiels. Nos
+                    cordistes garantissent un montage soigne et securise, même sur les sites complexes.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="poseur enseigne Carros">CONTACTEZ - NOUS</a>
             </div>
         </section>
@@ -356,7 +353,7 @@
                 <img src="filet-anti-pigeon.jpg.jpg" alt="prix pose pic anti pigeon Carros" loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="pose-filet-anti-pigeon-06.html"
                             title="installation pic anti pigeon Carros">ANTI-NUISIBLE – Pics & Filets de protection</a></strong></p>
-                <h3>À Carros, nos solutions anti-nuisibles permettent de préserver vos façades. Nous posons en hauteur
+                <h3>À Carros, nos solutions anti-nuisibles permettent de preserver vos façades. Nous posons en hauteur
                     pics, filets et dispositifs discrets pour une protection durable contre les pigeons et autres
                     nuisibles.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="installation pic anti pigeon Carros">CONTACTEZ - NOUS</a>
@@ -367,11 +364,11 @@
                 <img src="soudure-a-l-arc-06.jpg.jpg" alt="soudure à l arc Carros" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="maintenance-eolienne-06.html"
-                            title="maintenance eolienne Carros">AUTRES – Éolien, Soudure,
-                            Électricité...</a></strong></p>
-                <h3>À Carros, nous réalisons tous vos travaux techniques en hauteur : maintenance éolienne,
-                    interventions électriques, soudures… Nos cordistes spécialisés vous garantissent un service fiable
-                    et sécurisé.</h3>
+                            title="maintenance eolienne Carros">AUTRES – Eolien, Soudure,
+                            Electricite...</a></strong></p>
+                <h3>À Carros, nous realisons tous vos travaux techniques en hauteur : maintenance eolienne,
+                    interventions electriques, soudures… Nos cordistes specialises vous garantissent un service fiable
+                    et securise.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="maintenance eolienne Carros">CONTACTEZ -
                     NOUS</a>
             </div>
@@ -384,13 +381,13 @@
                                     maintenance)</strong></a>
                             : À Carros, nous assurons la maintenance et l’inspection en hauteur de vos silos et
                             installations
-                            industrielles. Nos cordistes expérimentés interviennent dans les milieux les plus complexes
+                            industrielles. Nos cordistes experimentes interviennent dans les milieux les plus complexes
                             pour garantir
-                            la continuité et la sécurité de vos équipements.
+                            la continuite et la securite de vos equipements.
                         </p>
                     </div>
                     <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo farine silos Carros" class="pcimgindex2"
-                        title="nettoyage silo granulés Carros" loading="lazy" decoding="async">
+                        title="nettoyage silo granules Carros" loading="lazy" decoding="async">
                 </div>
             </section>
             <section>
@@ -399,11 +396,11 @@
                         title="pose ligne de vie toiture Carros" loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="installation-ligne-de-vie-06.html"
-                                title="installation ligne de vie toiture Carros"><strong>Installation de SÉCURITÉ –
+                                title="installation ligne de vie toiture Carros"><strong>Installation de SECURITE –
                                     Lignes de vie & Filets</strong></a>
                             : À Carros, nous installons des lignes de vie, filets antichute et points d’ancrage pour
-                            sécuriser vos
-                            bâtiments et chantiers. Nos solutions sur mesure protègent efficacement vos équipes lors des
+                            securiser vos
+                            bâtiments et chantiers. Nos solutions sur mesure protègent efficacement vos equipes lors des
                             travaux en
                             hauteur.
                         </p>
@@ -416,9 +413,9 @@
                         <p><a href="nettoyage-vitre-hauteur-06.html"
                                 title="nettoyage vitres en hauteur Carros"><strong>Nettoyage de vitres en
                                     hauteur</strong></a>
-                            : À Carros, nous réalisons le nettoyage de vos vitrages en hauteur avec soin. Nos cordistes
+                            : À Carros, nous realisons le nettoyage de vos vitrages en hauteur avec soin. Nos cordistes
                             accèdent aux
-                            façades et aux zones les plus difficiles pour garantir un résultat impeccable et durable.
+                            façades et aux zones les plus difficiles pour garantir un resultat impeccable et durable.
                         </p>
                     </div>
                     <img src="nettoyage-vitre-en-hauteur-06.webp" alt="nettoyage vitres Carros"
@@ -427,7 +424,7 @@
             </section>
             <section>
                 <div class="nosservicespc">
-                    <img src="peinture-en-hauteur-06.webp" alt="rénovation peinture en hauteur Carros" class="pcimgindex"
+                    <img src="peinture-en-hauteur-06.webp" alt="renovation peinture en hauteur Carros" class="pcimgindex"
                         title="peinture en hauteur Carros" loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="peinture-en-hauteur-06.html"
@@ -435,7 +432,7 @@
                                     Maçonnerie & Peinture</strong></a>
                             : À Carros, valorisez vos façades grâce à nos prestations de ravalement, peinture et
                             maçonnerie en
-                            hauteur. Nos cordistes qualifiés garantissent un rendu soigné, rapide et sans gêner votre
+                            hauteur. Nos cordistes qualifies garantissent un rendu soigne, rapide et sans gêner votre
                             environnement.
                         </p>
                     </div>
@@ -447,13 +444,13 @@
                         <p><a href="pose-filet-de-securite-06.html"
                                 title="pose filet de protection Carros"><strong>URGENCE – Purge, Bâchage &
                                     Filets</strong></a>
-                            : À Carros, nos équipes interviennent en urgence pour sécuriser vos bâtiments après
+                            : À Carros, nos equipes interviennent en urgence pour securiser vos bâtiments après
                             sinistres ou chutes
-                            de matériaux. Nous réalisons purges, bâchages et poses de filets de protection avec une
-                            grande réactivité.
+                            de materiaux. Nous realisons purges, bâchages et poses de filets de protection avec une
+                            grande reactivite.
                         </p>
                     </div>
-                    <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="prix pose de filet de protection anti chute Carros"
+                    <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="prix pose de filet de protection anti chute Carros"
                         class="pcimgindex2" title="pose filet de securite Carros" loading="lazy"
                         decoding="async">
                 </div>
@@ -464,11 +461,11 @@
                         title="installateur d enseignes lumineuses Carros" loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="pose-d-enseigne-06.html"
-                                title="installateur d enseigne Carros"><strong>ÉVÉNEMENTIEL –
+                                title="installateur d enseigne Carros"><strong>EVENEMENTIEL –
                                     Enseignes & Animations</strong></a>
-                            : À Carros, nous assurons l’installation en hauteur de vos enseignes, banderoles et éléments
-                            événementiels.
-                            Nos cordistes garantissent une pose rapide et parfaitement sécurisée, quel que soit le site.
+                            : À Carros, nous assurons l’installation en hauteur de vos enseignes, banderoles et elements
+                            evenementiels.
+                            Nos cordistes garantissent une pose rapide et parfaitement securisee, quel que soit le site.
                         </p>
                     </div>
                 </div>
@@ -481,7 +478,7 @@
                                     Filets de protection</strong></a>
                             : À Carros, nous posons en hauteur pics anti-pigeons et filets de protection. Nos
                             installations discrètes
-                            et durables vous permettent de protéger efficacement vos bâtiments contre les nuisibles.
+                            et durables vous permettent de proteger efficacement vos bâtiments contre les nuisibles.
                         </p>
                     </div>
                     <img src="filet-anti-pigeon.jpg.jpg" alt="pose de pics anti pigeons Carros"
@@ -495,44 +492,44 @@
                         title="entreprise de maintenance eolienne Carros" loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="maintenance-eolienne-06.html"
-                                title="electricien Carros"><strong>AUTRES – Éolien, Soudure,
-                                    Électricité...</strong></a>
-                            : À Carros, nous réalisons tous types de travaux techniques en hauteur : maintenance
-                            éolienne, travaux de
-                            soudure, interventions électriques… Nos cordistes expérimentés garantissent un service
-                            sécurisé et de
-                            qualité.
+                                title="electricien Carros"><strong>AUTRES – Eolien, Soudure,
+                                    Electricite...</strong></a>
+                            : À Carros, nous realisons tous types de travaux techniques en hauteur : maintenance
+                            eolienne, travaux de
+                            soudure, interventions electriques… Nos cordistes experimentes garantissent un service
+                            securise et de
+                            qualite.
                         </p>
                     </div>
                 </div>
             </section>
 
             <div class="aloooooo1">
-                <h2>Des cordistes expérimentés à votre service à Carros</h2>
+                <h2>Des cordistes experimentes à votre service à Carros</h2>
                 <hr>
                 <p>
-                    À Carros, notre entreprise de travaux en hauteur s’appuie sur une équipe de cordistes qualifiés et
-                    formés aux interventions en accès difficile. Grâce à un matériel professionnel de dernière
-                    génération et
+                    À Carros, notre entreprise de travaux en hauteur s’appuie sur une equipe de cordistes qualifies et
+                    formes aux interventions en accès difficile. Grâce à un materiel professionnel de dernière
+                    generation et
                     à une parfaite maîtrise des techniques sur corde, nous intervenons efficacement pour le nettoyage de
-                    vitres, la peinture extérieure, le ravalement de façade, la sécurisation de toiture ou encore la
+                    vitres, la peinture exterieure, le ravalement de façade, la securisation de toiture ou encore la
                     pose de
-                    lignes de vie. Nous assurons des interventions rapides, sécurisées et toujours conformes aux normes
+                    lignes de vie. Nous assurons des interventions rapides, securisees et toujours conformes aux normes
                     en
                     vigueur.
                 </p>
             </div>
             <section>
                 <div id="devis">
-                    <h2>Des tarifs adaptés à vos besoins à Carros</h2>
+                    <h2>Des tarifs adaptes à vos besoins à Carros</h2>
                     <h3>Un devis gratuit, rapide et sans engagement</h3>
                     <p>
-                        Nos prestations à Carros sont conçues pour offrir un excellent rapport qualité-prix. Que ce soit
-                        pour du nettoyage, de la peinture ou des travaux de sécurisation, <strong>Cordiste 06</strong>
+                        Nos prestations à Carros sont conçues pour offrir un excellent rapport qualite-prix. Que ce soit
+                        pour du nettoyage, de la peinture ou des travaux de securisation, <strong>Cordiste 06</strong>
                         vous
                         garantit un service professionnel à des tarifs justes. Demandez dès maintenant votre devis
                         gratuit
-                        et recevez une estimation claire et personnalisée, sans aucun engagement.
+                        et recevez une estimation claire et personnalisee, sans aucun engagement.
                     </p>
                     <a class="deviiiiiiiiiiiiiiiis" href="devis-cordiste-06.html" title="prix cordiste Carros">DEVIS
                         GRATUIT</a>
@@ -542,47 +539,47 @@
                 <h2>Pourquoi faire appel à Cordiste 06 à Carros ?</h2>
                 <hr>
                 <p>
-                    En faisant confiance à <strong>Cordiste 06</strong> à Carros, vous choisissez une équipe sérieuse,
-                    réactive et passionnée. Reconnus dans les Alpes-Maritimes pour notre expertise, nous assurons chaque
-                    intervention avec professionnalisme, qu’il s’agisse de travaux ponctuels ou réguliers. De l’étude
+                    En faisant confiance à <strong>Cordiste 06</strong> à Carros, vous choisissez une equipe serieuse,
+                    reactive et passionnee. Reconnus dans les Alpes-Maritimes pour notre expertise, nous assurons chaque
+                    intervention avec professionnalisme, qu’il s’agisse de travaux ponctuels ou reguliers. De l’etude
                     technique jusqu’à la finition, nous vous accompagnons avec transparence et exigence, pour un
-                    résultat
+                    resultat
                     impeccable.
                 </p>
             </div>
             <div class="aloooooo1">
-                <h2>Des contrats personnalisés pour une gestion sereine à Carros</h2>
+                <h2>Des contrats personnalises pour une gestion sereine à Carros</h2>
                 <img src="note.webp" alt="cordiste travaux en hauteur Carros" loading="lazy" decoding="async">
                 <h3>Interventions ponctuelles</h3>
                 <img src="note.webp" alt="cordiste entretien façade Carros" loading="lazy" decoding="async">
-                <h3>Entretien programmé</h3>
+                <h3>Entretien programme</h3>
                 <p>
-                    Pour répondre aux besoins spécifiques de vos bâtiments à Carros, <strong>Cordiste 06</strong>
+                    Pour repondre aux besoins specifiques de vos bâtiments à Carros, <strong>Cordiste 06</strong>
                     propose
-                    des contrats sur mesure. Qu’il s’agisse d’un besoin ponctuel (mise en sécurité, peinture, nettoyage)
+                    des contrats sur mesure. Qu’il s’agisse d’un besoin ponctuel (mise en securite, peinture, nettoyage)
                     ou
-                    d’un entretien régulier, nous nous engageons sur des prestations de qualité, dans les délais et à un
-                    tarif maîtrisé. Nos formules sont flexibles et adaptées à chaque situation.
+                    d’un entretien regulier, nous nous engageons sur des prestations de qualite, dans les delais et à un
+                    tarif maîtrise. Nos formules sont flexibles et adaptees à chaque situation.
                 </p>
             </div>
             <div class="aloooooo1">
                 <h2>Votre partenaire de confiance pour les travaux en hauteur à Carros</h2>
                 <hr>
                 <p>
-                    <strong>Cordiste 06</strong> est votre interlocuteur privilégié à Carros pour toutes vos
+                    <strong>Cordiste 06</strong> est votre interlocuteur privilegie à Carros pour toutes vos
                     interventions
-                    en hauteur, qu’elles soient urgentes ou planifiées. Nous travaillons avec les particuliers comme les
+                    en hauteur, qu’elles soient urgentes ou planifiees. Nous travaillons avec les particuliers comme les
                     professionnels dans un cadre contractuel clair et sans surprise.
                 </p>
                 <p>
                     Nous intervenons dans les zones inaccessibles par nacelle, pour le nettoyage de vitres, la peinture
-                    extérieure, la sécurisation de toiture ou encore l’installation de lignes de vie. Grâce à nos
+                    exterieure, la securisation de toiture ou encore l’installation de lignes de vie. Grâce à nos
                     techniques
-                    d’accès par corde, chaque chantier est réalisé en toute sécurité et avec efficacité.
+                    d’accès par corde, chaque chantier est realise en toute securite et avec efficacite.
                 </p>
                 <p>
-                    <strong>Disponibles 7j/7, 24h/24, y compris les jours fériés</strong>, nos équipes vous assurent des
-                    interventions rapides et conformes aux normes. Pour un chantier ponctuel ou un contrat longue durée
+                    <strong>Disponibles 7j/7, 24h/24, y compris les jours feries</strong>, nos equipes vous assurent des
+                    interventions rapides et conformes aux normes. Pour un chantier ponctuel ou un contrat longue duree
                     à
                     Carros, faites appel à Cordiste 06.
                 </p>
@@ -592,7 +589,7 @@
     <footer>
         <div id="contact">
 
-            <h5>NOS RÉSEAUX SOCIAUX</h5>
+            <h5>NOS RESEAUX SOCIAUX</h5>
             <div class="reseau-contact">
                 <a href="https://www.linkedin.com/company/quali-corde-sud?trk=public_post_reshare_feed-actor-image"
                     target="_blank" title="linkedin-cordiste"> Linkedin -</a>
@@ -613,8 +610,8 @@
                     title="entreprise cordiste 06">contacts@quali-corde.com</a></p>
 
             <div class="liens-wp">
-                <h6>&copy; Copyright 2025 - Site réalisé par <a href="https://webprime.fr/" target="_blank">webprime</a>
-                    - <a href="mentions-legales.html" target="_blank">mentions légales</a>.
+                <h6>&copy; Copyright 2025 - Site realise par <a href="https://webprime.fr/" target="_blank">webprime</a>
+                    - <a href="mentions-legales.html" target="_blank">mentions legales</a>.
                 </h6>
             </div>
         </div>
@@ -694,28 +691,40 @@
         });
     </script>
     <script>
-        function validateForm() {
-            var name = document.getElementById("name").value.trim();
-            var tel = document.getElementById("tel").value.trim();
-            var services = document.getElementById("services").value.trim();
-            var comments = document.getElementById("comments").value.trim();
-            if (name === "" || tel === "" || services === "" || comments === "") {
-                alert("Champs obligatoires.");
-                return false;
+        async function submitToWebPrime(e) {
+        e.preventDefault();
+        var form = document.getElementById('contactForm');
+        var btn = form.querySelector('button[type="submit"]');
+        var originalText = btn.textContent;
+
+        // Anti-spam honeypot check
+        if (form._gotcha && form._gotcha.value) return false;
+
+        btn.textContent = 'Envoi en cours...';
+        btn.disabled = true;
+
+        try {
+            var formData = new FormData(form);
+            var response = await fetch('https://webprime.app/webhook/contact/a0dbffb8afffbd140c7c09cb7d2c09e30a8e36bb44f78f4fcd0f5e49af523630', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                // Redirection apres succes
+                window.location.href = 'https://cordiste-06.com/';
+            } else {
+                alert('Erreur lors de l\'envoi. Veuillez reessayer.');
+                btn.textContent = originalText;
+                btn.disabled = false;
             }
-            var telPattern = /^((0[1679])|(\+33[1679]))\d{8}$/;
-            if (!telPattern.test(tel)) {
-                alert("Veuillez entrer un numéro de téléphone valide.");
-                return false;
-            }
-            var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
-            var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
-            if (linkPattern.test(comments) || scriptPattern.test(comments)) {
-                alert("Pas autorisé.");
-                return false;
-            }
-            return true;
+        } catch (error) {
+            alert('Erreur de connexion. Veuillez reessayer.');
+            btn.textContent = originalText;
+            btn.disabled = false;
         }
+        return false;
+    }
     </script>
 </body>
 

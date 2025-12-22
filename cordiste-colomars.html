@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -242,35 +242,32 @@
             <div class="image-container">
                 <img src="logo.jpg" alt="entreprise cordiste Vence">
             </div>
-            <form action="https://formsubmit.co/formulaire@webprime.fr" method="POST" onsubmit="return validateForm()">
+            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
                 <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
-                    <input type="text" id="website" name="website" autocomplete="off">
+                    <input type="text" id="website" name="_gotcha" autocomplete="off">
                 </div>
 
                 <input type="hidden" name="_captcha" value="true">
-                <input type="hidden" name="_next" value="https://cordiste-06.com/">
-                <input type="hidden" name="_cc" value="contacts@quali-corde.com">
-                <input type="hidden" name=" from" value="Quali Corde Sud">
-                <input type="hidden" name="_subject" value="Formulaire">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
-
+                                                                                                
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="nom" required>
 
-                <label for="tel">Téléphone :</label>
-                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+                <label for="tel">Telephone :</label>
+                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
                 <label for="services">Services :</label>
                 <select id="services" name="services" required>
                     <option value="NETTOYAGE">NETTOYAGE</option>
                     <option value="PEINTURE">PEINTURE</option>
-                    <option value="MAÇONNERIE">MAÇONNERIE</option>
+                    <option value="MACONNERIE">MACONNERIE</option>
                     <option value="INDUSTRIE">INDUSTRIE</option>
-                    <option value="SECURITE">SÉCURITÉ</option>
-                    <option value="ÉVÉNEMENTIEL">ÉVÉNEMENTIEL</option>
+                    <option value="SECURITE">SECURITE</option>
+                    <option value="EVENEMENTIEL">EVENEMENTIEL</option>
                     <option value="ANTI-NUISIBLE">ANTI-NUISIBLE</option>
                     <option value="URGENCE">URGENCE</option>
                     <option value="AUTRE">AUTRE</option>
@@ -291,9 +288,9 @@
                 decoding="async">
             <p><strong class="strong-color"><a href="nettoyage-vitre-hauteur-06.html"
                         title="nettoyage vitre en hauteur Vence">NETTOYAGE DE VITRE</a></strong></p>
-            <h3>À Vence, nous réalisons le nettoyage de vos vitres en hauteur avec précision. Nos cordistes
-                interviennent sur toutes les surfaces vitrées inaccessibles pour leur redonner un éclat parfait, en
-                toute sécurité.</h3>
+            <h3>À Vence, nous realisons le nettoyage de vos vitres en hauteur avec precision. Nos cordistes
+                interviennent sur toutes les surfaces vitrees inaccessibles pour leur redonner un eclat parfait, en
+                toute securite.</h3>
             <a class="bouton3" href="tel:+33497148939" title="nettoyage vitre en hauteur Vence">CONTACTEZ - NOUS</a>
         </div>
         </section>
@@ -303,8 +300,8 @@
                     decoding="async">
                 <p><strong class="strong-color"><a href="peinture-en-hauteur-06.html"
                             title="peinture en hauteur Vence">RAVALEMENT – Maçonnerie & Peinture</a></strong></p>
-                <h3>À Vence, nous rénovons vos façades et ouvrages en hauteur grâce à nos prestations de ravalement,
-                    maçonnerie et peinture réalisées par des cordistes expérimentés. Qualité et sécurité garanties.</h3>
+                <h3>À Vence, nous renovons vos façades et ouvrages en hauteur grâce à nos prestations de ravalement,
+                    maçonnerie et peinture realisees par des cordistes experimentes. Qualite et securite garanties.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="peinture en hauteur Vence">CONTACTEZ - NOUS</a>
             </div>
         </section>
@@ -313,10 +310,10 @@
                 <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo Vence" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="nettoyage-de-silo-06.html"
-                            title="nettoyage de silo industriel Vence">nettoyage silo granulés</a></strong></p>
+                            title="nettoyage de silo industriel Vence">nettoyage silo granules</a></strong></p>
                 <h3>À Vence, nos cordistes assurent l’entretien et l’inspection de vos silos et installations
-                    industrielles en hauteur. Interventions rapides et sécurisées pour garantir la continuité de vos
-                    activités.</h3>
+                    industrielles en hauteur. Interventions rapides et securisees pour garantir la continuite de vos
+                    activites.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="nettoyage de silo industriel Vence">CONTACTEZ - NOUS</a>
             </div>
         </section>
@@ -324,21 +321,21 @@
             <div class="nosservices3">
                 <img src="ligne-de-vie-toiture-06.webp" alt="installation ligne de vie toiture Vence" loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="installation-ligne-de-vie-06.html"
-                            title="pose de ligne de vie Vence">SÉCURITÉ – Lignes de vie & Filets</a></strong></p>
-                <h3>À Vence, nous installons des lignes de vie, filets de sécurité et points d’ancrage pour permettre
-                    à vos équipes de travailler en hauteur en toute sécurité et dans le respect des normes en vigueur.
+                            title="pose de ligne de vie Vence">SECURITE – Lignes de vie & Filets</a></strong></p>
+                <h3>À Vence, nous installons des lignes de vie, filets de securite et points d’ancrage pour permettre
+                    à vos equipes de travailler en hauteur en toute securite et dans le respect des normes en vigueur.
                 </h3>
                 <a class="bouton3" href="tel:+33497148939" title="pose de ligne de vie Vence">CONTACTEZ - NOUS</a>
             </div>
         </section>
         <section>
             <div class="nosservices2">
-                <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="poseur de filet de sécurité Vence" loading="lazy" decoding="async">
+                <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="poseur de filet de securite Vence" loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="pose-filet-de-securite-06.html"
                             title="pose de filet anti chute Vence">URGENCE – Purge, Bâchage & Filets</a></strong></p>
-                <h3>À Vence, nous intervenons en urgence pour sécuriser vos bâtiments après sinistres, intempéries ou
-                    chutes de matériaux. Pose de bâches et de filets, purge de façades : réactivité et efficacité
-                    assurées.</h3>
+                <h3>À Vence, nous intervenons en urgence pour securiser vos bâtiments après sinistres, intemperies ou
+                    chutes de materiaux. Pose de bâches et de filets, purge de façades : reactivite et efficacite
+                    assurees.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="pose de filet anti chute Vence">CONTACTEZ - NOUS</a>
             </div>
         </section>
@@ -347,11 +344,11 @@
                 <img src="pose-d-enseigne-06.jpg.jpg" alt="poseur d enseigne Vence" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="pose-d-enseigne-06.html"
-                            title="poseur enseigne Vence">ÉVÉNEMENTIEL – Enseignes & Animations</a></strong>
+                            title="poseur enseigne Vence">EVENEMENTIEL – Enseignes & Animations</a></strong>
                 </p>
-                <h3>À Vence, nous réalisons la pose en hauteur de vos enseignes, banderoles et éléments
-                    événementiels. Nos cordistes travaillent avec rigueur et rapidité pour mettre en valeur vos
-                    événements en toute sécurité.</h3>
+                <h3>À Vence, nous realisons la pose en hauteur de vos enseignes, banderoles et elements
+                    evenementiels. Nos cordistes travaillent avec rigueur et rapidite pour mettre en valeur vos
+                    evenements en toute securite.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="poseur enseigne Vence">CONTACTEZ - NOUS</a>
             </div>
         </section>
@@ -361,7 +358,7 @@
                 <p><strong class="strong-color"><a href="pose-filet-anti-pigeon-06.html"
                             title="installation pic anti pigeon Vence">ANTI-NUISIBLE – Pics & Filets de protection</a></strong></p>
                 <h3>À Vence, nous posons des pics anti-pigeons et filets de protection en hauteur. Nos solutions
-                    discrètes et efficaces permettent de protéger durablement vos façades et vos ouvrages des nuisibles.
+                    discrètes et efficaces permettent de proteger durablement vos façades et vos ouvrages des nuisibles.
                 </h3>
                 <a class="bouton3" href="tel:+33497148939" title="installation pic anti pigeon Vence">CONTACTEZ - NOUS</a>
             </div>
@@ -371,11 +368,11 @@
                 <img src="soudure-a-l-arc-06.jpg.jpg" alt="soudure à l arc Vence" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="maintenance-eolienne-06.html"
-                            title="maintenance eolienne Vence">AUTRES – Éolien, Soudure,
-                            Électricité...</a></strong></p>
-                <h3>À Vence, nous réalisons vos travaux techniques en hauteur : maintenance éolienne, interventions
-                    électriques, soudures spécialisées… Nos équipes garantissent des prestations de qualité en toute
-                    sécurité.</h3>
+                            title="maintenance eolienne Vence">AUTRES – Eolien, Soudure,
+                            Electricite...</a></strong></p>
+                <h3>À Vence, nous realisons vos travaux techniques en hauteur : maintenance eolienne, interventions
+                    electriques, soudures specialisees… Nos equipes garantissent des prestations de qualite en toute
+                    securite.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="maintenance eolienne Vence">CONTACTEZ -
                     NOUS</a>
             </div>
@@ -386,14 +383,14 @@
                         <p><a href="nettoyage-de-silo-06.html"
                                 title="nettoyage des silos Vence"><strong>INDUSTRIE (silos &
                                     maintenance)</strong></a>
-                            : À Vence, nous réalisons l’entretien, la maintenance et l’inspection en hauteur de vos
-                            silos et installations industrielles. Nos cordistes expérimentés interviennent rapidement
-                            pour garantir la sécurité et la continuité de vos activités, même dans les accès les plus
+                            : À Vence, nous realisons l’entretien, la maintenance et l’inspection en hauteur de vos
+                            silos et installations industrielles. Nos cordistes experimentes interviennent rapidement
+                            pour garantir la securite et la continuite de vos activites, même dans les accès les plus
                             complexes.
                         </p>
                     </div>
                     <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo farine silos Vence" class="pcimgindex2"
-                        title="nettoyage silo granulés Vence" loading="lazy" decoding="async">
+                        title="nettoyage silo granules Vence" loading="lazy" decoding="async">
                 </div>
             </section>
             <section>
@@ -402,11 +399,11 @@
                         title="pose ligne de vie toiture Vence" loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="installation-ligne-de-vie-06.html"
-                                title="installation ligne de vie toiture Vence"><strong>Installation de SÉCURITÉ –
+                                title="installation ligne de vie toiture Vence"><strong>Installation de SECURITE –
                                     Lignes de vie & Filets</strong></a>
-                            : À Vence, nous posons des lignes de vie, filets de sécurité et points d’ancrage adaptés
-                            à tous types de bâtiments. Nos solutions conformes aux normes protègent vos équipes lors de
-                            travaux en hauteur en toute sécurité.
+                            : À Vence, nous posons des lignes de vie, filets de securite et points d’ancrage adaptes
+                            à tous types de bâtiments. Nos solutions conformes aux normes protègent vos equipes lors de
+                            travaux en hauteur en toute securite.
                         </p>
                     </div>
                 </div>
@@ -417,8 +414,8 @@
                         <p><a href="nettoyage-vitre-hauteur-06.html"
                                 title="nettoyage vitres en hauteur Vence"><strong>Nettoyage de vitres en
                                     hauteur</strong></a>
-                            : À Vence, nous offrons un nettoyage de vitres en hauteur soigné et efficace. Nos
-                            cordistes accèdent aux vitrages les plus difficiles pour un résultat impeccable, même en
+                            : À Vence, nous offrons un nettoyage de vitres en hauteur soigne et efficace. Nos
+                            cordistes accèdent aux vitrages les plus difficiles pour un resultat impeccable, même en
                             zones urbaines complexes ou sur grandes hauteurs.
                         </p>
                     </div>
@@ -429,15 +426,15 @@
             </section>
             <section>
                 <div class="nosservicespc">
-                    <img src="peinture-en-hauteur-06.webp" alt="rénovation peinture en hauteur Vence" class="pcimgindex"
+                    <img src="peinture-en-hauteur-06.webp" alt="renovation peinture en hauteur Vence" class="pcimgindex"
                         title="peinture en hauteur Vence" loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="peinture-en-hauteur-06.html"
                                 title="entreprise peinture cordiste Vence"><strong>RAVALEMENT –
                                     Maçonnerie & Peinture</strong></a>
-                            : À Vence, nos cordistes rénovent vos façades en hauteur sans échafaudage. Nous réalisons
-                            vos travaux de ravalement, maçonnerie et peinture avec discrétion et sécurité, pour un rendu
-                            esthétique durable.
+                            : À Vence, nos cordistes renovent vos façades en hauteur sans echafaudage. Nous realisons
+                            vos travaux de ravalement, maçonnerie et peinture avec discretion et securite, pour un rendu
+                            esthetique durable.
                         </p>
                     </div>
                 </div>
@@ -448,12 +445,12 @@
                         <p><a href="pose-filet-de-securite-06.html"
                                 title="pose filet de protection Vence"><strong>URGENCE – Purge, Bâchage &
                                     Filets</strong></a>
-                            : À Vence, nous intervenons en urgence pour sécuriser vos bâtiments après sinistres,
-                            chutes de matériaux ou intempéries. Nos cordistes effectuent purges, bâchages et poses de
-                            filets de protection avec une réactivité optimale.
+                            : À Vence, nous intervenons en urgence pour securiser vos bâtiments après sinistres,
+                            chutes de materiaux ou intemperies. Nos cordistes effectuent purges, bâchages et poses de
+                            filets de protection avec une reactivite optimale.
                         </p>
                     </div>
-                    <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="prix pose de filet de protection anti chute Vence"
+                    <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="prix pose de filet de protection anti chute Vence"
                         class="pcimgindex2" title="pose filet de securite Vence" loading="lazy"
                         decoding="async">
                 </div>
@@ -465,11 +462,11 @@
                         decoding="async">
                     <div class="pcservtext">
                         <p><a href="pose-d-enseigne-06.html"
-                                title="installateur d enseigne Vence"><strong>ÉVÉNEMENTIEL –
+                                title="installateur d enseigne Vence"><strong>EVENEMENTIEL –
                                     Enseignes & Animations</strong></a>
-                            : À Vence, nous réalisons la pose en hauteur de vos enseignes, banderoles et éléments
-                            événementiels. Nos cordistes vous assurent une installation soignée et sécurisée pour
-                            sublimer vos événements.
+                            : À Vence, nous realisons la pose en hauteur de vos enseignes, banderoles et elements
+                            evenementiels. Nos cordistes vous assurent une installation soignee et securisee pour
+                            sublimer vos evenements.
                         </p>
                     </div>
                 </div>
@@ -481,8 +478,8 @@
                                 title="pose de filet anti pigeon Vence"><strong>ANTI-NUISIBLE – Pics &
                                     Filets de protection</strong></a>
                             : À Vence, nous posons en hauteur pics anti-pigeons et filets de protection. Nos
-                            dispositifs discrets et durables permettent de préserver l’esthétique de vos façades tout en
-                            protégeant vos bâtiments des nuisibles.
+                            dispositifs discrets et durables permettent de preserver l’esthetique de vos façades tout en
+                            protegeant vos bâtiments des nuisibles.
                         </p>
                     </div>
                     <img src="filet-anti-pigeon.jpg.jpg" alt="pose de pics anti pigeons Vence"
@@ -496,38 +493,38 @@
                         title="entreprise de maintenance eolienne Vence" loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="maintenance-eolienne-06.html"
-                                title="electricien Vence"><strong>AUTRES – Éolien, Soudure,
-                                    Électricité...</strong></a>
-                            : À Vence, nous intervenons en hauteur sur vos installations spécifiques : maintenance
-                            éolienne, soudures complexes, interventions électriques, pose de phares… Nos cordistes
-                            expérimentés vous garantissent un travail sécurisé et sur-mesure.
+                                title="electricien Vence"><strong>AUTRES – Eolien, Soudure,
+                                    Electricite...</strong></a>
+                            : À Vence, nous intervenons en hauteur sur vos installations specifiques : maintenance
+                            eolienne, soudures complexes, interventions electriques, pose de phares… Nos cordistes
+                            experimentes vous garantissent un travail securise et sur-mesure.
                         </p>
                     </div>
                 </div>
             </section>
 
             <div class="aloooooo1">
-                <h2>Des cordistes expérimentés à votre service à Vence</h2>
+                <h2>Des cordistes experimentes à votre service à Vence</h2>
                 <hr>
                 <p>
-                    À Vence, notre société spécialisée en travaux en hauteur met à votre disposition une équipe de
-                    cordistes formés, équipés de matériel professionnel dernière génération. Nous intervenons sur tous
+                    À Vence, notre societe specialisee en travaux en hauteur met à votre disposition une equipe de
+                    cordistes formes, equipes de materiel professionnel dernière generation. Nous intervenons sur tous
                     types
                     de bâtiments, y compris les plus complexes d’accès, pour des prestations telles que le nettoyage de
-                    vitres, la peinture extérieure, le ravalement de façades ou l’installation de lignes de vie. Grâce à
+                    vitres, la peinture exterieure, le ravalement de façades ou l’installation de lignes de vie. Grâce à
                     notre savoir-faire et à nos techniques d’accès par corde, nous vous assurons des interventions
                     rapides,
-                    sécurisées et parfaitement conformes aux normes.
+                    securisees et parfaitement conformes aux normes.
                 </p>
             </div>
             <section>
                 <div id="devis">
-                    <h2>Des tarifs adaptés à vos besoins à Vence</h2>
+                    <h2>Des tarifs adaptes à vos besoins à Vence</h2>
                     <h3>Obtenez votre devis gratuit</h3>
                     <p>
-                        Nos prestations à Vence allient qualité professionnelle et prix compétitifs. Que vous ayez
+                        Nos prestations à Vence allient qualite professionnelle et prix competitifs. Que vous ayez
                         besoin
-                        d’un nettoyage ponctuel, de travaux de peinture ou d’une sécurisation de toiture,
+                        d’un nettoyage ponctuel, de travaux de peinture ou d’une securisation de toiture,
                         <strong>Cordiste
                             06</strong> vous garantit un service efficace au meilleur tarif. Demandez votre devis
                         gratuit et
@@ -541,27 +538,27 @@
                 <h2>Pourquoi faire appel à Cordiste 06 à Vence ?</h2>
                 <hr>
                 <p>
-                    En faisant appel à <strong>Cordiste 06</strong> à Vence, vous bénéficiez d’un accompagnement
-                    professionnel à chaque étape de votre projet. Notre équipe, reconnue pour son sérieux et sa
-                    réactivité,
+                    En faisant appel à <strong>Cordiste 06</strong> à Vence, vous beneficiez d’un accompagnement
+                    professionnel à chaque etape de votre projet. Notre equipe, reconnue pour son serieux et sa
+                    reactivite,
                     intervient pour tous types de travaux en hauteur : nettoyage de façade, entretien de vitres,
                     peinture
-                    extérieure, mise en sécurité… Nous vous garantissons des résultats de qualité, réalisés dans les
-                    délais,
+                    exterieure, mise en securite… Nous vous garantissons des resultats de qualite, realises dans les
+                    delais,
                     avec une transparence totale.
                 </p>
             </div>
             <div class="aloooooo1">
-                <h2>Des contrats personnalisés pour votre tranquillité à Vence</h2>
+                <h2>Des contrats personnalises pour votre tranquillite à Vence</h2>
                 <img src="note.webp" alt="cordiste travaux en hauteur Vence" loading="lazy" decoding="async">
                 <h3>Interventions ponctuelles</h3>
                 <img src="note.webp" alt="cordiste entretien façade Vence" loading="lazy" decoding="async">
-                <h3>Entretien régulier</h3>
+                <h3>Entretien regulier</h3>
                 <p>
-                    Pour vous offrir un service sur mesure à Vence, nous proposons des contrats adaptés à vos
+                    Pour vous offrir un service sur mesure à Vence, nous proposons des contrats adaptes à vos
                     besoins.
-                    Que vous souhaitiez une prestation ponctuelle (nettoyage, peinture, sécurisation) ou un contrat
-                    d’entretien régulier, <strong>Cordiste 06</strong> s’engage sur la qualité, les délais et la
+                    Que vous souhaitiez une prestation ponctuelle (nettoyage, peinture, securisation) ou un contrat
+                    d’entretien regulier, <strong>Cordiste 06</strong> s’engage sur la qualite, les delais et la
                     transparence tarifaire. Nos formules flexibles vous garantissent une totale maîtrise de vos travaux
                     en
                     hauteur.
@@ -578,17 +575,17 @@
                     leurs projets, avec un encadrement contractuel clair et des prestations sans mauvaise surprise.
                 </p>
                 <p>
-                    Nos cordistes réalisent des interventions dans les zones les plus difficiles d’accès, pour des
+                    Nos cordistes realisent des interventions dans les zones les plus difficiles d’accès, pour des
                     services
-                    tels que le nettoyage de vitres, la peinture extérieure, le ravalement de façades ou encore la pose
+                    tels que le nettoyage de vitres, la peinture exterieure, le ravalement de façades ou encore la pose
                     de
-                    lignes de vie. Nous utilisons exclusivement des techniques d’accès par corde, idéales là où les
+                    lignes de vie. Nous utilisons exclusivement des techniques d’accès par corde, ideales là où les
                     nacelles
                     ne peuvent intervenir.
                 </p>
                 <p>
-                    <strong>Disponible 7j/7, 24h/24, y compris les jours fériés</strong>, notre équipe vous assure des
-                    prestations rapides, fiables et conformes aux exigences de sécurité. Faites confiance à Cordiste 06
+                    <strong>Disponible 7j/7, 24h/24, y compris les jours feries</strong>, notre equipe vous assure des
+                    prestations rapides, fiables et conformes aux exigences de securite. Faites confiance à Cordiste 06
                     pour
                     vos besoins ponctuels ou sous contrat à Vence.
                 </p>
@@ -598,7 +595,7 @@
     <footer>
         <div id="contact">
 
-            <h5>NOS RÉSEAUX SOCIAUX</h5>
+            <h5>NOS RESEAUX SOCIAUX</h5>
             <div class="reseau-contact">
                 <a href="https://www.linkedin.com/company/quali-corde-sud?trk=public_post_reshare_feed-actor-image"
                     target="_blank" title="linkedin-cordiste"> Linkedin -</a>
@@ -619,8 +616,8 @@
                     title="entreprise cordiste 06">contacts@quali-corde.com</a></p>
 
             <div class="liens-wp">
-                <h6>&copy; Copyright 2025 - Site réalisé par <a href="https://webprime.fr/" target="_blank">webprime</a>
-                    - <a href="mentions-legales.html" target="_blank">mentions légales</a>.
+                <h6>&copy; Copyright 2025 - Site realise par <a href="https://webprime.fr/" target="_blank">webprime</a>
+                    - <a href="mentions-legales.html" target="_blank">mentions legales</a>.
                 </h6>
             </div>
         </div>
@@ -700,28 +697,40 @@
         });
     </script>
     <script>
-        function validateForm() {
-            var name = document.getElementById("name").value.trim();
-            var tel = document.getElementById("tel").value.trim();
-            var services = document.getElementById("services").value.trim();
-            var comments = document.getElementById("comments").value.trim();
-            if (name === "" || tel === "" || services === "" || comments === "") {
-                alert("Champs obligatoires.");
-                return false;
+        async function submitToWebPrime(e) {
+        e.preventDefault();
+        var form = document.getElementById('contactForm');
+        var btn = form.querySelector('button[type="submit"]');
+        var originalText = btn.textContent;
+
+        // Anti-spam honeypot check
+        if (form._gotcha && form._gotcha.value) return false;
+
+        btn.textContent = 'Envoi en cours...';
+        btn.disabled = true;
+
+        try {
+            var formData = new FormData(form);
+            var response = await fetch('https://webprime.app/webhook/contact/a0dbffb8afffbd140c7c09cb7d2c09e30a8e36bb44f78f4fcd0f5e49af523630', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                // Redirection apres succes
+                window.location.href = 'https://cordiste-06.com/';
+            } else {
+                alert('Erreur lors de l\'envoi. Veuillez reessayer.');
+                btn.textContent = originalText;
+                btn.disabled = false;
             }
-            var telPattern = /^((0[1679])|(\+33[1679]))\d{8}$/;
-            if (!telPattern.test(tel)) {
-                alert("Veuillez entrer un numéro de téléphone valide.");
-                return false;
-            }
-            var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
-            var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
-            if (linkPattern.test(comments) || scriptPattern.test(comments)) {
-                alert("Pas autorisé.");
-                return false;
-            }
-            return true;
+        } catch (error) {
+            alert('Erreur de connexion. Veuillez reessayer.');
+            btn.textContent = originalText;
+            btn.disabled = false;
         }
+        return false;
+    }
     </script>
 </body>
 

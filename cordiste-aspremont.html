@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -242,35 +242,32 @@
             <div class="image-container">
                 <img src="logo.jpg" alt="entreprise cordiste Aspremont">
             </div>
-            <form action="https://formsubmit.co/formulaire@webprime.fr" method="POST" onsubmit="return validateForm()">
+            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
                 <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
-                    <input type="text" id="website" name="website" autocomplete="off">
+                    <input type="text" id="website" name="_gotcha" autocomplete="off">
                 </div>
 
                 <input type="hidden" name="_captcha" value="true">
-                <input type="hidden" name="_next" value="https://cordiste-06.com/">
-                <input type="hidden" name="_cc" value="contacts@quali-corde.com">
-                <input type="hidden" name=" from" value="Quali Corde Sud">
-                <input type="hidden" name="_subject" value="Formulaire">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
-
+                                                                                                
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="nom" required>
 
-                <label for="tel">Téléphone :</label>
-                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+                <label for="tel">Telephone :</label>
+                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
                 <label for="services">Services :</label>
                 <select id="services" name="services" required>
                     <option value="NETTOYAGE">NETTOYAGE</option>
                     <option value="PEINTURE">PEINTURE</option>
-                    <option value="MAÇONNERIE">MAÇONNERIE</option>
+                    <option value="MACONNERIE">MACONNERIE</option>
                     <option value="INDUSTRIE">INDUSTRIE</option>
-                    <option value="SECURITE">SÉCURITÉ</option>
-                    <option value="ÉVÉNEMENTIEL">ÉVÉNEMENTIEL</option>
+                    <option value="SECURITE">SECURITE</option>
+                    <option value="EVENEMENTIEL">EVENEMENTIEL</option>
                     <option value="ANTI-NUISIBLE">ANTI-NUISIBLE</option>
                     <option value="URGENCE">URGENCE</option>
                     <option value="AUTRE">AUTRE</option>
@@ -291,9 +288,9 @@
                     loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="nettoyage-vitre-hauteur-06.html"
                             title="laveur de vitre en hauteur à Aspremont">NETTOYAGE DE VITRE</a></strong></p>
-                <h3>À Aspremont, redonnez à vos vitrages en hauteur une clarté parfaite. Nos experts du nettoyage
-                    interviennent sur toutes les surfaces difficiles d’accès pour éliminer efficacement les traces et
-                    salissures. Un service rapide et sécurisé pour un résultat impeccable.</h3>
+                <h3>À Aspremont, redonnez à vos vitrages en hauteur une clarte parfaite. Nos experts du nettoyage
+                    interviennent sur toutes les surfaces difficiles d’accès pour eliminer efficacement les traces et
+                    salissures. Un service rapide et securise pour un resultat impeccable.</h3>
                 <a class="bouton3" href="tel:+33497148939"
                     title="entreprise nettoyage vitre en hauteur à Aspremont">CONTACTEZ - NOUS</a>
             </div>
@@ -306,10 +303,10 @@
                     <p><strong class="strong-color"><a href="peinture-en-hauteur-06.html"
                                 title="cordiste peinture à Aspremont">RAVALEMENT – Maçonnerie & Peinture</a></strong>
                     </p>
-                    <h3>À Aspremont, nous rénovons vos façades en hauteur sans échafaudage. Ravalement, maçonnerie,
+                    <h3>À Aspremont, nous renovons vos façades en hauteur sans echafaudage. Ravalement, maçonnerie,
                         peinture
-                        : nos cordistes qualifiés réalisent vos travaux dans les zones les plus complexes. Interventions
-                        rapides, discrètes et parfaitement sécurisées.</h3>
+                        : nos cordistes qualifies realisent vos travaux dans les zones les plus complexes. Interventions
+                        rapides, discrètes et parfaitement securisees.</h3>
                     <a class="bouton3" href="tel:+33497148939"
                         title="peinture façade inaccessible à Aspremont">CONTACTEZ
                         -
@@ -326,10 +323,10 @@
                                 maintenance)</a></strong></p>
                     <h3>Pour vos installations industrielles à Aspremont, nous intervenons en hauteur pour la
                         maintenance,
-                        l’inspection et le nettoyage de vos silos. Nos cordistes expérimentés garantissent des
+                        l’inspection et le nettoyage de vos silos. Nos cordistes experimentes garantissent des
                         prestations
-                        rapides et sécurisées sans interruption de votre activité.</h3>
-                    <a class="bouton3" href="tel:+33497148939" title="nettoyage silo granulés à Aspremont">CONTACTEZ -
+                        rapides et securisees sans interruption de votre activite.</h3>
+                    <a class="bouton3" href="tel:+33497148939" title="nettoyage silo granules à Aspremont">CONTACTEZ -
                         NOUS</a>
                 </div>
             </section>
@@ -339,13 +336,13 @@
                     <img src="ligne-de-vie-toiture-06.webp" alt="installation ligne de vie toiture toiture à Aspremont"
                         loading="lazy" decoding="async">
                     <p><strong class="strong-color"><a href="installation-ligne-de-vie-06.html"
-                                title="installation ligne de vie à Aspremont">SÉCURITÉ – Lignes de vie &
+                                title="installation ligne de vie à Aspremont">SECURITE – Lignes de vie &
                                 Filets</a></strong>
                     </p>
-                    <h3>Assurez la sécurité de vos équipes à Aspremont avec nos solutions de lignes de vie, filets et
-                        systèmes antichute. Fourniture et pose conformes aux normes, adaptées à toutes les structures,
+                    <h3>Assurez la securite de vos equipes à Aspremont avec nos solutions de lignes de vie, filets et
+                        systèmes antichute. Fourniture et pose conformes aux normes, adaptees à toutes les structures,
                         en
-                        neuf comme en rénovation.</h3>
+                        neuf comme en renovation.</h3>
                     <a class="bouton3" href="tel:+33497148939" title="pose de ligne de vie à Aspremont">CONTACTEZ -
                         NOUS</a>
                 </div>
@@ -353,14 +350,14 @@
 
             <section>
                 <div class="nosservices2">
-                    <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="intervention d'urgence en hauteur à Aspremont"
+                    <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="intervention d'urgence en hauteur à Aspremont"
                         loading="lazy" decoding="async">
                     <p><strong class="strong-color"><a href="pose-filet-de-securite-06.html"
                                 title="intervention d'urgence en hauteur à Aspremont">URGENCE – Purge, Bâchage &
                                 Filets</a></strong></p>
-                    <h3>À Aspremont, nous intervenons en urgence pour sécuriser vos bâtiments suite à des chutes de
-                        matériaux ou des intempéries. Pose de bâches, de filets de protection et purges rapides : nos
-                        cordistes garantissent votre sécurité en un temps record.</h3>
+                    <h3>À Aspremont, nous intervenons en urgence pour securiser vos bâtiments suite à des chutes de
+                        materiaux ou des intemperies. Pose de bâches, de filets de protection et purges rapides : nos
+                        cordistes garantissent votre securite en un temps record.</h3>
                     <a class="bouton3" href="tel:+33497148939"
                         title="intervention d'urgence en hauteur à Aspremont">CONTACTEZ
                         - NOUS</a>
@@ -372,12 +369,12 @@
                     <img src="pose-d-enseigne-06.jpg.jpg" alt="pose enseigne en hauteur à Aspremont" loading="lazy"
                         decoding="async">
                     <p><strong class="strong-color"><a href="pose-d-enseigne-06.html"
-                                title="pose enseigne en hauteur à Aspremont">ÉVÉNEMENTIEL – Enseignes &
+                                title="pose enseigne en hauteur à Aspremont">EVENEMENTIEL – Enseignes &
                                 Animations</a></strong></p>
-                    <h3>Valorisez vos événements à Aspremont avec une pose en hauteur sur-mesure. Nous installons
+                    <h3>Valorisez vos evenements à Aspremont avec une pose en hauteur sur-mesure. Nous installons
                         enseignes,
-                        banderoles et éléments scénographiques dans les lieux les plus exigeants, alliant efficacité,
-                        sécurité et discrétion.</h3>
+                        banderoles et elements scenographiques dans les lieux les plus exigeants, alliant efficacite,
+                        securite et discretion.</h3>
                     <a class="bouton3" href="tel:+33497148939" title="pose enseigne en hauteur à Aspremont">CONTACTEZ -
                         NOUS</a>
                 </div>
@@ -391,11 +388,11 @@
                                 title="pose de pics et filets anti-nuisible à Aspremont">ANTI-NUISIBLE – Pics & Filets
                                 de
                                 protection</a></strong></p>
-                    <h3>Protégez durablement vos bâtiments à Aspremont contre les nuisibles. Nos interventions en
+                    <h3>Protegez durablement vos bâtiments à Aspremont contre les nuisibles. Nos interventions en
                         hauteur
-                        permettent la pose discrète de pics, filets et dispositifs anti-pigeons pour un résultat
+                        permettent la pose discrète de pics, filets et dispositifs anti-pigeons pour un resultat
                         efficace et
-                        respectueux de l’esthétique de vos façades.</h3>
+                        respectueux de l’esthetique de vos façades.</h3>
                     <a class="bouton3" href="tel:+33497148939"
                         title="pose de protection anti-nuisible à Aspremont">CONTACTEZ
                         - NOUS</a>
@@ -404,17 +401,17 @@
 
             <section>
                 <div class="nosservices2">
-                    <img src="soudure-a-l-arc-06.jpg.jpg" alt="intervention spécialisée en hauteur à Aspremont"
+                    <img src="soudure-a-l-arc-06.jpg.jpg" alt="intervention specialisee en hauteur à Aspremont"
                         loading="lazy" decoding="async">
                     <p><strong class="strong-color"><a href="maintenance-eolienne-06.html"
-                                title="travaux spécialisés en hauteur à Aspremont">AUTRES – Éolien, Soudure,
-                                Électricité...</a></strong></p>
-                    <h3>Nos cordistes interviennent à Aspremont sur des missions techniques variées : maintenance
-                        éolienne,
-                        soudure, électricité, pose de phares, et plus encore. Expertise, sécurité et flexibilité pour
-                        répondre à vos besoins les plus spécifiques en hauteur.</h3>
+                                title="travaux specialises en hauteur à Aspremont">AUTRES – Eolien, Soudure,
+                                Electricite...</a></strong></p>
+                    <h3>Nos cordistes interviennent à Aspremont sur des missions techniques variees : maintenance
+                        eolienne,
+                        soudure, electricite, pose de phares, et plus encore. Expertise, securite et flexibilite pour
+                        repondre à vos besoins les plus specifiques en hauteur.</h3>
                     <a class="bouton3" href="tel:+33497148939"
-                        title="travaux spécialisés en hauteur à Aspremont">CONTACTEZ -
+                        title="travaux specialises en hauteur à Aspremont">CONTACTEZ -
                         NOUS</a>
                 </div>
         </div>
@@ -424,13 +421,13 @@
                     <p><a href="nettoyage-de-silo-06.html" title="nettoyage des silos Aspremont"><strong>INDUSTRIE
                                 (silos &
                                 maintenance)</strong></a>
-                        : À Aspremont, nous réalisons la maintenance et l’inspection en hauteur de vos silos et
-                        équipements industriels. Nos cordistes interviennent en milieux difficiles d’accès pour garantir
-                        des prestations rapides et sécurisées, sans interruption de votre activité.
+                        : À Aspremont, nous realisons la maintenance et l’inspection en hauteur de vos silos et
+                        equipements industriels. Nos cordistes interviennent en milieux difficiles d’accès pour garantir
+                        des prestations rapides et securisees, sans interruption de votre activite.
                     </p>
                 </div>
                 <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo farine silos Aspremont" class="pcimgindex2"
-                    title="nettoyage silo granulés Aspremont" loading="lazy" decoding="async">
+                    title="nettoyage silo granules Aspremont" loading="lazy" decoding="async">
             </div>
         </section>
         <section>
@@ -439,11 +436,11 @@
                     title="pose ligne de vie toiture Aspremont" loading="lazy" decoding="async">
                 <div class="pcservtext">
                     <p><a href="installation-ligne-de-vie-06.html"
-                            title="installation ligne de vie toiture Aspremont"><strong>Installation de SÉCURITÉ –
+                            title="installation ligne de vie toiture Aspremont"><strong>Installation de SECURITE –
                                 Lignes de vie & Filets</strong></a>
-                        : Sécurisez vos chantiers et bâtiments à Aspremont. Nous posons lignes de vie, points d’ancrage
-                        et filets antichute conformes aux normes, sur toutes structures neuves ou rénovées. Protégez
-                        efficacement vos équipes.
+                        : Securisez vos chantiers et bâtiments à Aspremont. Nous posons lignes de vie, points d’ancrage
+                        et filets antichute conformes aux normes, sur toutes structures neuves ou renovees. Protegez
+                        efficacement vos equipes.
                     </p>
                 </div>
             </div>
@@ -454,9 +451,9 @@
                     <p><a href="nettoyage-vitre-hauteur-06.html"
                             title="nettoyage vitres en hauteur Aspremont"><strong>Nettoyage de vitres en
                                 hauteur</strong></a>
-                        : Offrez à vos vitrages à Aspremont une propreté parfaite. Nos cordistes accèdent aux façades
-                        les plus complexes pour nettoyer vos surfaces vitrées avec rapidité et sécurité. Résultat
-                        éclatant garanti.
+                        : Offrez à vos vitrages à Aspremont une proprete parfaite. Nos cordistes accèdent aux façades
+                        les plus complexes pour nettoyer vos surfaces vitrees avec rapidite et securite. Resultat
+                        eclatant garanti.
                     </p>
                 </div>
                 <img src="nettoyage-vitre-en-hauteur-06.webp" alt="nettoyage vitres Aspremont" class="pcimgindex2"
@@ -465,15 +462,15 @@
         </section>
         <section>
             <div class="nosservicespc">
-                <img src="peinture-en-hauteur-06.webp" alt="rénovation peinture en hauteur Aspremont" class="pcimgindex"
+                <img src="peinture-en-hauteur-06.webp" alt="renovation peinture en hauteur Aspremont" class="pcimgindex"
                     title="peinture en hauteur Aspremont" loading="lazy" decoding="async">
                 <div class="pcservtext">
                     <p><a href="peinture-en-hauteur-06.html"
                             title="entreprise peinture cordiste Aspremont"><strong>RAVALEMENT –
                                 Maçonnerie & Peinture</strong></a>
-                        : À Aspremont, redonnez vie à vos façades en hauteur sans échafaudage. Nos cordistes qualifiés
-                        réalisent ravalements, travaux de maçonnerie et peinture avec discrétion et sécurité. Sublimez
-                        et protégez votre patrimoine.
+                        : À Aspremont, redonnez vie à vos façades en hauteur sans echafaudage. Nos cordistes qualifies
+                        realisent ravalements, travaux de maçonnerie et peinture avec discretion et securite. Sublimez
+                        et protegez votre patrimoine.
                     </p>
                 </div>
             </div>
@@ -484,12 +481,12 @@
                     <p><a href="pose-filet-de-securite-06.html"
                             title="pose filet de protection Aspremont"><strong>URGENCE – Purge, Bâchage &
                                 Filets</strong></a>
-                        : À Aspremont, nous intervenons en urgence suite à chutes de matériaux ou sinistres. Nos équipes
-                        réalisent purges, bâchages et poses de filets de protection rapidement pour sécuriser vos
+                        : À Aspremont, nous intervenons en urgence suite à chutes de materiaux ou sinistres. Nos equipes
+                        realisent purges, bâchages et poses de filets de protection rapidement pour securiser vos
                         bâtiments en un temps record.
                     </p>
                 </div>
-                <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="prix pose de filet de protection anti chute Aspremont"
+                <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="prix pose de filet de protection anti chute Aspremont"
                     class="pcimgindex2" title="pose filet de securite Aspremont" loading="lazy" decoding="async">
             </div>
         </section>
@@ -499,11 +496,11 @@
                     title="installateur d enseignes lumineuses Aspremont" loading="lazy" decoding="async">
                 <div class="pcservtext">
                     <p><a href="pose-d-enseigne-06.html"
-                            title="installateur d enseigne Aspremont"><strong>ÉVÉNEMENTIEL –
+                            title="installateur d enseigne Aspremont"><strong>EVENEMENTIEL –
                                 Enseignes & Animations</strong></a>
-                        : Pour vos événements à Aspremont, nous assurons l’installation en hauteur de vos enseignes,
-                        banderoles et éléments scéniques. Nos cordistes travaillent avec précision et discrétion pour un
-                        rendu impeccable et sécurisé.
+                        : Pour vos evenements à Aspremont, nous assurons l’installation en hauteur de vos enseignes,
+                        banderoles et elements sceniques. Nos cordistes travaillent avec precision et discretion pour un
+                        rendu impeccable et securise.
                     </p>
                 </div>
             </div>
@@ -514,8 +511,8 @@
                     <p><a href="pose-filet-anti-pigeon-06.html"
                             title="pose de filet anti pigeon Aspremont"><strong>ANTI-NUISIBLE – Pics &
                                 Filets de protection</strong></a>
-                        : À Aspremont, nous protégeons vos bâtiments contre les nuisibles. Pose discrète de pics, filets
-                        et systèmes adaptés en hauteur pour une solution durable et respectueuse de l’esthétique de vos
+                        : À Aspremont, nous protegeons vos bâtiments contre les nuisibles. Pose discrète de pics, filets
+                        et systèmes adaptes en hauteur pour une solution durable et respectueuse de l’esthetique de vos
                         façades.
                     </p>
                 </div>
@@ -528,12 +525,12 @@
                 <img src="soudure-a-l-arc-06.jpg.jpg" alt="soudure à l arc Aspremont" class="pcimgindex"
                     title="entreprise de maintenance eolienne Aspremont" loading="lazy" decoding="async">
                 <div class="pcservtext">
-                    <p><a href="maintenance-eolienne-06.html" title="electricien Aspremont"><strong>AUTRES – Éolien,
+                    <p><a href="maintenance-eolienne-06.html" title="electricien Aspremont"><strong>AUTRES – Eolien,
                                 Soudure,
-                                Électricité...</strong></a>
-                        : Nos cordistes interviennent à Aspremont sur vos installations spécifiques : maintenance
-                        éolienne, travaux de soudure, électricité, pose de phares, etc. Expertise multi-technique pour
-                        des interventions fiables et sécurisées.
+                                Electricite...</strong></a>
+                        : Nos cordistes interviennent à Aspremont sur vos installations specifiques : maintenance
+                        eolienne, travaux de soudure, electricite, pose de phares, etc. Expertise multi-technique pour
+                        des interventions fiables et securisees.
                     </p>
                 </div>
             </div>
@@ -542,23 +539,23 @@
             <h2>Votre expert des travaux en hauteur à Aspremont</h2>
             <hr>
             <p>
-                À Aspremont, notre entreprise spécialisée dans les travaux en hauteur met à votre disposition une équipe
-                de cordistes expérimentés et du matériel de dernière génération. Que ce soit pour des interventions sur
+                À Aspremont, notre entreprise specialisee dans les travaux en hauteur met à votre disposition une equipe
+                de cordistes experimentes et du materiel de dernière generation. Que ce soit pour des interventions sur
                 façades, vitres, toitures ou structures difficiles d'accès, nous utilisons des techniques d'accès par
-                corde pour garantir des prestations efficaces, rapides et sécurisées. Notre savoir-faire nous permet de
-                répondre à toutes vos demandes, du nettoyage à la peinture extérieure en passant par la mise en sécurité
+                corde pour garantir des prestations efficaces, rapides et securisees. Notre savoir-faire nous permet de
+                repondre à toutes vos demandes, du nettoyage à la peinture exterieure en passant par la mise en securite
                 et la pose de lignes de vie.
             </p>
         </div>
         <section>
             <div id="devis">
-                <h2>Des tarifs clairs et compétitifs à Aspremont</h2>
+                <h2>Des tarifs clairs et competitifs à Aspremont</h2>
                 <h3>Demandez votre devis gratuit</h3>
                 <p>
-                    Nos services de travaux en hauteur à Aspremont sont pensés pour répondre à vos besoins tout en
-                    respectant votre budget. Nous proposons un excellent rapport qualité-prix sur l’ensemble de nos
-                    prestations : nettoyage, peinture, sécurisation, entretien… Demandez votre devis personnalisé sans
-                    engagement pour obtenir une estimation rapide, claire et adaptée à vos attentes.
+                    Nos services de travaux en hauteur à Aspremont sont penses pour repondre à vos besoins tout en
+                    respectant votre budget. Nous proposons un excellent rapport qualite-prix sur l’ensemble de nos
+                    prestations : nettoyage, peinture, securisation, entretien… Demandez votre devis personnalise sans
+                    engagement pour obtenir une estimation rapide, claire et adaptee à vos attentes.
                 </p>
                 <a class="deviiiiiiiiiiiiiiiis" href="devis-cordiste-06.html" title="prix cordiste">DEVIS GRATUIT</a>
             </div>
@@ -567,45 +564,45 @@
             <h2>Pourquoi faire appel à Cordiste 06 à Aspremont ?</h2>
             <hr>
             <p>
-                En choisissant <strong>Cordiste 06</strong> à Aspremont, vous optez pour une équipe fiable, passionnée
+                En choisissant <strong>Cordiste 06</strong> à Aspremont, vous optez pour une equipe fiable, passionnee
                 et rigoureuse. Reconnus pour notre expertise dans les Alpes-Maritimes, nous assurons tous types de
                 travaux en hauteur avec professionnalisme : lavage de vitres, peinture, entretien de façades,
-                sécurisation de toiture… De l’analyse du chantier à la réalisation, nous vous accompagnons avec sérieux
-                et transparence à chaque étape.
+                securisation de toiture… De l’analyse du chantier à la realisation, nous vous accompagnons avec serieux
+                et transparence à chaque etape.
             </p>
         </div>
         <div class="aloooooo1">
-            <h2>Des contrats personnalisés pour vos besoins à Aspremont</h2>
+            <h2>Des contrats personnalises pour vos besoins à Aspremont</h2>
             <img src="note.webp" alt="cordiste travaux en hauteur à Aspremont" loading="lazy" decoding="async">
-            <h3>Interventions ponctuelles ou planifiées</h3>
+            <h3>Interventions ponctuelles ou planifiees</h3>
             <img src="note.webp" alt="cordiste entretien façade Aspremont" loading="lazy" decoding="async">
-            <h3>Entretien régulier selon vos contraintes</h3>
+            <h3>Entretien regulier selon vos contraintes</h3>
             <p>
-                Nos formules sur mesure s’adaptent à vos besoins spécifiques à Aspremont. Que vous ayez besoin d’une
-                intervention unique (nettoyage, peinture, mise en sécurité) ou d’un contrat d’entretien régulier,
+                Nos formules sur mesure s’adaptent à vos besoins specifiques à Aspremont. Que vous ayez besoin d’une
+                intervention unique (nettoyage, peinture, mise en securite) ou d’un contrat d’entretien regulier,
                 <strong>Cordiste 06</strong> vous propose des solutions claires, flexibles et conformes à vos exigences.
-                Chaque engagement est accompagné d’un tarif transparent et de délais respectés.
+                Chaque engagement est accompagne d’un tarif transparent et de delais respectes.
             </p>
         </div>
         <div class="aloooooo1">
             <h2>Cordiste 06 : votre partenaire à Aspremont pour les travaux en hauteur</h2>
             <hr>
             <p>
-                Présent à Aspremont, <strong>Cordiste 06</strong> est votre interlocuteur privilégié pour tous types
-                d’interventions en hauteur, qu’il s’agisse d’une urgence ou d’un rendez-vous programmé. Nos cordistes
+                Present à Aspremont, <strong>Cordiste 06</strong> est votre interlocuteur privilegie pour tous types
+                d’interventions en hauteur, qu’il s’agisse d’une urgence ou d’un rendez-vous programme. Nos cordistes
                 interviennent auprès des particuliers comme des professionnels, toujours dans un cadre contractuel clair
                 et sans surprise.
             </p>
             <p>
                 Nous prenons en charge les chantiers en accès difficile à Aspremont, notamment pour le nettoyage de
-                vitres, le ravalement de façades, la peinture extérieure, ou encore la sécurisation et la pose de
+                vitres, le ravalement de façades, la peinture exterieure, ou encore la securisation et la pose de
                 systèmes anti-chute. Grâce à nos techniques par cordes, nous intervenons là où les nacelles sont
                 inaccessibles.
             </p>
             <p>
-                <strong>Intervention 7j/7 à Aspremont, 24h/24, même les jours fériés</strong> : notre équipe est
-                réactive et respecte les normes de sécurité les plus strictes pour chaque prestation, qu'elle soit
-                ponctuelle ou intégrée à un contrat d’entretien.
+                <strong>Intervention 7j/7 à Aspremont, 24h/24, même les jours feries</strong> : notre equipe est
+                reactive et respecte les normes de securite les plus strictes pour chaque prestation, qu'elle soit
+                ponctuelle ou integree à un contrat d’entretien.
             </p>
         </div>
         <a class="bouton3" href="tel:+33497148939" title="prix nettoyage vitre en hauteur">CONTACTEZ - NOUS</a>
@@ -613,7 +610,7 @@
     <footer>
         <div id="contact">
 
-            <h5>NOS RÉSEAUX SOCIAUX</h5>
+            <h5>NOS RESEAUX SOCIAUX</h5>
             <div class="reseau-contact">
                 <a href="https://www.linkedin.com/company/quali-corde-sud?trk=public_post_reshare_feed-actor-image"
                     target="_blank" title="linkedin-cordiste"> Linkedin -</a>
@@ -634,8 +631,8 @@
                     title="entreprise cordiste 06">contacts@quali-corde.com</a></p>
 
             <div class="liens-wp">
-                <h6>&copy; Copyright 2025 - Site réalisé par <a href="https://webprime.fr/" target="_blank">webprime</a>
-                    - <a href="mentions-legales.html" target="_blank">mentions légales</a>.
+                <h6>&copy; Copyright 2025 - Site realise par <a href="https://webprime.fr/" target="_blank">webprime</a>
+                    - <a href="mentions-legales.html" target="_blank">mentions legales</a>.
                 </h6>
             </div>
         </div>
@@ -716,28 +713,40 @@
         });
     </script>
     <script>
-        function validateForm() {
-            var name = document.getElementById("name").value.trim();
-            var tel = document.getElementById("tel").value.trim();
-            var services = document.getElementById("services").value.trim();
-            var comments = document.getElementById("comments").value.trim();
-            if (name === "" || tel === "" || services === "" || comments === "") {
-                alert("Champs obligatoires.");
-                return false;
+        async function submitToWebPrime(e) {
+        e.preventDefault();
+        var form = document.getElementById('contactForm');
+        var btn = form.querySelector('button[type="submit"]');
+        var originalText = btn.textContent;
+
+        // Anti-spam honeypot check
+        if (form._gotcha && form._gotcha.value) return false;
+
+        btn.textContent = 'Envoi en cours...';
+        btn.disabled = true;
+
+        try {
+            var formData = new FormData(form);
+            var response = await fetch('https://webprime.app/webhook/contact/a0dbffb8afffbd140c7c09cb7d2c09e30a8e36bb44f78f4fcd0f5e49af523630', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                // Redirection apres succes
+                window.location.href = 'https://cordiste-06.com/';
+            } else {
+                alert('Erreur lors de l\'envoi. Veuillez reessayer.');
+                btn.textContent = originalText;
+                btn.disabled = false;
             }
-            var telPattern = /^((0[1679])|(\+33[1679]))\d{8}$/;
-            if (!telPattern.test(tel)) {
-                alert("Veuillez entrer un numéro de téléphone valide.");
-                return false;
-            }
-            var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
-            var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
-            if (linkPattern.test(comments) || scriptPattern.test(comments)) {
-                alert("Pas autorisé.");
-                return false;
-            }
-            return true;
+        } catch (error) {
+            alert('Erreur de connexion. Veuillez reessayer.');
+            btn.textContent = originalText;
+            btn.disabled = false;
         }
+        return false;
+    }
     </script>
 </body>
 

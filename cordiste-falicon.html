@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -242,35 +242,32 @@
             <div class="image-container">
                 <img src="logo.jpg" alt="entreprise cordiste Falicon">
             </div>
-            <form action="https://formsubmit.co/formulaire@webprime.fr" method="POST" onsubmit="return validateForm()">
+            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
                 <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
-                    <input type="text" id="website" name="website" autocomplete="off">
+                    <input type="text" id="website" name="_gotcha" autocomplete="off">
                 </div>
 
                 <input type="hidden" name="_captcha" value="true">
-                <input type="hidden" name="_next" value="https://cordiste-06.com/">
-                <input type="hidden" name="_cc" value="contacts@quali-corde.com">
-                <input type="hidden" name=" from" value="Quali Corde Sud">
-                <input type="hidden" name="_subject" value="Formulaire">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
-
+                                                                                                
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="nom" required>
 
-                <label for="tel">Téléphone :</label>
-                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+                <label for="tel">Telephone :</label>
+                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
                 <label for="services">Services :</label>
                 <select id="services" name="services" required>
                     <option value="NETTOYAGE">NETTOYAGE</option>
                     <option value="PEINTURE">PEINTURE</option>
-                    <option value="MAÇONNERIE">MAÇONNERIE</option>
+                    <option value="MACONNERIE">MACONNERIE</option>
                     <option value="INDUSTRIE">INDUSTRIE</option>
-                    <option value="SECURITE">SÉCURITÉ</option>
-                    <option value="ÉVÉNEMENTIEL">ÉVÉNEMENTIEL</option>
+                    <option value="SECURITE">SECURITE</option>
+                    <option value="EVENEMENTIEL">EVENEMENTIEL</option>
                     <option value="ANTI-NUISIBLE">ANTI-NUISIBLE</option>
                     <option value="URGENCE">URGENCE</option>
                     <option value="AUTRE">AUTRE</option>
@@ -292,7 +289,7 @@
             <p><strong class="strong-color"><a href="nettoyage-vitre-hauteur-06.html"
                         title="nettoyage vitre en hauteur Falicon">NETTOYAGE DE VITRE</a></strong></p>
             <h3>À Falicon, nous assurons le nettoyage de vos vitres en hauteur, même sur les surfaces les plus complexes
-                d’accès. Nos cordistes vous garantissent un résultat impeccable en toute sécurité.</h3>
+                d’accès. Nos cordistes vous garantissent un resultat impeccable en toute securite.</h3>
             <a class="bouton3" href="tel:+33497148939" title="nettoyage vitre en hauteur Falicon">CONTACTEZ - NOUS</a>
         </div>
         </section>
@@ -303,7 +300,7 @@
                 <p><strong class="strong-color"><a href="peinture-en-hauteur-06.html"
                             title="peinture en hauteur Falicon">RAVALEMENT – Maçonnerie & Peinture</a></strong></p>
                 <h3>À Falicon, redonnez vie à vos façades avec nos prestations de ravalement, peinture et maçonnerie en
-                    hauteur. Nos cordistes interviennent sans échafaudage, pour un chantier rapide et soigné.</h3>
+                    hauteur. Nos cordistes interviennent sans echafaudage, pour un chantier rapide et soigne.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="peinture en hauteur Falicon">CONTACTEZ - NOUS</a>
             </div>
         </section>
@@ -312,9 +309,9 @@
                 <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo Falicon" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="nettoyage-de-silo-06.html"
-                            title="nettoyage de silo industriel Falicon">nettoyage silo granulés</a></strong></p>
-                <h3>À Falicon, nous intervenons pour l’entretien et la maintenance de vos silos et équipements
-                    industriels en hauteur. Nos solutions garantissent des interventions sécurisées et efficaces.</h3>
+                            title="nettoyage de silo industriel Falicon">nettoyage silo granules</a></strong></p>
+                <h3>À Falicon, nous intervenons pour l’entretien et la maintenance de vos silos et equipements
+                    industriels en hauteur. Nos solutions garantissent des interventions securisees et efficaces.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="nettoyage de silo industriel Falicon">CONTACTEZ - NOUS</a>
             </div>
         </section>
@@ -322,20 +319,20 @@
             <div class="nosservices3">
                 <img src="ligne-de-vie-toiture-06.webp" alt="installation ligne de vie toiture Falicon" loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="installation-ligne-de-vie-06.html"
-                            title="pose de ligne de vie Falicon">SÉCURITÉ – Lignes de vie & Filets</a></strong></p>
-                <h3>À Falicon, nous installons lignes de vie, filets de sécurité et points d’ancrage pour garantir la
-                    protection de vos équipes lors de travaux en hauteur. Conformité totale avec les normes en vigueur.
+                            title="pose de ligne de vie Falicon">SECURITE – Lignes de vie & Filets</a></strong></p>
+                <h3>À Falicon, nous installons lignes de vie, filets de securite et points d’ancrage pour garantir la
+                    protection de vos equipes lors de travaux en hauteur. Conformite totale avec les normes en vigueur.
                 </h3>
                 <a class="bouton3" href="tel:+33497148939" title="pose de ligne de vie Falicon">CONTACTEZ - NOUS</a>
             </div>
         </section>
         <section>
             <div class="nosservices2">
-                <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="poseur de filet de sécurité Falicon" loading="lazy" decoding="async">
+                <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="poseur de filet de securite Falicon" loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="pose-filet-de-securite-06.html"
                             title="pose de filet anti chute Falicon">URGENCE – Purge, Bâchage & Filets</a></strong></p>
-                <h3>À Falicon, en cas d’intempéries, sinistres ou chutes de matériaux, nous intervenons en urgence pour
-                    sécuriser vos bâtiments. Pose de bâches, filets de protection et purge de façades assurées par nos
+                <h3>À Falicon, en cas d’intemperies, sinistres ou chutes de materiaux, nous intervenons en urgence pour
+                    securiser vos bâtiments. Pose de bâches, filets de protection et purge de façades assurees par nos
                     cordistes.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="pose de filet anti chute Falicon">CONTACTEZ - NOUS</a>
             </div>
@@ -345,10 +342,10 @@
                 <img src="pose-d-enseigne-06.jpg.jpg" alt="poseur d enseigne Falicon" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="pose-d-enseigne-06.html"
-                            title="poseur enseigne Falicon">ÉVÉNEMENTIEL – Enseignes & Animations</a></strong>
+                            title="poseur enseigne Falicon">EVENEMENTIEL – Enseignes & Animations</a></strong>
                 </p>
-                <h3>À Falicon, pour vos événements, nous assurons la pose en hauteur de vos enseignes, banderoles et
-                    décorations scéniques. Intervention rapide et sécurisée par nos cordistes expérimentés.</h3>
+                <h3>À Falicon, pour vos evenements, nous assurons la pose en hauteur de vos enseignes, banderoles et
+                    decorations sceniques. Intervention rapide et securisee par nos cordistes experimentes.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="poseur enseigne Falicon">CONTACTEZ - NOUS</a>
             </div>
         </section>
@@ -357,8 +354,8 @@
                 <img src="filet-anti-pigeon.jpg.jpg" alt="prix pose pic anti pigeon Falicon" loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="pose-filet-anti-pigeon-06.html"
                             title="installation pic anti pigeon Falicon">ANTI-NUISIBLE – Pics & Filets de protection</a></strong></p>
-                <h3>À Falicon, protégez durablement vos bâtiments contre les nuisibles. Nous posons en hauteur pics
-                    anti-pigeons, filets et solutions discrètes, respectueuses de l’esthétique de vos façades.</h3>
+                <h3>À Falicon, protegez durablement vos bâtiments contre les nuisibles. Nous posons en hauteur pics
+                    anti-pigeons, filets et solutions discrètes, respectueuses de l’esthetique de vos façades.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="installation pic anti pigeon Falicon">CONTACTEZ - NOUS</a>
             </div>
         </section>
@@ -367,11 +364,11 @@
                 <img src="soudure-a-l-arc-06.jpg.jpg" alt="soudure à l arc Falicon" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="maintenance-eolienne-06.html"
-                            title="maintenance eolienne Falicon">AUTRES – Éolien, Soudure,
-                            Électricité...</a></strong></p>
-                <h3>À Falicon, nous réalisons tous vos travaux techniques en hauteur : maintenance d’éoliennes,
-                    soudures, interventions électriques… Nos cordistes spécialisés vous garantissent un service
-                    sur-mesure en toute sécurité.</h3>
+                            title="maintenance eolienne Falicon">AUTRES – Eolien, Soudure,
+                            Electricite...</a></strong></p>
+                <h3>À Falicon, nous realisons tous vos travaux techniques en hauteur : maintenance d’eoliennes,
+                    soudures, interventions electriques… Nos cordistes specialises vous garantissent un service
+                    sur-mesure en toute securite.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="maintenance eolienne Falicon">CONTACTEZ -
                     NOUS</a>
             </div>
@@ -382,13 +379,13 @@
                         <p><a href="nettoyage-de-silo-06.html"
                                 title="nettoyage des silos Falicon"><strong>INDUSTRIE (silos &
                                     maintenance)</strong></a>
-                            : À Falicon, nous réalisons l’inspection, l’entretien et la maintenance en hauteur de vos
-                            silos et équipements industriels. Nos cordistes interviennent en toute sécurité, même dans
-                            les milieux les plus difficiles d’accès, pour garantir la continuité de vos installations.
+                            : À Falicon, nous realisons l’inspection, l’entretien et la maintenance en hauteur de vos
+                            silos et equipements industriels. Nos cordistes interviennent en toute securite, même dans
+                            les milieux les plus difficiles d’accès, pour garantir la continuite de vos installations.
                         </p>
                     </div>
                     <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo farine silos Falicon" class="pcimgindex2"
-                        title="nettoyage silo granulés Falicon" loading="lazy" decoding="async">
+                        title="nettoyage silo granules Falicon" loading="lazy" decoding="async">
                 </div>
             </section>
             <section>
@@ -397,11 +394,11 @@
                         title="pose ligne de vie toiture Falicon" loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="installation-ligne-de-vie-06.html"
-                                title="installation ligne de vie toiture Falicon"><strong>Installation de SÉCURITÉ –
+                                title="installation ligne de vie toiture Falicon"><strong>Installation de SECURITE –
                                     Lignes de vie & Filets</strong></a>
                             : À Falicon, nous installons lignes de vie, filets antichute et points d’ancrage sur toutes
                             structures. Nos solutions sont conformes aux normes en vigueur et assurent la protection
-                            optimale de vos équipes en hauteur.
+                            optimale de vos equipes en hauteur.
                         </p>
                     </div>
                 </div>
@@ -412,9 +409,9 @@
                         <p><a href="nettoyage-vitre-hauteur-06.html"
                                 title="nettoyage vitres en hauteur Falicon"><strong>Nettoyage de vitres en
                                     hauteur</strong></a>
-                            : À Falicon, nous réalisons le nettoyage de vos vitres en hauteur avec efficacité et
-                            sécurité. Nos cordistes accèdent aux vitrages les plus inaccessibles pour garantir un
-                            résultat impeccable et durable.
+                            : À Falicon, nous realisons le nettoyage de vos vitres en hauteur avec efficacite et
+                            securite. Nos cordistes accèdent aux vitrages les plus inaccessibles pour garantir un
+                            resultat impeccable et durable.
                         </p>
                     </div>
                     <img src="nettoyage-vitre-en-hauteur-06.webp" alt="nettoyage vitres Falicon"
@@ -423,14 +420,14 @@
             </section>
             <section>
                 <div class="nosservicespc">
-                    <img src="peinture-en-hauteur-06.webp" alt="rénovation peinture en hauteur Falicon" class="pcimgindex"
+                    <img src="peinture-en-hauteur-06.webp" alt="renovation peinture en hauteur Falicon" class="pcimgindex"
                         title="peinture en hauteur Falicon" loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="peinture-en-hauteur-06.html"
                                 title="entreprise peinture cordiste Falicon"><strong>RAVALEMENT –
                                     Maçonnerie & Peinture</strong></a>
                             : À Falicon, nous valorisons vos façades avec nos prestations de ravalement, peinture et
-                            maçonnerie en hauteur. Nos cordistes réalisent un travail soigné, rapide et sécurisé, sans
+                            maçonnerie en hauteur. Nos cordistes realisent un travail soigne, rapide et securise, sans
                             gêner votre environnement.
                         </p>
                     </div>
@@ -442,12 +439,12 @@
                         <p><a href="pose-filet-de-securite-06.html"
                                 title="pose filet de protection Falicon"><strong>URGENCE – Purge, Bâchage &
                                     Filets</strong></a>
-                            : À Falicon, nous intervenons en urgence pour sécuriser vos bâtiments après sinistres ou
-                            chutes de matériaux. Nos équipes réalisent purges, bâchages et poses de filets de protection
-                            avec une grande réactivité.
+                            : À Falicon, nous intervenons en urgence pour securiser vos bâtiments après sinistres ou
+                            chutes de materiaux. Nos equipes realisent purges, bâchages et poses de filets de protection
+                            avec une grande reactivite.
                         </p>
                     </div>
-                    <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="prix pose de filet de protection anti chute Falicon"
+                    <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="prix pose de filet de protection anti chute Falicon"
                         class="pcimgindex2" title="pose filet de securite Falicon" loading="lazy"
                         decoding="async">
                 </div>
@@ -458,10 +455,10 @@
                         title="installateur d enseignes lumineuses Falicon" loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="pose-d-enseigne-06.html"
-                                title="installateur d enseigne Falicon"><strong>ÉVÉNEMENTIEL –
+                                title="installateur d enseigne Falicon"><strong>EVENEMENTIEL –
                                     Enseignes & Animations</strong></a>
-                            : À Falicon, nous installons en hauteur vos enseignes, banderoles et décors événementiels.
-                            Nos cordistes assurent une mise en place soignée et sécurisée, même dans les sites les plus
+                            : À Falicon, nous installons en hauteur vos enseignes, banderoles et decors evenementiels.
+                            Nos cordistes assurent une mise en place soignee et securisee, même dans les sites les plus
                             complexes.
                         </p>
                     </div>
@@ -473,9 +470,9 @@
                         <p><a href="pose-filet-anti-pigeon-06.html"
                                 title="pose de filet anti pigeon Falicon"><strong>ANTI-NUISIBLE – Pics &
                                     Filets de protection</strong></a>
-                            : À Falicon, nous protégeons vos bâtiments en hauteur contre les nuisibles avec la pose de
+                            : À Falicon, nous protegeons vos bâtiments en hauteur contre les nuisibles avec la pose de
                             pics anti-pigeons et filets de protection. Nos solutions durables et discrètes respectent
-                            parfaitement l’esthétique de vos façades.
+                            parfaitement l’esthetique de vos façades.
                         </p>
                     </div>
                     <img src="filet-anti-pigeon.jpg.jpg" alt="pose de pics anti pigeons Falicon"
@@ -489,41 +486,41 @@
                         title="entreprise de maintenance eolienne Falicon" loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="maintenance-eolienne-06.html"
-                                title="electricien Falicon"><strong>AUTRES – Éolien, Soudure,
-                                    Électricité...</strong></a>
-                            : À Falicon, nous réalisons vos travaux techniques spécifiques en hauteur : maintenance
-                            éolienne, soudures complexes, interventions électriques… Nos cordistes expérimentés vous
-                            garantissent un service de qualité et sécurisé.
+                                title="electricien Falicon"><strong>AUTRES – Eolien, Soudure,
+                                    Electricite...</strong></a>
+                            : À Falicon, nous realisons vos travaux techniques specifiques en hauteur : maintenance
+                            eolienne, soudures complexes, interventions electriques… Nos cordistes experimentes vous
+                            garantissent un service de qualite et securise.
                         </p>
                     </div>
                 </div>
             </section>
 
             <div class="aloooooo1">
-                <h2>UNE ÉQUIPE DE CORDISTES EXPÉRIMENTÉS ET UN MATÉRIEL HAUTEMENT SPÉCIALISÉ</h2>
+                <h2>UNE EQUIPE DE CORDISTES EXPERIMENTES ET UN MATERIEL HAUTEMENT SPECIALISE</h2>
                 <hr>
                 <p>
-                    Présente à <strong>Falicon</strong> et dans tout le département, notre entreprise de cordistes vous
+                    Presente à <strong>Falicon</strong> et dans tout le departement, notre entreprise de cordistes vous
                     propose
-                    des interventions en hauteur réalisées avec professionnalisme. Dotés d’un équipement moderne et
+                    des interventions en hauteur realisees avec professionnalisme. Dotes d’un equipement moderne et
                     d’une
                     parfaite
                     maîtrise des techniques d’accès par corde, nous assurons des prestations efficaces sur tous types de
                     bâtiments :
-                    nettoyage de vitres, peinture de façades, mise en sécurité des toitures et pose de lignes de vie.
+                    nettoyage de vitres, peinture de façades, mise en securite des toitures et pose de lignes de vie.
                 </p>
             </div>
             <section>
                 <div id="devis">
                     <h2>DES TARIFS</h2>
-                    <h3>ADAPTÉS À VOS BESOINS</h3>
+                    <h3>ADAPTES À VOS BESOINS</h3>
                     <p>
                         Que vous soyez un particulier ou un professionnel à <strong>Falicon</strong>, nous vous
                         proposons
                         des
                         prestations de travaux en hauteur à des prix justes et transparents. Chaque projet fait l’objet
                         d’une
-                        estimation gratuite et détaillée, vous garantissant un excellent rapport qualité-prix sans
+                        estimation gratuite et detaillee, vous garantissant un excellent rapport qualite-prix sans
                         mauvaise
                         surprise.
                     </p>
@@ -535,52 +532,52 @@
                 <h2>POURQUOI CHOISIR CORDISTE 06 À Falicon ?</h2>
                 <hr>
                 <p>
-                    Avec <strong>Cordiste 06</strong>, vous bénéficiez à <strong>Falicon</strong> d’une équipe réactive
+                    Avec <strong>Cordiste 06</strong>, vous beneficiez à <strong>Falicon</strong> d’une equipe reactive
                     et
-                    expérimentée, spécialisée dans les accès difficiles. Nous intervenons pour tous types de chantiers
+                    experimentee, specialisee dans les accès difficiles. Nous intervenons pour tous types de chantiers
                     en
                     hauteur :
-                    nettoyage, peinture, sécurisation… De l’étude à la réalisation, notre accompagnement est complet,
+                    nettoyage, peinture, securisation… De l’etude à la realisation, notre accompagnement est complet,
                     rigoureux et
                     transparent, pour une totale satisfaction.
                 </p>
             </div>
             <div class="aloooooo1">
-                <h2>DES CONTRATS SUR MESURE POUR UNE TRANQUILLITÉ DURABLE</h2>
+                <h2>DES CONTRATS SUR MESURE POUR UNE TRANQUILLITE DURABLE</h2>
                 <img src="note.webp" alt="cordiste travaux en hauteur" loading="lazy" decoding="async">
                 <h3>INTERVENTIONS PONCTUELLES</h3>
                 <img src="note.webp" alt="cordiste entretien façade" loading="lazy" decoding="async">
-                <h3>ENTRETIEN PROGRAMMÉ</h3>
+                <h3>ENTRETIEN PROGRAMME</h3>
                 <p>
-                    Pour vos bâtiments situés à <strong>Falicon</strong>, nous proposons des formules d’intervention
+                    Pour vos bâtiments situes à <strong>Falicon</strong>, nous proposons des formules d’intervention
                     ponctuelle ou
-                    des contrats d’entretien régulier adaptés à vos besoins. Chaque prestation inclut un engagement
+                    des contrats d’entretien regulier adaptes à vos besoins. Chaque prestation inclut un engagement
                     clair
                     sur les
-                    délais, les tarifs et la qualité. Faites le choix d’une tranquillité durable avec Cordiste 06.
+                    delais, les tarifs et la qualite. Faites le choix d’une tranquillite durable avec Cordiste 06.
                 </p>
             </div>
             <div class="aloooooo1">
                 <h2>VOTRE PARTENAIRE DE CONFIANCE POUR LES TRAVAUX EN HAUTEUR</h2>
                 <hr>
                 <p>
-                    Implantée dans les Alpes-Maritimes, notre entreprise intervient également à <strong>Falicon</strong>
+                    Implantee dans les Alpes-Maritimes, notre entreprise intervient egalement à <strong>Falicon</strong>
                     pour tout
-                    besoin en travaux en hauteur. Disponibles pour des missions urgentes ou planifiées, nous mettons en
+                    besoin en travaux en hauteur. Disponibles pour des missions urgentes ou planifiees, nous mettons en
                     œuvre des
-                    solutions efficaces, encadrées par des contrats transparents.
+                    solutions efficaces, encadrees par des contrats transparents.
                 </p>
                 <p>
                     Grâce à l’accès par corde, nous atteignons les zones difficiles pour effectuer des travaux de
                     nettoyage
                     de
-                    vitres, d’entretien de façades, de peinture extérieure ou d’installation de dispositifs de sécurité.
+                    vitres, d’entretien de façades, de peinture exterieure ou d’installation de dispositifs de securite.
                     Pas
                     besoin
-                    de nacelle : notre expertise garantit discrétion et efficacité.
+                    de nacelle : notre expertise garantit discretion et efficacite.
                 </p>
                 <p>
-                    <strong>Disponible 24h/24 et 7j/7 à Falicon</strong>, y compris les week-ends et jours fériés,
+                    <strong>Disponible 24h/24 et 7j/7 à Falicon</strong>, y compris les week-ends et jours feries,
                     <strong>Cordiste
                         06</strong> est votre partenaire fiable pour tous vos besoins en hauteur.
                 </p>
@@ -590,7 +587,7 @@
     <footer>
         <div id="contact">
 
-            <h5>NOS RÉSEAUX SOCIAUX</h5>
+            <h5>NOS RESEAUX SOCIAUX</h5>
             <div class="reseau-contact">
                 <a href="https://www.linkedin.com/company/quali-corde-sud?trk=public_post_reshare_feed-actor-image"
                     target="_blank" title="linkedin-cordiste"> Linkedin -</a>
@@ -611,8 +608,8 @@
                     title="entreprise cordiste 06">contacts@quali-corde.com</a></p>
 
             <div class="liens-wp">
-                <h6>&copy; Copyright 2025 - Site réalisé par <a href="https://webprime.fr/" target="_blank">webprime</a>
-                    - <a href="mentions-legales.html" target="_blank">mentions légales</a>.
+                <h6>&copy; Copyright 2025 - Site realise par <a href="https://webprime.fr/" target="_blank">webprime</a>
+                    - <a href="mentions-legales.html" target="_blank">mentions legales</a>.
                 </h6>
             </div>
         </div>
@@ -692,28 +689,40 @@
         });
     </script>
     <script>
-        function validateForm() {
-            var name = document.getElementById("name").value.trim();
-            var tel = document.getElementById("tel").value.trim();
-            var services = document.getElementById("services").value.trim();
-            var comments = document.getElementById("comments").value.trim();
-            if (name === "" || tel === "" || services === "" || comments === "") {
-                alert("Champs obligatoires.");
-                return false;
+        async function submitToWebPrime(e) {
+        e.preventDefault();
+        var form = document.getElementById('contactForm');
+        var btn = form.querySelector('button[type="submit"]');
+        var originalText = btn.textContent;
+
+        // Anti-spam honeypot check
+        if (form._gotcha && form._gotcha.value) return false;
+
+        btn.textContent = 'Envoi en cours...';
+        btn.disabled = true;
+
+        try {
+            var formData = new FormData(form);
+            var response = await fetch('https://webprime.app/webhook/contact/a0dbffb8afffbd140c7c09cb7d2c09e30a8e36bb44f78f4fcd0f5e49af523630', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                // Redirection apres succes
+                window.location.href = 'https://cordiste-06.com/';
+            } else {
+                alert('Erreur lors de l\'envoi. Veuillez reessayer.');
+                btn.textContent = originalText;
+                btn.disabled = false;
             }
-            var telPattern = /^((0[1679])|(\+33[1679]))\d{8}$/;
-            if (!telPattern.test(tel)) {
-                alert("Veuillez entrer un numéro de téléphone valide.");
-                return false;
-            }
-            var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
-            var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
-            if (linkPattern.test(comments) || scriptPattern.test(comments)) {
-                alert("Pas autorisé.");
-                return false;
-            }
-            return true;
+        } catch (error) {
+            alert('Erreur de connexion. Veuillez reessayer.');
+            btn.textContent = originalText;
+            btn.disabled = false;
         }
+        return false;
+    }
     </script>
 </body>
 

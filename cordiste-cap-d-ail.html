@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -242,35 +242,32 @@
             <div class="image-container">
                 <img src="logo.jpg" alt="entreprise cordiste Cap-d’Ail">
             </div>
-            <form action="https://formsubmit.co/formulaire@webprime.fr" method="POST" onsubmit="return validateForm()">
+            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
                 <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
-                    <input type="text" id="website" name="website" autocomplete="off">
+                    <input type="text" id="website" name="_gotcha" autocomplete="off">
                 </div>
 
                 <input type="hidden" name="_captcha" value="true">
-                <input type="hidden" name="_next" value="https://cordiste-06.com/">
-                <input type="hidden" name="_cc" value="contacts@quali-corde.com">
-                <input type="hidden" name=" from" value="Quali Corde Sud">
-                <input type="hidden" name="_subject" value="Formulaire">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
-
+                                                                                                
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="nom" required>
 
-                <label for="tel">Téléphone :</label>
-                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+                <label for="tel">Telephone :</label>
+                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
                 <label for="services">Services :</label>
                 <select id="services" name="services" required>
                     <option value="NETTOYAGE">NETTOYAGE</option>
                     <option value="PEINTURE">PEINTURE</option>
-                    <option value="MAÇONNERIE">MAÇONNERIE</option>
+                    <option value="MACONNERIE">MACONNERIE</option>
                     <option value="INDUSTRIE">INDUSTRIE</option>
-                    <option value="SECURITE">SÉCURITÉ</option>
-                    <option value="ÉVÉNEMENTIEL">ÉVÉNEMENTIEL</option>
+                    <option value="SECURITE">SECURITE</option>
+                    <option value="EVENEMENTIEL">EVENEMENTIEL</option>
                     <option value="ANTI-NUISIBLE">ANTI-NUISIBLE</option>
                     <option value="URGENCE">URGENCE</option>
                     <option value="AUTRE">AUTRE</option>
@@ -305,8 +302,8 @@
                     <p><strong class="strong-color"><a href="peinture-en-hauteur-06.html"
                                 title="peinture en hauteur Cap-d’Ail">RAVALEMENT – Maçonnerie & Peinture</a></strong>
                     </p>
-                    <h3>À Cap-d’Ail, embellissez vos façades en hauteur sans montage d’échafaudage. Nos cordistes
-                        qualifiés
+                    <h3>À Cap-d’Ail, embellissez vos façades en hauteur sans montage d’echafaudage. Nos cordistes
+                        qualifies
                         assurent des travaux de peinture, de maçonnerie et de ravalement pour redonner un coup de neuf
                         durable à vos bâtiments.</h3>
                     <a class="bouton3" href="tel:+33497148939" title="peinture en hauteur Cap-d’Ail">CONTACTEZ - NOUS</a>
@@ -317,9 +314,9 @@
                     <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo Cap-d’Ail" loading="lazy"
                         decoding="async">
                     <p><strong class="strong-color"><a href="nettoyage-de-silo-06.html"
-                                title="nettoyage de silo industriel Cap-d’Ail">nettoyage silo granulés</a></strong></p>
-                    <h3>À Cap-d’Ail, confiez-nous l’entretien de vos silos et équipements industriels en hauteur. Nos
-                        techniciens cordistes garantissent des interventions rapides, sécurisées et respectueuses de vos
+                                title="nettoyage de silo industriel Cap-d’Ail">nettoyage silo granules</a></strong></p>
+                    <h3>À Cap-d’Ail, confiez-nous l’entretien de vos silos et equipements industriels en hauteur. Nos
+                        techniciens cordistes garantissent des interventions rapides, securisees et respectueuses de vos
                         contraintes de production.</h3>
                     <a class="bouton3" href="tel:+33497148939" title="nettoyage de silo industriel Cap-d’Ail">CONTACTEZ - NOUS</a>
                 </div>
@@ -329,21 +326,21 @@
                     <img src="ligne-de-vie-toiture-06.webp" alt="installation ligne de vie toiture Cap-d’Ail" loading="lazy"
                         decoding="async">
                     <p><strong class="strong-color"><a href="installation-ligne-de-vie-06.html"
-                                title="pose de ligne de vie Cap-d’Ail">SÉCURITÉ – Lignes de vie & Filets</a></strong></p>
-                    <h3>À Cap-d’Ail, protégez vos collaborateurs en hauteur. Nous installons lignes de vie, filets de
-                        sécurité et points d’ancrage, en conformité avec les dernières normes pour garantir un
+                                title="pose de ligne de vie Cap-d’Ail">SECURITE – Lignes de vie & Filets</a></strong></p>
+                    <h3>À Cap-d’Ail, protegez vos collaborateurs en hauteur. Nous installons lignes de vie, filets de
+                        securite et points d’ancrage, en conformite avec les dernières normes pour garantir un
                         environnement
-                        de travail sécurisé.</h3>
+                        de travail securise.</h3>
                     <a class="bouton3" href="tel:+33497148939" title="pose de ligne de vie Cap-d’Ail">CONTACTEZ - NOUS</a>
                 </div>
             </section>
             <section>
                 <div class="nosservices2">
-                    <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="poseur de filet de sécurité Cap-d’Ail" loading="lazy" decoding="async">
+                    <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="poseur de filet de securite Cap-d’Ail" loading="lazy" decoding="async">
                     <p><strong class="strong-color"><a href="pose-filet-de-securite-06.html"
                                 title="pose de filet anti chute Cap-d’Ail">URGENCE – Purge, Bâchage & Filets</a></strong></p>
-                    <h3>À Cap-d’Ail, nous intervenons en urgence pour sécuriser vos bâtiments suite à des sinistres ou
-                        intempéries. Pose de bâches, filets et purge de façades en hauteur : réactivité et sécurité
+                    <h3>À Cap-d’Ail, nous intervenons en urgence pour securiser vos bâtiments suite à des sinistres ou
+                        intemperies. Pose de bâches, filets et purge de façades en hauteur : reactivite et securite
                         garanties.</h3>
                     <a class="bouton3" href="tel:+33497148939" title="pose de filet anti chute Cap-d’Ail">CONTACTEZ - NOUS</a>
                 </div>
@@ -353,12 +350,12 @@
                     <img src="pose-d-enseigne-06.jpg.jpg" alt="poseur d enseigne Cap-d’Ail" loading="lazy"
                         decoding="async">
                     <p><strong class="strong-color"><a href="pose-d-enseigne-06.html"
-                                title="poseur enseigne Cap-d’Ail">ÉVÉNEMENTIEL – Enseignes &
+                                title="poseur enseigne Cap-d’Ail">EVENEMENTIEL – Enseignes &
                                 Animations</a></strong>
                     </p>
-                    <h3>À Cap-d’Ail, nous installons en hauteur vos enseignes et éléments événementiels. Nos cordistes
-                        assurent une mise en place rapide et sécurisée, adaptée aux lieux complexes et contraintes
-                        techniques spécifiques.</h3>
+                    <h3>À Cap-d’Ail, nous installons en hauteur vos enseignes et elements evenementiels. Nos cordistes
+                        assurent une mise en place rapide et securisee, adaptee aux lieux complexes et contraintes
+                        techniques specifiques.</h3>
                     <a class="bouton3" href="tel:+33497148939" title="poseur enseigne Cap-d’Ail">CONTACTEZ -
                         NOUS</a>
                 </div>
@@ -370,8 +367,8 @@
                                 title="installation pic anti pigeon Cap-d’Ail">ANTI-NUISIBLE – Pics & Filets de protection</a></strong>
                     </p>
                     <h3>À Cap-d’Ail, nos solutions anti-nuisibles protègent vos bâtiments. Installation rapide de pics
-                        anti-pigeons, filets de protection et dispositifs discrets pour préserver l’intégrité et
-                        l’esthétique de vos façades.</h3>
+                        anti-pigeons, filets de protection et dispositifs discrets pour preserver l’integrite et
+                        l’esthetique de vos façades.</h3>
                     <a class="bouton3" href="tel:+33497148939" title="installation pic anti pigeon Cap-d’Ail">CONTACTEZ - NOUS</a>
                 </div>
             </section>
@@ -380,11 +377,11 @@
                     <img src="soudure-a-l-arc-06.jpg.jpg" alt="soudure à l arc Cap-d’Ail" loading="lazy"
                         decoding="async">
                     <p><strong class="strong-color"><a href="maintenance-eolienne-06.html"
-                                title="maintenance eolienne Cap-d’Ail">AUTRES – Éolien, Soudure,
-                                Électricité...</a></strong></p>
-                    <h3>À Cap-d’Ail, nos équipes spécialisées réalisent vos travaux techniques en hauteur : maintenance
-                        éolienne, soudure, interventions électriques, pose de phares… Un service sur-mesure avec une
-                        sécurité optimale.</h3>
+                                title="maintenance eolienne Cap-d’Ail">AUTRES – Eolien, Soudure,
+                                Electricite...</a></strong></p>
+                    <h3>À Cap-d’Ail, nos equipes specialisees realisent vos travaux techniques en hauteur : maintenance
+                        eolienne, soudure, interventions electriques, pose de phares… Un service sur-mesure avec une
+                        securite optimale.</h3>
                     <a class="bouton3" href="tel:+33497148939" title="maintenance eolienne Cap-d’Ail">CONTACTEZ -
                         NOUS</a>
                 </div>
@@ -397,13 +394,13 @@
                                 maintenance)</strong></a>
                         : À Cap-d’Ail, nous assurons l’entretien et l’inspection en hauteur de vos silos et
                         installations
-                        industrielles. Nos cordistes travaillent avec rigueur et sécurité pour garantir la
+                        industrielles. Nos cordistes travaillent avec rigueur et securite pour garantir la
                         performance de vos
-                        équipements, sans interrompre votre production.
+                        equipements, sans interrompre votre production.
                     </p>
                 </div>
                 <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo farine silos Cap-d’Ail" class="pcimgindex2"
-                    title="nettoyage silo granulés Cap-d’Ail" loading="lazy" decoding="async">
+                    title="nettoyage silo granules Cap-d’Ail" loading="lazy" decoding="async">
             </div>
         </section>
         <section>
@@ -412,14 +409,14 @@
                     title="pose ligne de vie toiture Cap-d’Ail" loading="lazy" decoding="async">
                 <div class="pcservtext">
                     <p><a href="installation-ligne-de-vie-06.html"
-                            title="installation ligne de vie toiture Cap-d’Ail"><strong>Installation de SÉCURITÉ
+                            title="installation ligne de vie toiture Cap-d’Ail"><strong>Installation de SECURITE
                                 –
                                 Lignes de vie & Filets</strong></a>
-                        : À Cap-d’Ail, nous équipons vos bâtiments de lignes de vie, filets de sécurité et
+                        : À Cap-d’Ail, nous equipons vos bâtiments de lignes de vie, filets de securite et
                         points
                         d’ancrage.
-                        Nos solutions sur-mesure permettent à vos équipes de travailler en hauteur en toute
-                        sécurité.
+                        Nos solutions sur-mesure permettent à vos equipes de travailler en hauteur en toute
+                        securite.
                     </p>
                 </div>
             </div>
@@ -430,11 +427,11 @@
                     <p><a href="nettoyage-vitre-hauteur-06.html"
                             title="nettoyage vitres en hauteur Cap-d’Ail"><strong>Nettoyage de vitres en
                                 hauteur</strong></a>
-                        : À Cap-d’Ail, nous nettoyons vos vitres en hauteur pour un résultat éclatant. Nos
+                        : À Cap-d’Ail, nous nettoyons vos vitres en hauteur pour un resultat eclatant. Nos
                         cordistes
                         interviennent sur
                         les façades et vitrages les plus difficiles d’accès avec professionnalisme et
-                        efficacité.
+                        efficacite.
                     </p>
                 </div>
                 <img src="nettoyage-vitre-en-hauteur-06.webp" alt="nettoyage vitres Cap-d’Ail"
@@ -443,7 +440,7 @@
         </section>
         <section>
             <div class="nosservicespc">
-                <img src="peinture-en-hauteur-06.webp" alt="rénovation peinture en hauteur Cap-d’Ail" class="pcimgindex"
+                <img src="peinture-en-hauteur-06.webp" alt="renovation peinture en hauteur Cap-d’Ail" class="pcimgindex"
                     title="peinture en hauteur Cap-d’Ail" loading="lazy" decoding="async">
                 <div class="pcservtext">
                     <p><a href="peinture-en-hauteur-06.html"
@@ -451,7 +448,7 @@
                                 Maçonnerie & Peinture</strong></a>
                         : À Cap-d’Ail, embellissez vos façades avec nos services de ravalement, peinture et
                         maçonnerie en
-                        hauteur. Nos cordistes vous garantissent un rendu soigné, rapide et sans échafaudage.
+                        hauteur. Nos cordistes vous garantissent un rendu soigne, rapide et sans echafaudage.
                     </p>
                 </div>
             </div>
@@ -462,14 +459,14 @@
                     <p><a href="pose-filet-de-securite-06.html"
                             title="pose filet de protection Cap-d’Ail"><strong>URGENCE – Purge, Bâchage &
                                 Filets</strong></a>
-                        : À Cap-d’Ail, nous intervenons en urgence après sinistres ou chutes de matériaux. Nos
+                        : À Cap-d’Ail, nous intervenons en urgence après sinistres ou chutes de materiaux. Nos
                         cordistes assurent
-                        la purge des façades, la pose de bâches et de filets de protection pour sécuriser vos
+                        la purge des façades, la pose de bâches et de filets de protection pour securiser vos
                         bâtiments
                         efficacement.
                     </p>
                 </div>
-                <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="prix pose de filet de protection anti chute Cap-d’Ail" class="pcimgindex2"
+                <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="prix pose de filet de protection anti chute Cap-d’Ail" class="pcimgindex2"
                     title="pose filet de securite Cap-d’Ail" loading="lazy" decoding="async">
             </div>
         </section>
@@ -479,13 +476,13 @@
                     title="installateur d enseignes lumineuses Cap-d’Ail" loading="lazy" decoding="async">
                 <div class="pcservtext">
                     <p><a href="pose-d-enseigne-06.html"
-                            title="installateur d enseigne Cap-d’Ail"><strong>ÉVÉNEMENTIEL
+                            title="installateur d enseigne Cap-d’Ail"><strong>EVENEMENTIEL
                                 –
                                 Enseignes & Animations</strong></a>
-                        : À Cap-d’Ail, nous installons vos enseignes, banderoles et décors événementiels en
+                        : À Cap-d’Ail, nous installons vos enseignes, banderoles et decors evenementiels en
                         hauteur.
-                        Nos cordistes vous garantissent un rendu professionnel et sécurisé pour tous vos
-                        événements.
+                        Nos cordistes vous garantissent un rendu professionnel et securise pour tous vos
+                        evenements.
                     </p>
                 </div>
             </div>
@@ -497,10 +494,10 @@
                             title="pose de filet anti pigeon Cap-d’Ail"><strong>ANTI-NUISIBLE –
                                 Pics &
                                 Filets de protection</strong></a>
-                        : À Cap-d’Ail, nous protégeons vos bâtiments contre les nuisibles grâce à la pose de
+                        : À Cap-d’Ail, nous protegeons vos bâtiments contre les nuisibles grâce à la pose de
                         pics
                         anti-pigeons et de filets de protection. Nos installations sont discrètes et respectent
-                        l’esthétique de vos façades.
+                        l’esthetique de vos façades.
                     </p>
                 </div>
                 <img src="filet-anti-pigeon.jpg.jpg" alt="pose de pics anti pigeons Cap-d’Ail"
@@ -514,32 +511,32 @@
                     title="entreprise de maintenance eolienne Cap-d’Ail" loading="lazy" decoding="async">
                 <div class="pcservtext">
                     <p><a href="maintenance-eolienne-06.html"
-                            title="electricien Cap-d’Ail"><strong>AUTRES – Éolien,
+                            title="electricien Cap-d’Ail"><strong>AUTRES – Eolien,
                                 Soudure,
-                                Électricité...</strong></a>
-                        : À Cap-d’Ail, nous intervenons sur vos installations spécifiques en hauteur :
+                                Electricite...</strong></a>
+                        : À Cap-d’Ail, nous intervenons sur vos installations specifiques en hauteur :
                         maintenance
-                        éolienne,
-                        travaux de soudure, interventions électriques… Nos cordistes expérimentés vous
+                        eolienne,
+                        travaux de soudure, interventions electriques… Nos cordistes experimentes vous
                         garantissent
                         des
-                        prestations de haute qualité.
+                        prestations de haute qualite.
                     </p>
                 </div>
             </div>
         </section>
 
         <div class="aloooooo1">
-            <h2>Des cordistes qualifiés pour vos travaux en hauteur à Cap-d’Ail</h2>
+            <h2>Des cordistes qualifies pour vos travaux en hauteur à Cap-d’Ail</h2>
             <hr>
             <p>
-                À Cap-d’Ail, notre société met à votre disposition une équipe de cordistes expérimentés, formés
+                À Cap-d’Ail, notre societe met à votre disposition une equipe de cordistes experimentes, formes
                 aux
-                interventions en hauteur et dotés d’un matériel de dernière génération. Nous réalisons tous
+                interventions en hauteur et dotes d’un materiel de dernière generation. Nous realisons tous
                 types de
                 prestations, même sur les bâtiments les plus difficiles d’accès : nettoyage de vitres,
                 ravalement de
-                façades, peinture extérieure, sécurisation de toiture ou installation de lignes de vie. Grâce à
+                façades, peinture exterieure, securisation de toiture ou installation de lignes de vie. Grâce à
                 notre
                 parfaite maîtrise des accès par corde, nous vous garantissons des interventions rapides, sûres
                 et
@@ -548,14 +545,14 @@
         </div>
         <section>
             <div id="devis">
-                <h2>Des tarifs étudiés pour vos besoins à Cap-d’Ail</h2>
+                <h2>Des tarifs etudies pour vos besoins à Cap-d’Ail</h2>
                 <h3>Un devis gratuit, clair et sans engagement</h3>
                 <p>
-                    Nos prestations à Cap-d’Ail allient qualité professionnelle et prix compétitifs. Que vous
+                    Nos prestations à Cap-d’Ail allient qualite professionnelle et prix competitifs. Que vous
                     ayez
-                    besoin d’un nettoyage, de travaux de peinture ou de sécurisation en hauteur, nous vous
+                    besoin d’un nettoyage, de travaux de peinture ou de securisation en hauteur, nous vous
                     garantissons
-                    une intervention adaptée à votre budget. Demandez votre devis gratuit dès maintenant pour
+                    une intervention adaptee à votre budget. Demandez votre devis gratuit dès maintenant pour
                     recevoir
                     une offre transparente, rapide et sans engagement.
                 </p>
@@ -567,16 +564,16 @@
             <h2>Pourquoi faire appel à Cordiste 06 à Cap-d’Ail ?</h2>
             <hr>
             <p>
-                En choisissant <strong>Cordiste 06</strong> à Cap-d’Ail, vous bénéficiez de l’expertise d’une
-                équipe
-                sérieuse, rigoureuse et reconnue dans les Alpes-Maritimes. Nous intervenons avec
+                En choisissant <strong>Cordiste 06</strong> à Cap-d’Ail, vous beneficiez de l’expertise d’une
+                equipe
+                serieuse, rigoureuse et reconnue dans les Alpes-Maritimes. Nous intervenons avec
                 professionnalisme
                 pour
                 tous vos travaux en hauteur : nettoyage de façades, lavage de vitres, peinture inaccessible ou
                 encore
-                sécurisation de toiture. De l’étude technique à la réalisation, nous vous accompagnons avec
+                securisation de toiture. De l’etude technique à la realisation, nous vous accompagnons avec
                 transparence
-                et efficacité.
+                et efficacite.
             </p>
         </div>
         <div class="aloooooo1">
@@ -584,38 +581,38 @@
             <img src="note.webp" alt="cordiste travaux en hauteur Cap-d’Ail" loading="lazy" decoding="async">
             <h3>Interventions ponctuelles</h3>
             <img src="note.webp" alt="cordiste entretien façade Cap-d’Ail" loading="lazy" decoding="async">
-            <h3>Entretien régulier programmé</h3>
+            <h3>Entretien regulier programme</h3>
             <p>
-                À Cap-d’Ail, nous vous proposons des formules sur mesure pour répondre à vos besoins en toute
-                sérénité.
-                Que ce soit pour un chantier ponctuel (peinture, nettoyage, sécurisation) ou pour un entretien
-                régulier
+                À Cap-d’Ail, nous vous proposons des formules sur mesure pour repondre à vos besoins en toute
+                serenite.
+                Que ce soit pour un chantier ponctuel (peinture, nettoyage, securisation) ou pour un entretien
+                regulier
                 de vos structures, <strong>Cordiste 06</strong> s’engage à vous fournir un service fiable, aux
-                conditions claires et aux délais maîtrisés.
+                conditions claires et aux delais maîtrises.
             </p>
         </div>
         <div class="aloooooo1">
-            <h2>Votre spécialiste des accès difficiles à Cap-d’Ail</h2>
+            <h2>Votre specialiste des accès difficiles à Cap-d’Ail</h2>
             <hr>
             <p>
                 <strong>Cordiste 06</strong> intervient à Cap-d’Ail pour tous types de travaux en hauteur, qu’il
-                s’agisse d’urgences ou d’interventions programmées. Nous collaborons avec des particuliers et
+                s’agisse d’urgences ou d’interventions programmees. Nous collaborons avec des particuliers et
                 des
-                professionnels en garantissant un travail soigné, encadré par des contrats transparents et sans
+                professionnels en garantissant un travail soigne, encadre par des contrats transparents et sans
                 mauvaise
                 surprise.
             </p>
             <p>
                 Nos cordistes interviennent là où les nacelles ne passent pas, pour des missions telles que le
                 nettoyage
-                de vitres, le ravalement de façades, la peinture extérieure ou la mise en sécurité des toitures
+                de vitres, le ravalement de façades, la peinture exterieure ou la mise en securite des toitures
                 avec
                 pose de lignes de vie. Nous utilisons exclusivement des techniques d’accès par corde.
             </p>
             <p>
-                <strong>Disponibles 7j/7, 24h/24, y compris les jours fériés</strong>, nous garantissons des
+                <strong>Disponibles 7j/7, 24h/24, y compris les jours feries</strong>, nous garantissons des
                 prestations
-                réactives et conformes aux normes en vigueur. Faites confiance à Cordiste 06 pour tous vos
+                reactives et conformes aux normes en vigueur. Faites confiance à Cordiste 06 pour tous vos
                 besoins
                 ponctuels ou sous contrat à Cap-d’Ail.
             </p>
@@ -625,7 +622,7 @@
     <footer>
         <div id="contact">
 
-            <h5>NOS RÉSEAUX SOCIAUX</h5>
+            <h5>NOS RESEAUX SOCIAUX</h5>
             <div class="reseau-contact">
                 <a href="https://www.linkedin.com/company/quali-corde-sud?trk=public_post_reshare_feed-actor-image"
                     target="_blank" title="linkedin-cordiste"> Linkedin -</a>
@@ -646,8 +643,8 @@
                     title="entreprise cordiste 06">contacts@quali-corde.com</a></p>
 
             <div class="liens-wp">
-                <h6>&copy; Copyright 2025 - Site réalisé par <a href="https://webprime.fr/" target="_blank">webprime</a>
-                    - <a href="mentions-legales.html" target="_blank">mentions légales</a>.
+                <h6>&copy; Copyright 2025 - Site realise par <a href="https://webprime.fr/" target="_blank">webprime</a>
+                    - <a href="mentions-legales.html" target="_blank">mentions legales</a>.
                 </h6>
             </div>
         </div>
@@ -727,28 +724,40 @@
         });
     </script>
     <script>
-        function validateForm() {
-            var name = document.getElementById("name").value.trim();
-            var tel = document.getElementById("tel").value.trim();
-            var services = document.getElementById("services").value.trim();
-            var comments = document.getElementById("comments").value.trim();
-            if (name === "" || tel === "" || services === "" || comments === "") {
-                alert("Champs obligatoires.");
-                return false;
+        async function submitToWebPrime(e) {
+        e.preventDefault();
+        var form = document.getElementById('contactForm');
+        var btn = form.querySelector('button[type="submit"]');
+        var originalText = btn.textContent;
+
+        // Anti-spam honeypot check
+        if (form._gotcha && form._gotcha.value) return false;
+
+        btn.textContent = 'Envoi en cours...';
+        btn.disabled = true;
+
+        try {
+            var formData = new FormData(form);
+            var response = await fetch('https://webprime.app/webhook/contact/a0dbffb8afffbd140c7c09cb7d2c09e30a8e36bb44f78f4fcd0f5e49af523630', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                // Redirection apres succes
+                window.location.href = 'https://cordiste-06.com/';
+            } else {
+                alert('Erreur lors de l\'envoi. Veuillez reessayer.');
+                btn.textContent = originalText;
+                btn.disabled = false;
             }
-            var telPattern = /^((0[1679])|(\+33[1679]))\d{8}$/;
-            if (!telPattern.test(tel)) {
-                alert("Veuillez entrer un numéro de téléphone valide.");
-                return false;
-            }
-            var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
-            var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
-            if (linkPattern.test(comments) || scriptPattern.test(comments)) {
-                alert("Pas autorisé.");
-                return false;
-            }
-            return true;
+        } catch (error) {
+            alert('Erreur de connexion. Veuillez reessayer.');
+            btn.textContent = originalText;
+            btn.disabled = false;
         }
+        return false;
+    }
     </script>
 </body>
 

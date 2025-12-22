@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -242,35 +242,32 @@
             <div class="image-container">
                 <img src="logo.jpg" alt="entreprise cordiste Cagnes">
             </div>
-            <form action="https://formsubmit.co/formulaire@webprime.fr" method="POST" onsubmit="return validateForm()">
+            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
                 <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
-                    <input type="text" id="website" name="website" autocomplete="off">
+                    <input type="text" id="website" name="_gotcha" autocomplete="off">
                 </div>
 
                 <input type="hidden" name="_captcha" value="true">
-                <input type="hidden" name="_next" value="https://cordiste-06.com/">
-                <input type="hidden" name="_cc" value="contacts@quali-corde.com">
-                <input type="hidden" name=" from" value="Quali Corde Sud">
-                <input type="hidden" name="_subject" value="Formulaire">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
-
+                                                                                                
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="nom" required>
 
-                <label for="tel">Téléphone :</label>
-                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+                <label for="tel">Telephone :</label>
+                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
                 <label for="services">Services :</label>
                 <select id="services" name="services" required>
                     <option value="NETTOYAGE">NETTOYAGE</option>
                     <option value="PEINTURE">PEINTURE</option>
-                    <option value="MAÇONNERIE">MAÇONNERIE</option>
+                    <option value="MACONNERIE">MACONNERIE</option>
                     <option value="INDUSTRIE">INDUSTRIE</option>
-                    <option value="SECURITE">SÉCURITÉ</option>
-                    <option value="ÉVÉNEMENTIEL">ÉVÉNEMENTIEL</option>
+                    <option value="SECURITE">SECURITE</option>
+                    <option value="EVENEMENTIEL">EVENEMENTIEL</option>
                     <option value="ANTI-NUISIBLE">ANTI-NUISIBLE</option>
                     <option value="URGENCE">URGENCE</option>
                     <option value="AUTRE">AUTRE</option>
@@ -291,9 +288,9 @@
                 decoding="async">
             <p><strong class="strong-color"><a href="nettoyage-vitre-hauteur-06.html"
                         title="nettoyage vitre en hauteur Cagnes-sur-Mer">NETTOYAGE DE VITRE</a></strong></p>
-            <h3>À Cagnes-sur-Mer, nous nettoyons vos vitres en hauteur en toute sécurité. Nos cordistes interviennent
-                sur les vitrages les plus difficiles d’accès pour leur redonner un éclat parfait, sans interrompre votre
-                activité.</h3>
+            <h3>À Cagnes-sur-Mer, nous nettoyons vos vitres en hauteur en toute securite. Nos cordistes interviennent
+                sur les vitrages les plus difficiles d’accès pour leur redonner un eclat parfait, sans interrompre votre
+                activite.</h3>
             <a class="bouton3" href="tel:+33497148939" title="nettoyage vitre en hauteur Cagnes-sur-Mer">CONTACTEZ -
                 NOUS</a>
         </div>
@@ -306,7 +303,7 @@
                             title="peinture en hauteur Cagnes-sur-Mer">RAVALEMENT – Maçonnerie & Peinture</a></strong>
                 </p>
                 <h3>À Cagnes-sur-Mer, nous redonnons vie à vos façades avec des prestations de ravalement, peinture et
-                    maçonnerie réalisées en hauteur. Intervention rapide et soignée, sans besoin d’échafaudage.</h3>
+                    maçonnerie realisees en hauteur. Intervention rapide et soignee, sans besoin d’echafaudage.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="peinture en hauteur Cagnes-sur-Mer">CONTACTEZ - NOUS</a>
             </div>
         </section>
@@ -315,10 +312,10 @@
                 <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo Cagnes-sur-Mer" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="nettoyage-de-silo-06.html"
-                            title="nettoyage de silo industriel Cagnes-sur-Mer">nettoyage silo granulés</a></strong></p>
+                            title="nettoyage de silo industriel Cagnes-sur-Mer">nettoyage silo granules</a></strong></p>
                 <h3>À Cagnes-sur-Mer, nous assurons l’entretien et la maintenance de vos installations industrielles en
-                    hauteur. Nos cordistes qualifiés interviennent rapidement pour garantir le bon fonctionnement de vos
-                    équipements.</h3>
+                    hauteur. Nos cordistes qualifies interviennent rapidement pour garantir le bon fonctionnement de vos
+                    equipements.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="nettoyage de silo industriel Cagnes-sur-Mer">CONTACTEZ - NOUS</a>
             </div>
         </section>
@@ -327,21 +324,21 @@
                 <img src="ligne-de-vie-toiture-06.webp" alt="installation ligne de vie toiture Cagnes-sur-Mer" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="installation-ligne-de-vie-06.html"
-                            title="pose de ligne de vie Cagnes-sur-Mer">SÉCURITÉ – Lignes de vie & Filets</a></strong></p>
-                <h3>À Cagnes-sur-Mer, sécurisez vos chantiers et bâtiments en hauteur. Nous installons des lignes de
-                    vie, filets de sécurité et systèmes antichute conformes aux normes pour garantir la protection de
-                    vos équipes.</h3>
+                            title="pose de ligne de vie Cagnes-sur-Mer">SECURITE – Lignes de vie & Filets</a></strong></p>
+                <h3>À Cagnes-sur-Mer, securisez vos chantiers et bâtiments en hauteur. Nous installons des lignes de
+                    vie, filets de securite et systèmes antichute conformes aux normes pour garantir la protection de
+                    vos equipes.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="pose de ligne de vie Cagnes-sur-Mer">CONTACTEZ - NOUS</a>
             </div>
         </section>
         <section>
             <div class="nosservices2">
-                <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="poseur de filet de sécurité Cagnes-sur-Mer" loading="lazy"
+                <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="poseur de filet de securite Cagnes-sur-Mer" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="pose-filet-de-securite-06.html"
                             title="pose de filet anti chute Cagnes-sur-Mer">URGENCE – Purge, Bâchage & Filets</a></strong></p>
-                <h3>À Cagnes-sur-Mer, nos équipes interviennent en urgence suite aux intempéries ou sinistres. Purge de
-                    façades, pose de bâches et filets en hauteur : intervention rapide pour garantir la sécurité de vos
+                <h3>À Cagnes-sur-Mer, nos equipes interviennent en urgence suite aux intemperies ou sinistres. Purge de
+                    façades, pose de bâches et filets en hauteur : intervention rapide pour garantir la securite de vos
                     bâtiments.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="pose de filet anti chute Cagnes-sur-Mer">CONTACTEZ - NOUS</a>
             </div>
@@ -351,10 +348,10 @@
                 <img src="pose-d-enseigne-06.jpg.jpg" alt="poseur d enseigne Cagnes-sur-Mer" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="pose-d-enseigne-06.html"
-                            title="poseur enseigne Cagnes-sur-Mer">ÉVÉNEMENTIEL – Enseignes &
+                            title="poseur enseigne Cagnes-sur-Mer">EVENEMENTIEL – Enseignes &
                             Animations</a></strong></p>
-                <h3>À Cagnes-sur-Mer, pour vos événements, nous posons en hauteur enseignes, banderoles et décorations.
-                    Nos cordistes assurent un travail rapide et soigné, pour un rendu visuel à la hauteur de vos
+                <h3>À Cagnes-sur-Mer, pour vos evenements, nous posons en hauteur enseignes, banderoles et decorations.
+                    Nos cordistes assurent un travail rapide et soigne, pour un rendu visuel à la hauteur de vos
                     attentes.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="poseur enseigne Cagnes-sur-Mer">CONTACTEZ -
                     NOUS</a>
@@ -366,8 +363,8 @@
                 <p><strong class="strong-color"><a href="pose-filet-anti-pigeon-06.html"
                             title="installation pic anti pigeon Cagnes-sur-Mer">ANTI-NUISIBLE – Pics & Filets de
                             protection</a></strong></p>
-                <h3>À Cagnes-sur-Mer, nous protégeons vos bâtiments des nuisibles. Installation rapide et efficace de
-                    pics, filets et solutions anti-pigeons en hauteur, pour préserver vos façades et votre confort.</h3>
+                <h3>À Cagnes-sur-Mer, nous protegeons vos bâtiments des nuisibles. Installation rapide et efficace de
+                    pics, filets et solutions anti-pigeons en hauteur, pour preserver vos façades et votre confort.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="installation pic anti pigeon Cagnes-sur-Mer">CONTACTEZ - NOUS</a>
             </div>
         </section>
@@ -376,11 +373,11 @@
                 <img src="soudure-a-l-arc-06.jpg.jpg" alt="soudure à l arc Cagnes-sur-Mer" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="maintenance-eolienne-06.html"
-                            title="maintenance eolienne Cagnes-sur-Mer">AUTRES – Éolien, Soudure,
-                            Électricité...</a></strong></p>
-                <h3>À Cagnes-sur-Mer, nous réalisons vos travaux techniques en hauteur : maintenance éolienne, soudure
-                    spécialisée, interventions électriques… Nos cordistes assurent un travail de qualité, en toute
-                    sécurité.</h3>
+                            title="maintenance eolienne Cagnes-sur-Mer">AUTRES – Eolien, Soudure,
+                            Electricite...</a></strong></p>
+                <h3>À Cagnes-sur-Mer, nous realisons vos travaux techniques en hauteur : maintenance eolienne, soudure
+                    specialisee, interventions electriques… Nos cordistes assurent un travail de qualite, en toute
+                    securite.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="maintenance eolienne Cagnes-sur-Mer">CONTACTEZ
                     - NOUS</a>
             </div>
@@ -391,15 +388,15 @@
                         <p><a href="nettoyage-de-silo-06.html"
                                 title="nettoyage des silos Cagnes-sur-Mer"><strong>INDUSTRIE (silos &
                                     maintenance)</strong></a>
-                            : À Cagnes-sur-Mer, nous réalisons l’entretien et l’inspection en hauteur de vos silos et
-                            équipements
-                            industriels. Nos cordistes assurent des interventions rapides et sécurisées, même en milieux
+                            : À Cagnes-sur-Mer, nous realisons l’entretien et l’inspection en hauteur de vos silos et
+                            equipements
+                            industriels. Nos cordistes assurent des interventions rapides et securisees, même en milieux
                             difficiles
                             d’accès, pour maintenir la performance de vos installations.
                         </p>
                     </div>
                     <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo farine silos Cagnes-sur-Mer" class="pcimgindex2"
-                        title="nettoyage silo granulés Cagnes-sur-Mer" loading="lazy" decoding="async">
+                        title="nettoyage silo granules Cagnes-sur-Mer" loading="lazy" decoding="async">
                 </div>
             </section>
             <section>
@@ -410,11 +407,11 @@
                     <div class="pcservtext">
                         <p><a href="installation-ligne-de-vie-06.html"
                                 title="installation ligne de vie toiture Cagnes-sur-Mer"><strong>Installation de
-                                    SÉCURITÉ –
+                                    SECURITE –
                                     Lignes de vie & Filets</strong></a>
-                            : À Cagnes-sur-Mer, nous équipons vos bâtiments de lignes de vie, filets antichute et points
+                            : À Cagnes-sur-Mer, nous equipons vos bâtiments de lignes de vie, filets antichute et points
                             d’ancrage
-                            sur mesure. Nos solutions garantissent la sécurité de vos équipes lors de tous travaux en
+                            sur mesure. Nos solutions garantissent la securite de vos equipes lors de tous travaux en
                             hauteur.
                         </p>
                     </div>
@@ -439,16 +436,16 @@
             </section>
             <section>
                 <div class="nosservicespc">
-                    <img src="peinture-en-hauteur-06.webp" alt="rénovation peinture en hauteur Cagnes-sur-Mer"
+                    <img src="peinture-en-hauteur-06.webp" alt="renovation peinture en hauteur Cagnes-sur-Mer"
                         class="pcimgindex" title="peinture en hauteur Cagnes-sur-Mer" loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="peinture-en-hauteur-06.html"
                                 title="entreprise peinture cordiste Cagnes-sur-Mer"><strong>RAVALEMENT –
                                     Maçonnerie & Peinture</strong></a>
-                            : À Cagnes-sur-Mer, nous redonnons tout leur éclat à vos façades en hauteur. Nos cordistes
-                            réalisent
-                            ravalements, travaux de maçonnerie et peinture en toute sécurité, sans montage
-                            d’échafaudage.
+                            : À Cagnes-sur-Mer, nous redonnons tout leur eclat à vos façades en hauteur. Nos cordistes
+                            realisent
+                            ravalements, travaux de maçonnerie et peinture en toute securite, sans montage
+                            d’echafaudage.
                         </p>
                     </div>
                 </div>
@@ -460,13 +457,13 @@
                                 title="pose filet de protection Cagnes-sur-Mer"><strong>URGENCE – Purge, Bâchage
                                     &
                                     Filets</strong></a>
-                            : À Cagnes-sur-Mer, nous intervenons en urgence pour sécuriser vos bâtiments après sinistres
+                            : À Cagnes-sur-Mer, nous intervenons en urgence pour securiser vos bâtiments après sinistres
                             ou
-                            intempéries. Nos cordistes réalisent purges, bâchages et poses de filets de protection avec
-                            réactivité.
+                            intemperies. Nos cordistes realisent purges, bâchages et poses de filets de protection avec
+                            reactivite.
                         </p>
                     </div>
-                    <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="prix pose de filet de protection anti chute Cagnes-sur-Mer"
+                    <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="prix pose de filet de protection anti chute Cagnes-sur-Mer"
                         class="pcimgindex2" title="pose filet de securite Cagnes-sur-Mer" loading="lazy"
                         decoding="async">
                 </div>
@@ -478,12 +475,12 @@
                         decoding="async">
                     <div class="pcservtext">
                         <p><a href="pose-d-enseigne-06.html"
-                                title="installateur d enseigne Cagnes-sur-Mer"><strong>ÉVÉNEMENTIEL
+                                title="installateur d enseigne Cagnes-sur-Mer"><strong>EVENEMENTIEL
                                     –
                                     Enseignes & Animations</strong></a>
-                            : À Cagnes-sur-Mer, nous assurons la pose en hauteur de vos enseignes, banderoles et décors
-                            événementiels.
-                            Nos cordistes vous garantissent une installation soignée et conforme à vos attentes.
+                            : À Cagnes-sur-Mer, nous assurons la pose en hauteur de vos enseignes, banderoles et decors
+                            evenementiels.
+                            Nos cordistes vous garantissent une installation soignee et conforme à vos attentes.
                         </p>
                     </div>
                 </div>
@@ -497,7 +494,7 @@
                                     Filets de protection</strong></a>
                             : À Cagnes-sur-Mer, nous installons en hauteur pics anti-pigeons et filets de protection.
                             Nos
-                            solutions vous permettent de préserver durablement l’esthétique et la propreté de vos
+                            solutions vous permettent de preserver durablement l’esthetique et la proprete de vos
                             façades.
                         </p>
                     </div>
@@ -514,13 +511,13 @@
                         loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="maintenance-eolienne-06.html"
-                                title="electricien Cagnes-sur-Mer"><strong>AUTRES – Éolien,
+                                title="electricien Cagnes-sur-Mer"><strong>AUTRES – Eolien,
                                     Soudure,
-                                    Électricité...</strong></a>
-                            : À Cagnes-sur-Mer, nous réalisons vos travaux spécifiques en hauteur : maintenance
-                            éolienne, travaux de
-                            soudure, interventions électriques… Nos cordistes qualifiés vous garantissent un service
-                            sécurisé et
+                                    Electricite...</strong></a>
+                            : À Cagnes-sur-Mer, nous realisons vos travaux specifiques en hauteur : maintenance
+                            eolienne, travaux de
+                            soudure, interventions electriques… Nos cordistes qualifies vous garantissent un service
+                            securise et
                             efficace.
                         </p>
                     </div>
@@ -528,29 +525,29 @@
             </section>
 
             <div class="aloooooo1">
-                <h2>Des cordistes expérimentés à votre service à Cagnes-sur-Mer</h2>
+                <h2>Des cordistes experimentes à votre service à Cagnes-sur-Mer</h2>
                 <hr>
                 <p>
-                    À Cagnes-sur-Mer, notre entreprise de cordistes met à votre disposition une équipe hautement
-                    qualifiée,
-                    formée aux travaux en hauteur, et équipée de matériel de pointe. Nous intervenons sur tous types de
+                    À Cagnes-sur-Mer, notre entreprise de cordistes met à votre disposition une equipe hautement
+                    qualifiee,
+                    formee aux travaux en hauteur, et equipee de materiel de pointe. Nous intervenons sur tous types de
                     bâtiments, y compris les plus difficiles d'accès, pour des prestations telles que le nettoyage de
-                    vitres, le lavage de façades, la peinture extérieure, ou encore la sécurisation de toitures et la
+                    vitres, le lavage de façades, la peinture exterieure, ou encore la securisation de toitures et la
                     pose
                     de lignes de vie. Grâce à notre expertise des accès par corde, nous vous assurons des interventions
-                    rapides, sécurisées et toujours conformes aux normes en vigueur.
+                    rapides, securisees et toujours conformes aux normes en vigueur.
                 </p>
             </div>
             <section>
                 <div id="devis">
                     <h2>Des tarifs sur mesure à Cagnes-sur-Mer</h2>
-                    <h3>Une offre claire et compétitive</h3>
+                    <h3>Une offre claire et competitive</h3>
                     <p>
-                        Nos prestations de travaux en hauteur à Cagnes-sur-Mer sont pensées pour répondre à vos besoins
+                        Nos prestations de travaux en hauteur à Cagnes-sur-Mer sont pensees pour repondre à vos besoins
                         tout
-                        en respectant votre budget. Que vous ayez besoin de nettoyage, de peinture ou de sécurisation,
+                        en respectant votre budget. Que vous ayez besoin de nettoyage, de peinture ou de securisation,
                         nous
-                        proposons des services professionnels à un excellent rapport qualité-prix. Demandez dès
+                        proposons des services professionnels à un excellent rapport qualite-prix. Demandez dès
                         aujourd’hui
                         votre devis gratuit pour une estimation rapide, sans engagement.
                     </p>
@@ -563,55 +560,55 @@
                 <h2>Pourquoi faire appel à Cordiste 06 à Cagnes-sur-Mer ?</h2>
                 <hr>
                 <p>
-                    En choisissant <strong>Cordiste 06</strong> à Cagnes-sur-Mer, vous bénéficiez de l’expertise d’une
-                    équipe sérieuse, réactive et reconnue pour son professionnalisme. Nous réalisons tous types de
+                    En choisissant <strong>Cordiste 06</strong> à Cagnes-sur-Mer, vous beneficiez de l’expertise d’une
+                    equipe serieuse, reactive et reconnue pour son professionnalisme. Nous realisons tous types de
                     travaux
                     en hauteur : nettoyage de façades, lavage de vitres, peinture sur surfaces inaccessibles, ou encore
-                    sécurisation de toitures. De l’étude du chantier à la finalisation, chaque étape est réalisée avec
-                    rigueur, transparence et efficacité.
+                    securisation de toitures. De l’etude du chantier à la finalisation, chaque etape est realisee avec
+                    rigueur, transparence et efficacite.
                 </p>
             </div>
             <div class="aloooooo1">
-                <h2>Des contrats personnalisés pour une tranquillité durable à Cagnes-sur-Mer</h2>
+                <h2>Des contrats personnalises pour une tranquillite durable à Cagnes-sur-Mer</h2>
                 <img src="note.webp" alt="cordiste travaux en hauteur Cagnes-sur-Mer" loading="lazy" decoding="async">
                 <h3>Interventions ponctuelles</h3>
                 <img src="note.webp" alt="cordiste entretien façade Cagnes-sur-Mer" loading="lazy" decoding="async">
-                <h3>Entretien programmé</h3>
+                <h3>Entretien programme</h3>
                 <p>
-                    Nos contrats sur mesure à Cagnes-sur-Mer sont conçus pour s’adapter à vos besoins spécifiques. Que
+                    Nos contrats sur mesure à Cagnes-sur-Mer sont conçus pour s’adapter à vos besoins specifiques. Que
                     vous
-                    ayez besoin d’une intervention unique (mise en sécurité, peinture, nettoyage) ou d’un entretien
-                    régulier
+                    ayez besoin d’une intervention unique (mise en securite, peinture, nettoyage) ou d’un entretien
+                    regulier
                     de vos bâtiments en hauteur, <strong>Cordiste 06</strong> vous propose des formules flexibles,
                     fiables
-                    et parfaitement encadrées. Chaque prestation inclut un engagement clair sur les tarifs, les délais
+                    et parfaitement encadrees. Chaque prestation inclut un engagement clair sur les tarifs, les delais
                     et la
-                    qualité.
+                    qualite.
                 </p>
             </div>
             <div class="aloooooo1">
                 <h2>Cordiste 06 : votre partenaire à Cagnes-sur-Mer pour les travaux en hauteur</h2>
                 <hr>
                 <p>
-                    Présent à Cagnes-sur-Mer, <strong>Cordiste 06</strong> intervient aussi bien en urgence que sur
+                    Present à Cagnes-sur-Mer, <strong>Cordiste 06</strong> intervient aussi bien en urgence que sur
                     rendez-vous pour tout type de chantier en hauteur. Nous accompagnons particuliers et professionnels
                     avec
-                    des prestations sérieuses, encadrées par des contrats transparents et sans mauvaise surprise.
+                    des prestations serieuses, encadrees par des contrats transparents et sans mauvaise surprise.
                 </p>
                 <p>
-                    Notre équipe intervient dans les zones les plus complexes d’accès, que ce soit pour le nettoyage de
-                    vitres, le ravalement de façades, la peinture extérieure ou la pose de lignes de vie et la
-                    sécurisation
-                    de toitures. Nous utilisons exclusivement des techniques d'accès par corde, idéales là où les
+                    Notre equipe intervient dans les zones les plus complexes d’accès, que ce soit pour le nettoyage de
+                    vitres, le ravalement de façades, la peinture exterieure ou la pose de lignes de vie et la
+                    securisation
+                    de toitures. Nous utilisons exclusivement des techniques d'accès par corde, ideales là où les
                     nacelles
-                    ne peuvent pas accéder.
+                    ne peuvent pas acceder.
                 </p>
                 <p>
-                    <strong>Disponible 7j/7 et 24h/24, y compris les jours fériés</strong>, notre entreprise vous
+                    <strong>Disponible 7j/7 et 24h/24, y compris les jours feries</strong>, notre entreprise vous
                     garantit à
-                    Cagnes-sur-Mer des interventions rapides, sécurisées et réalisées dans le respect des normes les
+                    Cagnes-sur-Mer des interventions rapides, securisees et realisees dans le respect des normes les
                     plus
-                    strictes. Nous assurons aussi bien les missions ponctuelles que les contrats d’entretien régulier.
+                    strictes. Nous assurons aussi bien les missions ponctuelles que les contrats d’entretien regulier.
                 </p>
             </div>
             <a class="bouton3" href="tel:+33497148939" title="prix nettoyage vitre en hauteur">CONTACTEZ - NOUS</a>
@@ -619,7 +616,7 @@
     <footer>
         <div id="contact">
 
-            <h5>NOS RÉSEAUX SOCIAUX</h5>
+            <h5>NOS RESEAUX SOCIAUX</h5>
             <div class="reseau-contact">
                 <a href="https://www.linkedin.com/company/quali-corde-sud?trk=public_post_reshare_feed-actor-image"
                     target="_blank" title="linkedin-cordiste"> Linkedin -</a>
@@ -640,8 +637,8 @@
                     title="entreprise cordiste 06">contacts@quali-corde.com</a></p>
 
             <div class="liens-wp">
-                <h6>&copy; Copyright 2025 - Site réalisé par <a href="https://webprime.fr/" target="_blank">webprime</a>
-                    - <a href="mentions-legales.html" target="_blank">mentions légales</a>.
+                <h6>&copy; Copyright 2025 - Site realise par <a href="https://webprime.fr/" target="_blank">webprime</a>
+                    - <a href="mentions-legales.html" target="_blank">mentions legales</a>.
                 </h6>
             </div>
         </div>
@@ -721,28 +718,40 @@
         });
     </script>
     <script>
-        function validateForm() {
-            var name = document.getElementById("name").value.trim();
-            var tel = document.getElementById("tel").value.trim();
-            var services = document.getElementById("services").value.trim();
-            var comments = document.getElementById("comments").value.trim();
-            if (name === "" || tel === "" || services === "" || comments === "") {
-                alert("Champs obligatoires.");
-                return false;
+        async function submitToWebPrime(e) {
+        e.preventDefault();
+        var form = document.getElementById('contactForm');
+        var btn = form.querySelector('button[type="submit"]');
+        var originalText = btn.textContent;
+
+        // Anti-spam honeypot check
+        if (form._gotcha && form._gotcha.value) return false;
+
+        btn.textContent = 'Envoi en cours...';
+        btn.disabled = true;
+
+        try {
+            var formData = new FormData(form);
+            var response = await fetch('https://webprime.app/webhook/contact/a0dbffb8afffbd140c7c09cb7d2c09e30a8e36bb44f78f4fcd0f5e49af523630', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                // Redirection apres succes
+                window.location.href = 'https://cordiste-06.com/';
+            } else {
+                alert('Erreur lors de l\'envoi. Veuillez reessayer.');
+                btn.textContent = originalText;
+                btn.disabled = false;
             }
-            var telPattern = /^((0[1679])|(\+33[1679]))\d{8}$/;
-            if (!telPattern.test(tel)) {
-                alert("Veuillez entrer un numéro de téléphone valide.");
-                return false;
-            }
-            var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
-            var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
-            if (linkPattern.test(comments) || scriptPattern.test(comments)) {
-                alert("Pas autorisé.");
-                return false;
-            }
-            return true;
+        } catch (error) {
+            alert('Erreur de connexion. Veuillez reessayer.');
+            btn.textContent = originalText;
+            btn.disabled = false;
         }
+        return false;
+    }
     </script>
 </body>
 

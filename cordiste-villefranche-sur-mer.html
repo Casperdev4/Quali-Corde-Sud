@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -243,35 +243,32 @@
             <div class="image-container">
                 <img src="logo.jpg" alt="entreprise cordiste Villefranche">
             </div>
-            <form action="https://formsubmit.co/formulaire@webprime.fr" method="POST" onsubmit="return validateForm()">
+            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
                 <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
-                    <input type="text" id="website" name="website" autocomplete="off">
+                    <input type="text" id="website" name="_gotcha" autocomplete="off">
                 </div>
 
                 <input type="hidden" name="_captcha" value="true">
-                <input type="hidden" name="_next" value="https://cordiste-06.com/">
-                <input type="hidden" name="_cc" value="contacts@quali-corde.com">
-                <input type="hidden" name=" from" value="Quali Corde Sud">
-                <input type="hidden" name="_subject" value="Formulaire">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
-
+                                                                                                
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="nom" required>
 
-                <label for="tel">Téléphone :</label>
-                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+                <label for="tel">Telephone :</label>
+                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
                 <label for="services">Services :</label>
                 <select id="services" name="services" required>
                     <option value="NETTOYAGE">NETTOYAGE</option>
                     <option value="PEINTURE">PEINTURE</option>
-                    <option value="MAÇONNERIE">MAÇONNERIE</option>
+                    <option value="MACONNERIE">MACONNERIE</option>
                     <option value="INDUSTRIE">INDUSTRIE</option>
-                    <option value="SECURITE">SÉCURITÉ</option>
-                    <option value="ÉVÉNEMENTIEL">ÉVÉNEMENTIEL</option>
+                    <option value="SECURITE">SECURITE</option>
+                    <option value="EVENEMENTIEL">EVENEMENTIEL</option>
                     <option value="ANTI-NUISIBLE">ANTI-NUISIBLE</option>
                     <option value="URGENCE">URGENCE</option>
                     <option value="AUTRE">AUTRE</option>
@@ -294,7 +291,7 @@
                             title="nettoyage vitre en hauteur Villefranche-sur-Mer">NETTOYAGE DE VITRE</a></strong></p>
                 <h3>À Villefranche-sur-Mer, nous assurons le nettoyage de vitres en hauteur pour tous types de
                     bâtiments.
-                    Nos cordistes professionnels interviennent en toute sécurité pour offrir à vos vitrages une propreté
+                    Nos cordistes professionnels interviennent en toute securite pour offrir à vos vitrages une proprete
                     parfaite.</h3>
                 <a class="bouton3" href="tel:+33497148939"
                     title="nettoyage vitre en hauteur Villefranche-sur-Mer">CONTACTEZ -
@@ -308,11 +305,11 @@
                     <p><strong class="strong-color"><a href="peinture-en-hauteur-06.html"
                                 title="peinture en hauteur Villefranche-sur-Mer">RAVALEMENT – Maçonnerie &
                                 Peinture</a></strong></p>
-                    <h3>À Villefranche-sur-Mer, nous redonnons de l’éclat à vos façades avec nos prestations de
+                    <h3>À Villefranche-sur-Mer, nous redonnons de l’eclat à vos façades avec nos prestations de
                         ravalement,
-                        peinture et maçonnerie en hauteur. Nos cordistes vous garantissent un rendu soigné et durable,
+                        peinture et maçonnerie en hauteur. Nos cordistes vous garantissent un rendu soigne et durable,
                         sans
-                        échafaudage.</h3>
+                        echafaudage.</h3>
                     <a class="bouton3" href="tel:+33497148939" title="peinture en hauteur Villefranche-sur-Mer">CONTACTEZ
                         -
                         NOUS</a>
@@ -326,11 +323,11 @@
                                 title="nettoyage de silo industriel Villefranche-sur-Mer">INDUSTRIE (silos &
                                 maintenance)</a></strong>
                     </p>
-                    <h3>À Villefranche-sur-Mer, nous réalisons la maintenance et l’inspection de vos silos et
+                    <h3>À Villefranche-sur-Mer, nous realisons la maintenance et l’inspection de vos silos et
                         installations
-                        industrielles en hauteur. Nos cordistes interviennent efficacement pour assurer la sécurité et
+                        industrielles en hauteur. Nos cordistes interviennent efficacement pour assurer la securite et
                         la
-                        continuité de votre activité.</h3>
+                        continuite de votre activite.</h3>
                     <a class="bouton3" href="tel:+33497148939" title="nettoyage de silo industriel Villefranche-sur-Mer">CONTACTEZ -
                         NOUS</a>
                 </div>
@@ -340,12 +337,12 @@
                     <img src="ligne-de-vie-toiture-06.webp" alt="installation ligne de vie toiture Villefranche-sur-Mer" loading="lazy"
                         decoding="async">
                     <p><strong class="strong-color"><a href="installation-ligne-de-vie-06.html"
-                                title="pose de ligne de vie Villefranche-sur-Mer">SÉCURITÉ – Lignes de vie & Filets</a></strong>
+                                title="pose de ligne de vie Villefranche-sur-Mer">SECURITE – Lignes de vie & Filets</a></strong>
                     </p>
-                    <h3>À Villefranche-sur-Mer, nous installons des lignes de vie, filets de sécurité et points
+                    <h3>À Villefranche-sur-Mer, nous installons des lignes de vie, filets de securite et points
                         d’ancrage
-                        pour permettre à vos équipes de travailler en hauteur en toute sécurité. Nos solutions sont
-                        adaptées
+                        pour permettre à vos equipes de travailler en hauteur en toute securite. Nos solutions sont
+                        adaptees
                         à toutes les structures.</h3>
                     <a class="bouton3" href="tel:+33497148939" title="pose de ligne de vie Villefranche-sur-Mer">CONTACTEZ -
                         NOUS</a>
@@ -353,14 +350,14 @@
             </section>
             <section>
                 <div class="nosservices2">
-                    <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="poseur de filet de sécurité Villefranche-sur-Mer" loading="lazy"
+                    <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="poseur de filet de securite Villefranche-sur-Mer" loading="lazy"
                         decoding="async">
                     <p><strong class="strong-color"><a href="pose-filet-de-securite-06.html"
                                 title="pose de filet anti chute Villefranche-sur-Mer">URGENCE – Purge, Bâchage &
                                 Filets</a></strong>
                     </p>
-                    <h3>À Villefranche-sur-Mer, nous intervenons en urgence pour sécuriser vos bâtiments après
-                        intempéries
+                    <h3>À Villefranche-sur-Mer, nous intervenons en urgence pour securiser vos bâtiments après
+                        intemperies
                         ou sinistres. Nos cordistes procèdent rapidement à la purge des façades, au bâchage et à la pose
                         de
                         filets de protection.</h3>
@@ -373,13 +370,13 @@
                     <img src="pose-d-enseigne-06.jpg.jpg" alt="poseur d enseigne Villefranche-sur-Mer" loading="lazy"
                         decoding="async">
                     <p><strong class="strong-color"><a href="pose-d-enseigne-06.html"
-                                title="poseur enseigne Villefranche-sur-Mer">ÉVÉNEMENTIEL – Enseignes &
+                                title="poseur enseigne Villefranche-sur-Mer">EVENEMENTIEL – Enseignes &
                                 Animations</a></strong></p>
-                    <h3>À Villefranche-sur-Mer, nous posons en hauteur vos enseignes, banderoles et éléments
-                        événementiels.
-                        Nos cordistes expérimentés assurent un travail soigné et sécurisé, pour une visibilité optimale
+                    <h3>À Villefranche-sur-Mer, nous posons en hauteur vos enseignes, banderoles et elements
+                        evenementiels.
+                        Nos cordistes experimentes assurent un travail soigne et securise, pour une visibilite optimale
                         de
-                        vos événements.</h3>
+                        vos evenements.</h3>
                     <a class="bouton3" href="tel:+33497148939"
                         title="poseur enseigne Villefranche-sur-Mer">CONTACTEZ
                         - NOUS</a>
@@ -392,7 +389,7 @@
                     <p><strong class="strong-color"><a href="pose-filet-anti-pigeon-06.html"
                                 title="installation pic anti pigeon Villefranche-sur-Mer">ANTI-NUISIBLE – Pics & Filets de
                                 protection</a></strong></p>
-                    <h3>À Villefranche-sur-Mer, nous protégeons vos bâtiments contre les nuisibles en hauteur grâce à la
+                    <h3>À Villefranche-sur-Mer, nous protegeons vos bâtiments contre les nuisibles en hauteur grâce à la
                         pose de pics anti-pigeons et de filets de protection. Nos solutions sont efficaces, discrètes et
                         respectueuses de vos façades.</h3>
                     <a class="bouton3" href="tel:+33497148939" title="installation pic anti pigeon Villefranche-sur-Mer">CONTACTEZ -
@@ -404,11 +401,11 @@
                     <img src="soudure-a-l-arc-06.jpg.jpg" alt="soudure à l arc Villefranche-sur-Mer"
                         loading="lazy" decoding="async">
                     <p><strong class="strong-color"><a href="maintenance-eolienne-06.html"
-                                title="maintenance eolienne Villefranche-sur-Mer">AUTRES – Éolien, Soudure,
-                                Électricité...</a></strong></p>
-                    <h3>À Villefranche-sur-Mer, nous réalisons tous types de travaux techniques en hauteur : maintenance
-                        éolienne, interventions électriques, soudures spécifiques. Nos cordistes spécialisés vous
-                        garantissent un travail sécurisé et de qualité.</h3>
+                                title="maintenance eolienne Villefranche-sur-Mer">AUTRES – Eolien, Soudure,
+                                Electricite...</a></strong></p>
+                    <h3>À Villefranche-sur-Mer, nous realisons tous types de travaux techniques en hauteur : maintenance
+                        eolienne, interventions electriques, soudures specifiques. Nos cordistes specialises vous
+                        garantissent un travail securise et de qualite.</h3>
                     <a class="bouton3" href="tel:+33497148939"
                         title="maintenance eolienne Villefranche-sur-Mer">CONTACTEZ - NOUS</a>
                 </div>
@@ -419,13 +416,13 @@
                     <p><a href="nettoyage-de-silo-06.html"
                             title="nettoyage des silos Villefranche-sur-Mer"><strong>INDUSTRIE
                                 (silos & maintenance)</strong></a>
-                        : À Villefranche-sur-Mer, nous réalisons l’entretien, la maintenance et l’inspection en
-                        hauteur de vos silos et installations industrielles. Nos cordistes qualifiés assurent des
-                        interventions sécurisées et rapides, même en milieux difficiles d’accès.
+                        : À Villefranche-sur-Mer, nous realisons l’entretien, la maintenance et l’inspection en
+                        hauteur de vos silos et installations industrielles. Nos cordistes qualifies assurent des
+                        interventions securisees et rapides, même en milieux difficiles d’accès.
                     </p>
                 </div>
                 <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo farine silos Villefranche-sur-Mer"
-                    class="pcimgindex2" title="nettoyage silo granulés Villefranche-sur-Mer" loading="lazy"
+                    class="pcimgindex2" title="nettoyage silo granules Villefranche-sur-Mer" loading="lazy"
                     decoding="async">
             </div>
         </section>
@@ -437,10 +434,10 @@
                 <div class="pcservtext">
                     <p><a href="installation-ligne-de-vie-06.html"
                             title="installation ligne de vie toiture Villefranche-sur-Mer"><strong>Installation de
-                                SÉCURITÉ – Lignes de vie & Filets</strong></a>
+                                SECURITE – Lignes de vie & Filets</strong></a>
                         : À Villefranche-sur-Mer, nous installons lignes de vie, filets antichute et points
-                        d’ancrage adaptés à toutes structures. Nos solutions garantissent la sécurité de vos équipes
-                        lors de travaux en hauteur, en toute conformité.
+                        d’ancrage adaptes à toutes structures. Nos solutions garantissent la securite de vos equipes
+                        lors de travaux en hauteur, en toute conformite.
                     </p>
                 </div>
             </div>
@@ -452,8 +449,8 @@
                             title="nettoyage vitres en hauteur Villefranche-sur-Mer"><strong>Nettoyage de vitres en
                                 hauteur</strong></a>
                         : À Villefranche-sur-Mer, nous assurons le nettoyage de vos vitres en hauteur avec soin et
-                        efficacité. Nos cordistes interviennent sur tout type de bâtiment, même dans les
-                        environnements maritimes, pour garantir un résultat impeccable.
+                        efficacite. Nos cordistes interviennent sur tout type de bâtiment, même dans les
+                        environnements maritimes, pour garantir un resultat impeccable.
                     </p>
                 </div>
                 <img src="nettoyage-vitre-en-hauteur-06.webp" alt="nettoyage vitres Villefranche-sur-Mer"
@@ -463,15 +460,15 @@
         </section>
         <section>
             <div class="nosservicespc">
-                <img src="peinture-en-hauteur-06.webp" alt="rénovation peinture en hauteur Villefranche-sur-Mer"
+                <img src="peinture-en-hauteur-06.webp" alt="renovation peinture en hauteur Villefranche-sur-Mer"
                     class="pcimgindex" title="peinture en hauteur Villefranche-sur-Mer" loading="lazy" decoding="async">
                 <div class="pcservtext">
                     <p><a href="peinture-en-hauteur-06.html"
                             title="entreprise peinture cordiste Villefranche-sur-Mer"><strong>RAVALEMENT
                                 – Maçonnerie & Peinture</strong></a>
-                        : À Villefranche-sur-Mer, nous réalisons vos travaux de ravalement, peinture et maçonnerie
-                        en hauteur. Nos cordistes expérimentés interviennent sans échafaudage pour restaurer et
-                        embellir vos façades en toute sécurité.
+                        : À Villefranche-sur-Mer, nous realisons vos travaux de ravalement, peinture et maçonnerie
+                        en hauteur. Nos cordistes experimentes interviennent sans echafaudage pour restaurer et
+                        embellir vos façades en toute securite.
                     </p>
                 </div>
             </div>
@@ -482,12 +479,12 @@
                     <p><a href="pose-filet-de-securite-06.html"
                             title="pose filet de protection Villefranche-sur-Mer"><strong>URGENCE – Purge,
                                 Bâchage & Filets</strong></a>
-                        : À Villefranche-sur-Mer, nous intervenons en urgence pour sécuriser vos bâtiments suite à
-                        des sinistres ou des chutes de matériaux. Nos équipes réalisent purges, bâchages et poses de
-                        filets de protection avec réactivité et efficacité.
+                        : À Villefranche-sur-Mer, nous intervenons en urgence pour securiser vos bâtiments suite à
+                        des sinistres ou des chutes de materiaux. Nos equipes realisent purges, bâchages et poses de
+                        filets de protection avec reactivite et efficacite.
                     </p>
                 </div>
-                <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="prix pose de filet de protection anti chute Villefranche-sur-Mer"
+                <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="prix pose de filet de protection anti chute Villefranche-sur-Mer"
                     class="pcimgindex2" title="pose filet de securite Villefranche-sur-Mer" loading="lazy"
                     decoding="async">
             </div>
@@ -499,10 +496,10 @@
                     decoding="async">
                 <div class="pcservtext">
                     <p><a href="pose-d-enseigne-06.html"
-                            title="installateur d enseigne Villefranche-sur-Mer"><strong>ÉVÉNEMENTIEL
+                            title="installateur d enseigne Villefranche-sur-Mer"><strong>EVENEMENTIEL
                                 – Enseignes & Animations</strong></a>
                         : À Villefranche-sur-Mer, nous assurons la pose en hauteur de vos enseignes, banderoles et
-                        décors événementiels. Nos cordistes garantissent un travail soigné et sécurisé, même sur les
+                        decors evenementiels. Nos cordistes garantissent un travail soigne et securise, même sur les
                         façades soumises aux conditions maritimes.
                     </p>
                 </div>
@@ -514,9 +511,9 @@
                     <p><a href="pose-filet-anti-pigeon-06.html"
                             title="pose de filet anti pigeon Villefranche-sur-Mer"><strong>ANTI-NUISIBLE
                                 – Pics & Filets de protection</strong></a>
-                        : À Villefranche-sur-Mer, nous protégeons vos bâtiments contre les nuisibles grâce à
+                        : À Villefranche-sur-Mer, nous protegeons vos bâtiments contre les nuisibles grâce à
                         l’installation de pics anti-pigeons et filets de protection. Nos dispositifs sont discrets,
-                        efficaces et adaptés aux spécificités architecturales de la ville.
+                        efficaces et adaptes aux specificites architecturales de la ville.
                     </p>
                 </div>
                 <img src="filet-anti-pigeon.jpg.jpg"
@@ -533,42 +530,42 @@
                 <div class="pcservtext">
                     <p><a href="maintenance-eolienne-06.html"
                             title="electricien Villefranche-sur-Mer"><strong>AUTRES –
-                                Éolien, Soudure, Électricité...</strong></a>
-                        : À Villefranche-sur-Mer, nous réalisons tous types de travaux techniques en hauteur :
-                        maintenance éolienne, interventions électriques, soudures spécifiques… Nos cordistes vous
-                        garantissent un service sécurisé et de haute qualité.
+                                Eolien, Soudure, Electricite...</strong></a>
+                        : À Villefranche-sur-Mer, nous realisons tous types de travaux techniques en hauteur :
+                        maintenance eolienne, interventions electriques, soudures specifiques… Nos cordistes vous
+                        garantissent un service securise et de haute qualite.
                     </p>
                 </div>
             </div>
         </section>
 
         <div class="aloooooo1">
-            <h2>UNE ÉQUIPE DE CORDISTES EXPÉRIMENTÉS ET UN MATÉRIEL HAUTEMENT SPÉCIALISÉ</h2>
+            <h2>UNE EQUIPE DE CORDISTES EXPERIMENTES ET UN MATERIEL HAUTEMENT SPECIALISE</h2>
             <hr>
             <p>
-                À Villefranche-sur-Mer, notre entreprise spécialisée dans les travaux en hauteur met à votre service
+                À Villefranche-sur-Mer, notre entreprise specialisee dans les travaux en hauteur met à votre service
                 une
-                équipe
-                de cordistes qualifiés et un équipement de pointe. Nous intervenons sur tous types de bâtiments, y
+                equipe
+                de cordistes qualifies et un equipement de pointe. Nous intervenons sur tous types de bâtiments, y
                 compris les
                 plus difficiles d’accès, pour assurer des prestations telles que le nettoyage de vitres, la peinture
-                extérieure,
-                la sécurisation de toitures et l’installation de lignes de vie. Grâce à notre expertise en accès par
+                exterieure,
+                la securisation de toitures et l’installation de lignes de vie. Grâce à notre expertise en accès par
                 corde,
-                chaque intervention est rapide, sécurisée et conforme aux normes en vigueur.
+                chaque intervention est rapide, securisee et conforme aux normes en vigueur.
             </p>
         </div>
         <section>
             <div id="devis">
                 <h2>DES TARIFS</h2>
-                <h3>ADAPTÉS À VOS BESOINS</h3>
+                <h3>ADAPTES À VOS BESOINS</h3>
                 <p>
-                    Nos services de cordiste à Villefranche-sur-Mer sont pensés pour répondre précisément à vos
+                    Nos services de cordiste à Villefranche-sur-Mer sont penses pour repondre precisement à vos
                     attentes, tout
-                    en vous garantissant un excellent rapport qualité-prix. Que ce soit pour une intervention
+                    en vous garantissant un excellent rapport qualite-prix. Que ce soit pour une intervention
                     ponctuelle
                     ou
-                    régulière, nous vous proposons des devis gratuits, détaillés et sans engagement.
+                    regulière, nous vous proposons des devis gratuits, detailles et sans engagement.
                 </p>
                 <a class="deviiiiiiiiiiiiiiiis" href="devis-cordiste-06.html" title="prix cordiste">DEVIS
                     GRATUIT</a>
@@ -579,30 +576,30 @@
             <hr>
             <p>
                 En choisissant <strong>Cordiste 06</strong> pour vos travaux en hauteur à Villefranche-sur-Mer, vous
-                bénéficiez
-                de l’engagement d’une équipe réactive, rigoureuse et passionnée. Reconnus pour notre
+                beneficiez
+                de l’engagement d’une equipe reactive, rigoureuse et passionnee. Reconnus pour notre
                 professionnalisme
                 dans
-                tout le département, nous réalisons des prestations sur mesure : nettoyage de façades, vitres,
+                tout le departement, nous realisons des prestations sur mesure : nettoyage de façades, vitres,
                 peinture
                 ou
-                sécurisation. Du diagnostic initial jusqu’aux finitions, nous assurons un suivi complet avec une
+                securisation. Du diagnostic initial jusqu’aux finitions, nous assurons un suivi complet avec une
                 transparence
                 totale.
             </p>
         </div>
         <div class="aloooooo1">
-            <h2>DES CONTRATS SUR MESURE POUR UNE TRANQUILLITÉ DURABLE</h2>
+            <h2>DES CONTRATS SUR MESURE POUR UNE TRANQUILLITE DURABLE</h2>
             <img src="note.webp" alt="cordiste travaux en hauteur" loading="lazy" decoding="async">
             <h3>INTERVENTIONS PONCTUELLES</h3>
             <img src="note.webp" alt="cordiste entretien façade" loading="lazy" decoding="async">
-            <h3>ENTRETIEN PROGRAMMÉ</h3>
+            <h3>ENTRETIEN PROGRAMME</h3>
             <p>
-                À Villefranche-sur-Mer, nous proposons des contrats de maintenance adaptés à vos besoins : qu’il
+                À Villefranche-sur-Mer, nous proposons des contrats de maintenance adaptes à vos besoins : qu’il
                 s’agisse de
-                prestations ponctuelles ou d’un entretien programmé de vos structures en hauteur. Chaque engagement
+                prestations ponctuelles ou d’un entretien programme de vos structures en hauteur. Chaque engagement
                 inclut des
-                conditions claires sur les tarifs, les délais et la qualité, pour une intervention en toute sérénité
+                conditions claires sur les tarifs, les delais et la qualite, pour une intervention en toute serenite
                 avec
                 <strong>Cordiste 06</strong>.
             </p>
@@ -611,22 +608,22 @@
             <h2>VOTRE PARTENAIRE DE CONFIANCE POUR LES TRAVAUX EN HAUTEUR</h2>
             <hr>
             <p>
-                <strong>Cordiste 06</strong> est votre expert de proximité à Villefranche-sur-Mer pour tous types de
+                <strong>Cordiste 06</strong> est votre expert de proximite à Villefranche-sur-Mer pour tous types de
                 travaux en
-                hauteur, urgents ou planifiés. Nos services s’adressent aussi bien aux particuliers qu’aux
+                hauteur, urgents ou planifies. Nos services s’adressent aussi bien aux particuliers qu’aux
                 professionnels,
                 toujours avec des devis transparents et des interventions sans surprise.
             </p>
             <p>
                 Nos cordistes interviennent sur les zones difficiles d’accès pour assurer le nettoyage de vitres, la
                 peinture
-                de façades, la sécurisation de toitures ou la pose de lignes de vie. Grâce aux techniques d’accès
+                de façades, la securisation de toitures ou la pose de lignes de vie. Grâce aux techniques d’accès
                 par
                 corde, nos
-                équipes accèdent là où les nacelles ne passent pas.
+                equipes accèdent là où les nacelles ne passent pas.
             </p>
             <p>
-                <strong>Disponible 7j/7, 24h/24, même les jours fériés</strong>, notre société vous assure des
+                <strong>Disponible 7j/7, 24h/24, même les jours feries</strong>, notre societe vous assure des
                 prestations
                 rapides, sûres et rigoureusement conformes aux normes en vigueur, pour des bâtiments toujours bien
                 entretenus à
@@ -638,7 +635,7 @@
     <footer>
         <div id="contact">
 
-            <h5>NOS RÉSEAUX SOCIAUX</h5>
+            <h5>NOS RESEAUX SOCIAUX</h5>
             <div class="reseau-contact">
                 <a href="https://www.linkedin.com/company/quali-corde-sud?trk=public_post_reshare_feed-actor-image"
                     target="_blank" title="linkedin-cordiste"> Linkedin -</a>
@@ -659,8 +656,8 @@
                     title="entreprise cordiste 06">contacts@quali-corde.com</a></p>
 
             <div class="liens-wp">
-                <h6>&copy; Copyright 2025 - Site réalisé par <a href="https://webprime.fr/" target="_blank">webprime</a>
-                    - <a href="mentions-legales.html" target="_blank">mentions légales</a>.
+                <h6>&copy; Copyright 2025 - Site realise par <a href="https://webprime.fr/" target="_blank">webprime</a>
+                    - <a href="mentions-legales.html" target="_blank">mentions legales</a>.
                 </h6>
             </div>
         </div>
@@ -740,28 +737,40 @@
         });
     </script>
     <script>
-        function validateForm() {
-            var name = document.getElementById("name").value.trim();
-            var tel = document.getElementById("tel").value.trim();
-            var services = document.getElementById("services").value.trim();
-            var comments = document.getElementById("comments").value.trim();
-            if (name === "" || tel === "" || services === "" || comments === "") {
-                alert("Champs obligatoires.");
-                return false;
+        async function submitToWebPrime(e) {
+        e.preventDefault();
+        var form = document.getElementById('contactForm');
+        var btn = form.querySelector('button[type="submit"]');
+        var originalText = btn.textContent;
+
+        // Anti-spam honeypot check
+        if (form._gotcha && form._gotcha.value) return false;
+
+        btn.textContent = 'Envoi en cours...';
+        btn.disabled = true;
+
+        try {
+            var formData = new FormData(form);
+            var response = await fetch('https://webprime.app/webhook/contact/a0dbffb8afffbd140c7c09cb7d2c09e30a8e36bb44f78f4fcd0f5e49af523630', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                // Redirection apres succes
+                window.location.href = 'https://cordiste-06.com/';
+            } else {
+                alert('Erreur lors de l\'envoi. Veuillez reessayer.');
+                btn.textContent = originalText;
+                btn.disabled = false;
             }
-            var telPattern = /^((0[1679])|(\+33[1679]))\d{8}$/;
-            if (!telPattern.test(tel)) {
-                alert("Veuillez entrer un numéro de téléphone valide.");
-                return false;
-            }
-            var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
-            var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
-            if (linkPattern.test(comments) || scriptPattern.test(comments)) {
-                alert("Pas autorisé.");
-                return false;
-            }
-            return true;
+        } catch (error) {
+            alert('Erreur de connexion. Veuillez reessayer.');
+            btn.textContent = originalText;
+            btn.disabled = false;
         }
+        return false;
+    }
     </script>
 </body>
 

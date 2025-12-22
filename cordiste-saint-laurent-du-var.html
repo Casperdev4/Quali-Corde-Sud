@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -244,35 +244,32 @@
             <div class="image-container">
                 <img src="logo.jpg" alt="entreprise cordiste Saint-Laurent">
             </div>
-            <form action="https://formsubmit.co/formulaire@webprime.fr" method="POST" onsubmit="return validateForm()">
+            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
                 <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
-                    <input type="text" id="website" name="website" autocomplete="off">
+                    <input type="text" id="website" name="_gotcha" autocomplete="off">
                 </div>
 
                 <input type="hidden" name="_captcha" value="true">
-                <input type="hidden" name="_next" value="https://cordiste-06.com/">
-                <input type="hidden" name="_cc" value="contacts@quali-corde.com">
-                <input type="hidden" name=" from" value="Quali Corde Sud">
-                <input type="hidden" name="_subject" value="Formulaire">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
-
+                                                                                                
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="nom" required>
 
-                <label for="tel">Téléphone :</label>
-                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+                <label for="tel">Telephone :</label>
+                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
                 <label for="services">Services :</label>
                 <select id="services" name="services" required>
                     <option value="NETTOYAGE">NETTOYAGE</option>
                     <option value="PEINTURE">PEINTURE</option>
-                    <option value="MAÇONNERIE">MAÇONNERIE</option>
+                    <option value="MACONNERIE">MACONNERIE</option>
                     <option value="INDUSTRIE">INDUSTRIE</option>
-                    <option value="SECURITE">SÉCURITÉ</option>
-                    <option value="ÉVÉNEMENTIEL">ÉVÉNEMENTIEL</option>
+                    <option value="SECURITE">SECURITE</option>
+                    <option value="EVENEMENTIEL">EVENEMENTIEL</option>
                     <option value="ANTI-NUISIBLE">ANTI-NUISIBLE</option>
                     <option value="URGENCE">URGENCE</option>
                     <option value="AUTRE">AUTRE</option>
@@ -293,8 +290,8 @@
                 loading="lazy" decoding="async">
             <p><strong class="strong-color"><a href="nettoyage-vitre-hauteur-06.html"
                         title="nettoyage vitre en hauteur Saint-Laurent-du-Var">NETTOYAGE DE VITRE</a></strong></p>
-            <h3>À Saint-Laurent-du-Var, nous nettoyons vos vitres en hauteur sur tous types de bâtiments : résidentiels,
-                commerciaux, hôteliers. Nos cordistes garantissent un rendu parfait et sécurisé, même en accès complexe.
+            <h3>À Saint-Laurent-du-Var, nous nettoyons vos vitres en hauteur sur tous types de bâtiments : residentiels,
+                commerciaux, hôteliers. Nos cordistes garantissent un rendu parfait et securise, même en accès complexe.
             </h3>
             <a class="bouton3" href="tel:+33497148939" title="nettoyage vitre en hauteur Saint-Laurent-du-Var">CONTACTEZ -
                 NOUS</a>
@@ -307,8 +304,8 @@
                 <p><strong class="strong-color"><a href="peinture-en-hauteur-06.html"
                             title="peinture en hauteur Saint-Laurent-du-Var">RAVALEMENT – Maçonnerie &
                             Peinture</a></strong></p>
-                <h3>À Saint-Laurent-du-Var, nous redonnons tout leur éclat à vos façades grâce à nos prestations de
-                    ravalement, peinture et maçonnerie en hauteur. Une intervention rapide et soignée, sans échafaudage.
+                <h3>À Saint-Laurent-du-Var, nous redonnons tout leur eclat à vos façades grâce à nos prestations de
+                    ravalement, peinture et maçonnerie en hauteur. Une intervention rapide et soignee, sans echafaudage.
                 </h3>
                 <a class="bouton3" href="tel:+33497148939" title="peinture en hauteur Saint-Laurent-du-Var">CONTACTEZ -
                     NOUS</a>
@@ -319,11 +316,11 @@
                 <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo Saint-Laurent-du-Var" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="nettoyage-de-silo-06.html"
-                            title="nettoyage de silo industriel Saint-Laurent-du-Var">nettoyage silo granulés</a></strong>
+                            title="nettoyage de silo industriel Saint-Laurent-du-Var">nettoyage silo granules</a></strong>
                 </p>
-                <h3>À Saint-Laurent-du-Var, nous assurons la maintenance et l’inspection de vos silos et équipements
-                    industriels en hauteur. Nos interventions garantissent sécurité, efficacité et continuité de votre
-                    activité.</h3>
+                <h3>À Saint-Laurent-du-Var, nous assurons la maintenance et l’inspection de vos silos et equipements
+                    industriels en hauteur. Nos interventions garantissent securite, efficacite et continuite de votre
+                    activite.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="nettoyage de silo industriel Saint-Laurent-du-Var">CONTACTEZ -
                     NOUS</a>
             </div>
@@ -333,22 +330,22 @@
                 <img src="ligne-de-vie-toiture-06.webp" alt="installation ligne de vie toiture Saint-Laurent-du-Var" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="installation-ligne-de-vie-06.html"
-                            title="pose de ligne de vie Saint-Laurent-du-Var">SÉCURITÉ – Lignes de vie & Filets</a></strong></p>
-                <h3>À Saint-Laurent-du-Var, nous installons lignes de vie, filets de sécurité et points d’ancrage sur
-                    mesure. Nos solutions protègent vos équipes lors des travaux en hauteur, dans le respect des normes
+                            title="pose de ligne de vie Saint-Laurent-du-Var">SECURITE – Lignes de vie & Filets</a></strong></p>
+                <h3>À Saint-Laurent-du-Var, nous installons lignes de vie, filets de securite et points d’ancrage sur
+                    mesure. Nos solutions protègent vos equipes lors des travaux en hauteur, dans le respect des normes
                     en vigueur.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="pose de ligne de vie Saint-Laurent-du-Var">CONTACTEZ - NOUS</a>
             </div>
         </section>
         <section>
             <div class="nosservices2">
-                <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="poseur de filet de sécurité Saint-Laurent-du-Var" loading="lazy"
+                <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="poseur de filet de securite Saint-Laurent-du-Var" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="pose-filet-de-securite-06.html"
                             title="pose de filet anti chute Saint-Laurent-du-Var">URGENCE – Purge, Bâchage & Filets</a></strong>
                 </p>
-                <h3>À Saint-Laurent-du-Var, nous intervenons en urgence pour sécuriser vos bâtiments après sinistres ou
-                    intempéries. Nos cordistes réalisent purge de façades, bâchage et pose de filets de protection
+                <h3>À Saint-Laurent-du-Var, nous intervenons en urgence pour securiser vos bâtiments après sinistres ou
+                    intemperies. Nos cordistes realisent purge de façades, bâchage et pose de filets de protection
                     rapidement.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="pose de filet anti chute Saint-Laurent-du-Var">CONTACTEZ -
                     NOUS</a>
@@ -359,11 +356,11 @@
                 <img src="pose-d-enseigne-06.jpg.jpg" alt="poseur d enseigne Saint-Laurent-du-Var" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="pose-d-enseigne-06.html"
-                            title="poseur enseigne Saint-Laurent-du-Var">ÉVÉNEMENTIEL – Enseignes &
+                            title="poseur enseigne Saint-Laurent-du-Var">EVENEMENTIEL – Enseignes &
                             Animations</a></strong></p>
-                <h3>À Saint-Laurent-du-Var, nous assurons la pose en hauteur de vos enseignes, banderoles et éléments
-                    événementiels. Nos cordistes garantissent une installation soignée et rapide pour mettre en valeur
-                    vos événements.</h3>
+                <h3>À Saint-Laurent-du-Var, nous assurons la pose en hauteur de vos enseignes, banderoles et elements
+                    evenementiels. Nos cordistes garantissent une installation soignee et rapide pour mettre en valeur
+                    vos evenements.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="poseur enseigne Saint-Laurent-du-Var">CONTACTEZ
                     - NOUS</a>
             </div>
@@ -375,8 +372,8 @@
                 <p><strong class="strong-color"><a href="pose-filet-anti-pigeon-06.html"
                             title="installation pic anti pigeon Saint-Laurent-du-Var">ANTI-NUISIBLE – Pics & Filets de
                             protection</a></strong></p>
-                <h3>À Saint-Laurent-du-Var, nous protégeons durablement vos bâtiments contre les nuisibles grâce à la
-                    pose en hauteur de pics, filets et solutions discrètes. Nous respectons l’esthétique de vos façades.
+                <h3>À Saint-Laurent-du-Var, nous protegeons durablement vos bâtiments contre les nuisibles grâce à la
+                    pose en hauteur de pics, filets et solutions discrètes. Nous respectons l’esthetique de vos façades.
                 </h3>
                 <a class="bouton3" href="tel:+33497148939" title="installation pic anti pigeon Saint-Laurent-du-Var">CONTACTEZ - NOUS</a>
             </div>
@@ -386,11 +383,11 @@
                 <img src="soudure-a-l-arc-06.jpg.jpg" alt="soudure à l arc Saint-Laurent-du-Var"
                     loading="lazy" decoding="async">
                 <p><strong class="strong-color"><a href="maintenance-eolienne-06.html"
-                            title="maintenance eolienne Saint-Laurent-du-Var">AUTRES – Éolien, Soudure,
-                            Électricité...</a></strong></p>
-                <h3>À Saint-Laurent-du-Var, nous réalisons tous vos travaux techniques en hauteur : maintenance
-                    éolienne, interventions électriques, soudures spécifiques… Nos cordistes vous assurent un service
-                    sur mesure et sécurisé.</h3>
+                            title="maintenance eolienne Saint-Laurent-du-Var">AUTRES – Eolien, Soudure,
+                            Electricite...</a></strong></p>
+                <h3>À Saint-Laurent-du-Var, nous realisons tous vos travaux techniques en hauteur : maintenance
+                    eolienne, interventions electriques, soudures specifiques… Nos cordistes vous assurent un service
+                    sur mesure et securise.</h3>
                 <a class="bouton3" href="tel:+33497148939"
                     title="maintenance eolienne Saint-Laurent-du-Var">CONTACTEZ - NOUS</a>
             </div>
@@ -403,11 +400,11 @@
                                     (silos & maintenance)</strong></a>
                             : À Saint-Laurent-du-Var, nous assurons la maintenance, l’entretien et l’inspection en
                             hauteur de vos silos et installations industrielles. Nos cordistes interviennent avec
-                            rapidité et expertise, même dans les environnements les plus complexes.
+                            rapidite et expertise, même dans les environnements les plus complexes.
                         </p>
                     </div>
                     <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo farine silos Saint-Laurent-du-Var"
-                        class="pcimgindex2" title="nettoyage silo granulés Saint-Laurent-du-Var" loading="lazy"
+                        class="pcimgindex2" title="nettoyage silo granules Saint-Laurent-du-Var" loading="lazy"
                         decoding="async">
                 </div>
             </section>
@@ -419,9 +416,9 @@
                     <div class="pcservtext">
                         <p><a href="installation-ligne-de-vie-06.html"
                                 title="installation ligne de vie toiture Saint-Laurent-du-Var"><strong>Installation de
-                                    SÉCURITÉ – Lignes de vie & Filets</strong></a>
+                                    SECURITE – Lignes de vie & Filets</strong></a>
                             : À Saint-Laurent-du-Var, nous installons lignes de vie, filets antichute et points
-                            d’ancrage sur toutes structures. Nos solutions assurent la sécurité de vos équipes pour tous
+                            d’ancrage sur toutes structures. Nos solutions assurent la securite de vos equipes pour tous
                             travaux en hauteur, dans le respect des normes.
                         </p>
                     </div>
@@ -433,8 +430,8 @@
                         <p><a href="nettoyage-vitre-hauteur-06.html"
                                 title="nettoyage vitres en hauteur Saint-Laurent-du-Var"><strong>Nettoyage de vitres en
                                     hauteur</strong></a>
-                            : À Saint-Laurent-du-Var, nous réalisons le nettoyage de vos vitres en hauteur avec
-                            efficacité et soin. Nos cordistes interviennent sur tout type de bâtiment pour un résultat
+                            : À Saint-Laurent-du-Var, nous realisons le nettoyage de vos vitres en hauteur avec
+                            efficacite et soin. Nos cordistes interviennent sur tout type de bâtiment pour un resultat
                             impeccable et durable.
                         </p>
                     </div>
@@ -445,15 +442,15 @@
             </section>
             <section>
                 <div class="nosservicespc">
-                    <img src="peinture-en-hauteur-06.webp" alt="rénovation peinture en hauteur Saint-Laurent-du-Var"
+                    <img src="peinture-en-hauteur-06.webp" alt="renovation peinture en hauteur Saint-Laurent-du-Var"
                         class="pcimgindex" title="peinture en hauteur Saint-Laurent-du-Var" loading="lazy"
                         decoding="async">
                     <div class="pcservtext">
                         <p><a href="peinture-en-hauteur-06.html"
                                 title="entreprise peinture cordiste Saint-Laurent-du-Var"><strong>RAVALEMENT
                                     – Maçonnerie & Peinture</strong></a>
-                            : À Saint-Laurent-du-Var, nous réalisons vos travaux de ravalement, peinture et maçonnerie
-                            en hauteur. Nos cordistes assurent un travail rapide, sécurisé et sans échafaudage pour
+                            : À Saint-Laurent-du-Var, nous realisons vos travaux de ravalement, peinture et maçonnerie
+                            en hauteur. Nos cordistes assurent un travail rapide, securise et sans echafaudage pour
                             sublimer vos façades.
                         </p>
                     </div>
@@ -465,12 +462,12 @@
                         <p><a href="pose-filet-de-securite-06.html"
                                 title="pose filet de protection Saint-Laurent-du-Var"><strong>URGENCE – Purge,
                                     Bâchage & Filets</strong></a>
-                            : À Saint-Laurent-du-Var, nous intervenons en urgence pour sécuriser vos bâtiments après
-                            sinistres ou chutes de matériaux. Nos équipes réalisent purges, bâchages et poses de filets
-                            de protection avec une réactivité optimale.
+                            : À Saint-Laurent-du-Var, nous intervenons en urgence pour securiser vos bâtiments après
+                            sinistres ou chutes de materiaux. Nos equipes realisent purges, bâchages et poses de filets
+                            de protection avec une reactivite optimale.
                         </p>
                     </div>
-                    <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="prix pose de filet de protection anti chute Saint-Laurent-du-Var"
+                    <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="prix pose de filet de protection anti chute Saint-Laurent-du-Var"
                         class="pcimgindex2" title="pose filet de securite Saint-Laurent-du-Var"
                         loading="lazy" decoding="async">
                 </div>
@@ -482,10 +479,10 @@
                         loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="pose-d-enseigne-06.html"
-                                title="installateur d enseigne Saint-Laurent-du-Var"><strong>ÉVÉNEMENTIEL
+                                title="installateur d enseigne Saint-Laurent-du-Var"><strong>EVENEMENTIEL
                                     – Enseignes & Animations</strong></a>
                             : À Saint-Laurent-du-Var, nous assurons la pose en hauteur de vos enseignes, banderoles et
-                            décors événementiels. Nos cordistes garantissent un travail soigné et sécurisé, même dans
+                            decors evenementiels. Nos cordistes garantissent un travail soigne et securise, même dans
                             les environnements urbains les plus exigeants.
                         </p>
                     </div>
@@ -497,9 +494,9 @@
                         <p><a href="pose-filet-anti-pigeon-06.html"
                                 title="pose de filet anti pigeon Saint-Laurent-du-Var"><strong>ANTI-NUISIBLE
                                     – Pics & Filets de protection</strong></a>
-                            : À Saint-Laurent-du-Var, nous protégeons vos bâtiments contre les nuisibles en installant
-                            pics anti-pigeons et filets de protection. Nos solutions discrètes et durables préservent
-                            l’esthétique de vos façades.
+                            : À Saint-Laurent-du-Var, nous protegeons vos bâtiments contre les nuisibles en installant
+                            pics anti-pigeons et filets de protection. Nos solutions discrètes et durables preservent
+                            l’esthetique de vos façades.
                         </p>
                     </div>
                     <img src="filet-anti-pigeon.jpg.jpg"
@@ -516,38 +513,38 @@
                     <div class="pcservtext">
                         <p><a href="maintenance-eolienne-06.html"
                                 title="electricien Saint-Laurent-du-Var"><strong>AUTRES –
-                                    Éolien, Soudure, Électricité...</strong></a>
-                            : À Saint-Laurent-du-Var, nous réalisons vos travaux techniques en hauteur : maintenance
-                            éolienne, interventions électriques, soudures spécifiques… Nos cordistes expérimentés
-                            garantissent un service sécurisé et de haute qualité.
+                                    Eolien, Soudure, Electricite...</strong></a>
+                            : À Saint-Laurent-du-Var, nous realisons vos travaux techniques en hauteur : maintenance
+                            eolienne, interventions electriques, soudures specifiques… Nos cordistes experimentes
+                            garantissent un service securise et de haute qualite.
                         </p>
                     </div>
                 </div>
             </section>
 
             <div class="aloooooo1">
-                <h2>UNE ÉQUIPE DE CORDISTES EXPÉRIMENTÉS ET UN MATÉRIEL HAUTEMENT SPÉCIALISÉ</h2>
+                <h2>UNE EQUIPE DE CORDISTES EXPERIMENTES ET UN MATERIEL HAUTEMENT SPECIALISE</h2>
                 <hr>
                 <p>
-                    Présente à Saint-Laurent-du-Var, notre entreprise de cordistes s’appuie sur des techniciens
-                    qualifiés et
-                    un équipement de pointe pour répondre à toutes vos demandes en hauteur. Que ce soit pour le lavage
+                    Presente à Saint-Laurent-du-Var, notre entreprise de cordistes s’appuie sur des techniciens
+                    qualifies et
+                    un equipement de pointe pour repondre à toutes vos demandes en hauteur. Que ce soit pour le lavage
                     de
-                    vitres, la rénovation de façades, la peinture extérieure ou la pose de lignes de vie, nous
+                    vitres, la renovation de façades, la peinture exterieure ou la pose de lignes de vie, nous
                     intervenons
                     même dans les zones les plus complexes d’accès. Grâce à notre parfaite maîtrise des techniques sur
-                    corde, nous garantissons des prestations rapides, sécurisées et conformes aux réglementations en
+                    corde, nous garantissons des prestations rapides, securisees et conformes aux reglementations en
                     vigueur.
                 </p>
             </div>
             <section>
                 <div id="devis">
                     <h2>DES TARIFS</h2>
-                    <h3>ADAPTÉS À VOS BESOINS</h3>
+                    <h3>ADAPTES À VOS BESOINS</h3>
                     <p>
                         À Saint-Laurent-du-Var, nous proposons des services de travaux en hauteur avec un excellent
                         rapport
-                        qualité-prix. Nettoyage, peinture ou sécurisation : nos interventions sont toujours
+                        qualite-prix. Nettoyage, peinture ou securisation : nos interventions sont toujours
                         professionnelles, claires et accessibles. Demandez votre devis gratuit dès maintenant, sans
                         engagement.
                     </p>
@@ -559,49 +556,49 @@
                 <h2>POURQUOI CHOISIR CORDISTE 06 À Saint-Laurent-du-Var ?</h2>
                 <hr>
                 <p>
-                    Faire appel à <strong>Cordiste 06</strong> à Saint-Laurent-du-Var, c’est bénéficier du savoir-faire
-                    d’une équipe sérieuse, passionnée et réactive. Spécialistes des travaux en hauteur dans les
-                    Alpes-Maritimes, nous assurons chaque intervention avec précision, du diagnostic initial jusqu’à la
+                    Faire appel à <strong>Cordiste 06</strong> à Saint-Laurent-du-Var, c’est beneficier du savoir-faire
+                    d’une equipe serieuse, passionnee et reactive. Specialistes des travaux en hauteur dans les
+                    Alpes-Maritimes, nous assurons chaque intervention avec precision, du diagnostic initial jusqu’à la
                     livraison finale. Nettoyage de façade, peinture d’accès difficile ou entretien de vitres : chaque
-                    mission est menée avec rigueur et transparence.
+                    mission est menee avec rigueur et transparence.
                 </p>
             </div>
             <div class="aloooooo1">
-                <h2>DES CONTRATS SUR MESURE POUR UNE TRANQUILLITÉ DURABLE</h2>
+                <h2>DES CONTRATS SUR MESURE POUR UNE TRANQUILLITE DURABLE</h2>
                 <img src="note.webp" alt="cordiste travaux en hauteur" loading="lazy" decoding="async">
                 <h3>INTERVENTIONS PONCTUELLES</h3>
                 <img src="note.webp" alt="cordiste entretien façade" loading="lazy" decoding="async">
-                <h3>ENTRETIEN PROGRAMMÉ</h3>
+                <h3>ENTRETIEN PROGRAMME</h3>
                 <p>
-                    À Saint-Laurent-du-Var, nous vous proposons des contrats personnalisés pour vos besoins en travaux
-                    d'accès difficile. Nos offres garantissent clarté, respect des délais et qualité d’exécution, qu’il
-                    s’agisse d’une mission ponctuelle (nettoyage, peinture, mise en sécurité) ou d’un entretien
-                    programmé.
-                    Chaque formule est adaptée à vos contraintes spécifiques.
+                    À Saint-Laurent-du-Var, nous vous proposons des contrats personnalises pour vos besoins en travaux
+                    d'accès difficile. Nos offres garantissent clarte, respect des delais et qualite d’execution, qu’il
+                    s’agisse d’une mission ponctuelle (nettoyage, peinture, mise en securite) ou d’un entretien
+                    programme.
+                    Chaque formule est adaptee à vos contraintes specifiques.
                 </p>
             </div>
             <div class="aloooooo1">
                 <h2>VOTRE PARTENAIRE DE CONFIANCE POUR LES TRAVAUX EN HAUTEUR</h2>
                 <hr>
                 <p>
-                    Installée dans les Alpes-Maritimes, <strong>Cordiste 06</strong> intervient à Saint-Laurent-du-Var
+                    Installee dans les Alpes-Maritimes, <strong>Cordiste 06</strong> intervient à Saint-Laurent-du-Var
                     pour
                     tous types de travaux en hauteur, que ce soit en urgence ou sur rendez-vous. Nous travaillons avec
                     les
-                    particuliers comme avec les professionnels, dans le cadre de prestations encadrées par des contrats
+                    particuliers comme avec les professionnels, dans le cadre de prestations encadrees par des contrats
                     clairs.
                 </p>
                 <p>
                     Nos cordistes interviennent dans les zones les plus inaccessibles pour le nettoyage de vitres, la
-                    rénovation de façades, les travaux de peinture extérieure ou la sécurisation de toitures. Grâce aux
-                    techniques d’accès par corde, nous agissons là où les nacelles ne peuvent accéder.
+                    renovation de façades, les travaux de peinture exterieure ou la securisation de toitures. Grâce aux
+                    techniques d’accès par corde, nous agissons là où les nacelles ne peuvent acceder.
                 </p>
                 <p>
-                    <strong>Disponibles 7j/7, 24h/24, y compris les jours fériés</strong>, nous assurons des
+                    <strong>Disponibles 7j/7, 24h/24, y compris les jours feries</strong>, nous assurons des
                     interventions
-                    rapides, sûres et conformes aux normes, que ce soit pour un dépannage urgent ou un contrat
+                    rapides, sûres et conformes aux normes, que ce soit pour un depannage urgent ou un contrat
                     d’entretien
-                    régulier à Saint-Laurent-du-Var.
+                    regulier à Saint-Laurent-du-Var.
                 </p>
             </div>
             <a class="bouton3" href="tel:+33497148939" title="prix nettoyage vitre en hauteur">CONTACTEZ - NOUS</a>
@@ -609,7 +606,7 @@
     <footer>
         <div id="contact">
 
-            <h5>NOS RÉSEAUX SOCIAUX</h5>
+            <h5>NOS RESEAUX SOCIAUX</h5>
             <div class="reseau-contact">
                 <a href="https://www.linkedin.com/company/quali-corde-sud?trk=public_post_reshare_feed-actor-image"
                     target="_blank" title="linkedin-cordiste"> Linkedin -</a>
@@ -630,8 +627,8 @@
                     title="entreprise cordiste 06">contacts@quali-corde.com</a></p>
 
             <div class="liens-wp">
-                <h6>&copy; Copyright 2025 - Site réalisé par <a href="https://webprime.fr/" target="_blank">webprime</a>
-                    - <a href="mentions-legales.html" target="_blank">mentions légales</a>.
+                <h6>&copy; Copyright 2025 - Site realise par <a href="https://webprime.fr/" target="_blank">webprime</a>
+                    - <a href="mentions-legales.html" target="_blank">mentions legales</a>.
                 </h6>
             </div>
         </div>
@@ -711,28 +708,40 @@
         });
     </script>
     <script>
-        function validateForm() {
-            var name = document.getElementById("name").value.trim();
-            var tel = document.getElementById("tel").value.trim();
-            var services = document.getElementById("services").value.trim();
-            var comments = document.getElementById("comments").value.trim();
-            if (name === "" || tel === "" || services === "" || comments === "") {
-                alert("Champs obligatoires.");
-                return false;
+        async function submitToWebPrime(e) {
+        e.preventDefault();
+        var form = document.getElementById('contactForm');
+        var btn = form.querySelector('button[type="submit"]');
+        var originalText = btn.textContent;
+
+        // Anti-spam honeypot check
+        if (form._gotcha && form._gotcha.value) return false;
+
+        btn.textContent = 'Envoi en cours...';
+        btn.disabled = true;
+
+        try {
+            var formData = new FormData(form);
+            var response = await fetch('https://webprime.app/webhook/contact/a0dbffb8afffbd140c7c09cb7d2c09e30a8e36bb44f78f4fcd0f5e49af523630', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                // Redirection apres succes
+                window.location.href = 'https://cordiste-06.com/';
+            } else {
+                alert('Erreur lors de l\'envoi. Veuillez reessayer.');
+                btn.textContent = originalText;
+                btn.disabled = false;
             }
-            var telPattern = /^((0[1679])|(\+33[1679]))\d{8}$/;
-            if (!telPattern.test(tel)) {
-                alert("Veuillez entrer un numéro de téléphone valide.");
-                return false;
-            }
-            var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
-            var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
-            if (linkPattern.test(comments) || scriptPattern.test(comments)) {
-                alert("Pas autorisé.");
-                return false;
-            }
-            return true;
+        } catch (error) {
+            alert('Erreur de connexion. Veuillez reessayer.');
+            btn.textContent = originalText;
+            btn.disabled = false;
         }
+        return false;
+    }
     </script>
 </body>
 

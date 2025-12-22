@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -243,35 +243,32 @@
             <div class="image-container">
                 <img src="logo.jpg" alt="entreprise cordiste Beaulieu">
             </div>
-            <form action="https://formsubmit.co/formulaire@webprime.fr" method="POST" onsubmit="return validateForm()">
+            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
                 <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
-                    <input type="text" id="website" name="website" autocomplete="off">
+                    <input type="text" id="website" name="_gotcha" autocomplete="off">
                 </div>
 
                 <input type="hidden" name="_captcha" value="true">
-                <input type="hidden" name="_next" value="https://cordiste-06.com/">
-                <input type="hidden" name="_cc" value="contacts@quali-corde.com">
-                <input type="hidden" name=" from" value="Quali Corde Sud">
-                <input type="hidden" name="_subject" value="Formulaire">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_blacklist" value="http, https, www., .com, .net, .org, <a, </a, <script, </script, <iframe, </iframe, <img, javascript:, onerror=, onclick=, onload=">
-
+                                                                                                
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="nom" required>
 
-                <label for="tel">Téléphone :</label>
-                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+                <label for="tel">Telephone :</label>
+                <input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
                 <label for="services">Services :</label>
                 <select id="services" name="services" required>
                     <option value="NETTOYAGE">NETTOYAGE</option>
                     <option value="PEINTURE">PEINTURE</option>
-                    <option value="MAÇONNERIE">MAÇONNERIE</option>
+                    <option value="MACONNERIE">MACONNERIE</option>
                     <option value="INDUSTRIE">INDUSTRIE</option>
-                    <option value="SECURITE">SÉCURITÉ</option>
-                    <option value="ÉVÉNEMENTIEL">ÉVÉNEMENTIEL</option>
+                    <option value="SECURITE">SECURITE</option>
+                    <option value="EVENEMENTIEL">EVENEMENTIEL</option>
                     <option value="ANTI-NUISIBLE">ANTI-NUISIBLE</option>
                     <option value="URGENCE">URGENCE</option>
                     <option value="AUTRE">AUTRE</option>
@@ -305,8 +302,8 @@
                 <p><strong class="strong-color"><a href="peinture-en-hauteur-06.html"
                             title="peinture en hauteur Beaulieu-sur-Mer">RAVALEMENT – Maçonnerie & Peinture</a></strong>
                 </p>
-                <h3>À Beaulieu-sur-Mer, rénovez vos façades sans échafaudage. Nos cordistes expérimentés assurent vos
-                    travaux de ravalement, peinture et maçonnerie en hauteur pour valoriser et protéger durablement
+                <h3>À Beaulieu-sur-Mer, renovez vos façades sans echafaudage. Nos cordistes experimentes assurent vos
+                    travaux de ravalement, peinture et maçonnerie en hauteur pour valoriser et proteger durablement
                     votre patrimoine bâti.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="peinture en hauteur Beaulieu-sur-Mer">CONTACTEZ -
                     NOUS</a>
@@ -317,10 +314,10 @@
                 <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo Beaulieu-sur-Mer" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="nettoyage-de-silo-06.html"
-                            title="nettoyage de silo industriel Beaulieu-sur-Mer">nettoyage silo granulés</a></strong></p>
-                <h3>À Beaulieu-sur-Mer, nous intervenons sur vos silos et équipements industriels pour l’entretien, la
+                            title="nettoyage de silo industriel Beaulieu-sur-Mer">nettoyage silo granules</a></strong></p>
+                <h3>À Beaulieu-sur-Mer, nous intervenons sur vos silos et equipements industriels pour l’entretien, la
                     maintenance et l’inspection en hauteur. Nos solutions sur cordes garantissent des interventions
-                    rapides et sécurisées sans interrompre vos activités.</h3>
+                    rapides et securisees sans interrompre vos activites.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="nettoyage de silo industriel Beaulieu-sur-Mer">CONTACTEZ - NOUS</a>
             </div>
         </section>
@@ -329,22 +326,22 @@
                 <img src="ligne-de-vie-toiture-06.webp" alt="installation ligne de vie toiture Beaulieu-sur-Mer" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="installation-ligne-de-vie-06.html"
-                            title="pose de ligne de vie Beaulieu-sur-Mer">SÉCURITÉ – Lignes de vie & Filets</a></strong></p>
-                <h3>À Beaulieu-sur-Mer, protégez vos équipes et ouvrages en hauteur. Nous assurons l’installation de
+                            title="pose de ligne de vie Beaulieu-sur-Mer">SECURITE – Lignes de vie & Filets</a></strong></p>
+                <h3>À Beaulieu-sur-Mer, protegez vos equipes et ouvrages en hauteur. Nous assurons l’installation de
                     lignes de vie, filets antichute et points d’ancrage, conformes aux normes en vigueur, pour garantir
-                    un travail sécurisé sur toutes structures.</h3>
+                    un travail securise sur toutes structures.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="pose de ligne de vie Beaulieu-sur-Mer">CONTACTEZ - NOUS</a>
             </div>
         </section>
         <section>
             <div class="nosservices2">
-                <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="poseur de filet de sécurité Beaulieu-sur-Mer" loading="lazy"
+                <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="poseur de filet de securite Beaulieu-sur-Mer" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="pose-filet-de-securite-06.html"
                             title="pose de filet anti chute Beaulieu-sur-Mer">URGENCE – Purge, Bâchage & Filets</a></strong></p>
-                <h3>À Beaulieu-sur-Mer, en cas de chute de matériaux, intempéries ou sinistres, nos équipes
-                    interviennent en urgence pour sécuriser vos bâtiments : purge, pose de bâches et filets de
-                    protection, réactivité maximale pour votre tranquillité.</h3>
+                <h3>À Beaulieu-sur-Mer, en cas de chute de materiaux, intemperies ou sinistres, nos equipes
+                    interviennent en urgence pour securiser vos bâtiments : purge, pose de bâches et filets de
+                    protection, reactivite maximale pour votre tranquillite.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="pose de filet anti chute Beaulieu-sur-Mer">CONTACTEZ - NOUS</a>
             </div>
         </section>
@@ -353,11 +350,11 @@
                 <img src="pose-d-enseigne-06.jpg.jpg" alt="poseur d enseigne Beaulieu-sur-Mer" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="pose-d-enseigne-06.html"
-                            title="poseur enseigne Beaulieu-sur-Mer">ÉVÉNEMENTIEL – Enseignes &
+                            title="poseur enseigne Beaulieu-sur-Mer">EVENEMENTIEL – Enseignes &
                             Animations</a></strong></p>
-                <h3>À Beaulieu-sur-Mer, nous réalisons la pose en hauteur de vos enseignes, banderoles et éléments
-                    scénographiques. Nos cordistes garantissent une mise en place discrète, rapide et sécurisée pour
-                    sublimer vos événements.</h3>
+                <h3>À Beaulieu-sur-Mer, nous realisons la pose en hauteur de vos enseignes, banderoles et elements
+                    scenographiques. Nos cordistes garantissent une mise en place discrète, rapide et securisee pour
+                    sublimer vos evenements.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="poseur enseigne Beaulieu-sur-Mer">CONTACTEZ -
                     NOUS</a>
             </div>
@@ -368,8 +365,8 @@
                 <p><strong class="strong-color"><a href="pose-filet-anti-pigeon-06.html"
                             title="installation pic anti pigeon Beaulieu-sur-Mer">ANTI-NUISIBLE – Pics & Filets de
                             protection</a></strong></p>
-                <h3>À Beaulieu-sur-Mer, nous protégeons vos bâtiments contre les nuisibles. Installation discrète et
-                    durable de pics anti-pigeons, filets de protection et solutions adaptées pour préserver l’esthétique
+                <h3>À Beaulieu-sur-Mer, nous protegeons vos bâtiments contre les nuisibles. Installation discrète et
+                    durable de pics anti-pigeons, filets de protection et solutions adaptees pour preserver l’esthetique
                     de vos façades.</h3>
                 <a class="bouton3" href="tel:+33497148939" title="installation pic anti pigeon Beaulieu-sur-Mer">CONTACTEZ - NOUS</a>
             </div>
@@ -379,11 +376,11 @@
                 <img src="soudure-a-l-arc-06.jpg.jpg" alt="soudure à l arc Beaulieu-sur-Mer" loading="lazy"
                     decoding="async">
                 <p><strong class="strong-color"><a href="maintenance-eolienne-06.html"
-                            title="maintenance eolienne Beaulieu-sur-Mer">AUTRES – Éolien, Soudure,
-                            Électricité...</a></strong></p>
-                <h3>À Beaulieu-sur-Mer, nous réalisons tous types de travaux techniques en hauteur : maintenance
-                    éolienne, soudure, interventions électriques, réglages de phares… Nos cordistes qualifiés vous
-                    garantissent des prestations sur-mesure, sécurisées et efficaces.</h3>
+                            title="maintenance eolienne Beaulieu-sur-Mer">AUTRES – Eolien, Soudure,
+                            Electricite...</a></strong></p>
+                <h3>À Beaulieu-sur-Mer, nous realisons tous types de travaux techniques en hauteur : maintenance
+                    eolienne, soudure, interventions electriques, reglages de phares… Nos cordistes qualifies vous
+                    garantissent des prestations sur-mesure, securisees et efficaces.</h3>
                 <a class="bouton3" href="tel:+33497148939"
                     title="maintenance eolienne Beaulieu-sur-Mer">CONTACTEZ - NOUS</a>
             </div>
@@ -396,13 +393,13 @@
                                     maintenance)</strong></a>
                             : À Beaulieu-sur-Mer, nous assurons la maintenance et l’inspection en hauteur de vos silos
                             et
-                            équipements industriels. Nos cordistes spécialisés interviennent avec précision, même en
+                            equipements industriels. Nos cordistes specialises interviennent avec precision, même en
                             milieux
-                            complexes, pour garantir la sécurité et la continuité de vos installations.
+                            complexes, pour garantir la securite et la continuite de vos installations.
                         </p>
                     </div>
                     <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo farine silos Beaulieu-sur-Mer"
-                        class="pcimgindex2" title="nettoyage silo granulés Beaulieu-sur-Mer" loading="lazy"
+                        class="pcimgindex2" title="nettoyage silo granules Beaulieu-sur-Mer" loading="lazy"
                         decoding="async">
                 </div>
             </section>
@@ -414,11 +411,11 @@
                     <div class="pcservtext">
                         <p><a href="installation-ligne-de-vie-06.html"
                                 title="installation ligne de vie toiture Beaulieu-sur-Mer"><strong>Installation de
-                                    SÉCURITÉ –
+                                    SECURITE –
                                     Lignes de vie & Filets</strong></a>
                             : À Beaulieu-sur-Mer, nous installons lignes de vie, filets antichute et points d’ancrage
                             pour
-                            sécuriser vos chantiers et bâtiments. Nos systèmes sont adaptés à toutes les structures et
+                            securiser vos chantiers et bâtiments. Nos systèmes sont adaptes à toutes les structures et
                             conformes
                             aux normes en vigueur.
                         </p>
@@ -433,7 +430,7 @@
                                     hauteur</strong></a>
                             : À Beaulieu-sur-Mer, nous nettoyons vos vitrages en hauteur avec soin. Nos cordistes
                             accèdent aux
-                            surfaces vitrées les plus difficiles pour garantir une propreté parfaite et un éclat durable
+                            surfaces vitrees les plus difficiles pour garantir une proprete parfaite et un eclat durable
                             sur tous
                             vos bâtiments.
                         </p>
@@ -445,7 +442,7 @@
             </section>
             <section>
                 <div class="nosservicespc">
-                    <img src="peinture-en-hauteur-06.webp" alt="rénovation peinture en hauteur Beaulieu-sur-Mer"
+                    <img src="peinture-en-hauteur-06.webp" alt="renovation peinture en hauteur Beaulieu-sur-Mer"
                         class="pcimgindex" title="peinture en hauteur Beaulieu-sur-Mer" loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="peinture-en-hauteur-06.html"
@@ -454,7 +451,7 @@
                                     Maçonnerie & Peinture</strong></a>
                             : À Beaulieu-sur-Mer, sublimez vos façades avec nos prestations de ravalement, peinture et
                             maçonnerie
-                            en hauteur. Nos cordistes vous garantissent un travail soigné, sécurisé et sans échafaudage.
+                            en hauteur. Nos cordistes vous garantissent un travail soigne, securise et sans echafaudage.
                         </p>
                     </div>
                 </div>
@@ -466,14 +463,14 @@
                                 title="pose filet de protection Beaulieu-sur-Mer"><strong>URGENCE – Purge,
                                     Bâchage &
                                     Filets</strong></a>
-                            : À Beaulieu-sur-Mer, nous intervenons en urgence après chutes de matériaux ou sinistres.
+                            : À Beaulieu-sur-Mer, nous intervenons en urgence après chutes de materiaux ou sinistres.
                             Nos
                             cordistes assurent la purge des façades, le bâchage et la pose de filets de protection avec
                             une
-                            réactivité maximale.
+                            reactivite maximale.
                         </p>
                     </div>
-                    <img src="poseur-de-filet-de-sécurité-06.jpg.jpg" alt="prix pose de filet de protection anti chute Beaulieu-sur-Mer"
+                    <img src="poseur-de-filet-de-securite-06.jpg.jpg" alt="prix pose de filet de protection anti chute Beaulieu-sur-Mer"
                         class="pcimgindex2" title="pose filet de securite Beaulieu-sur-Mer" loading="lazy"
                         decoding="async">
                 </div>
@@ -485,12 +482,12 @@
                         decoding="async">
                     <div class="pcservtext">
                         <p><a href="pose-d-enseigne-06.html"
-                                title="installateur d enseigne Beaulieu-sur-Mer"><strong>ÉVÉNEMENTIEL
+                                title="installateur d enseigne Beaulieu-sur-Mer"><strong>EVENEMENTIEL
                                     –
                                     Enseignes & Animations</strong></a>
-                            : À Beaulieu-sur-Mer, nous posons en hauteur vos enseignes, banderoles et décors
-                            événementiels. Nos
-                            cordistes assurent une installation rapide et soignée, même sur les structures les plus
+                            : À Beaulieu-sur-Mer, nous posons en hauteur vos enseignes, banderoles et decors
+                            evenementiels. Nos
+                            cordistes assurent une installation rapide et soignee, même sur les structures les plus
                             complexes.
                         </p>
                     </div>
@@ -503,10 +500,10 @@
                                 title="pose de filet anti pigeon Beaulieu-sur-Mer"><strong>ANTI-NUISIBLE –
                                     Pics &
                                     Filets de protection</strong></a>
-                            : À Beaulieu-sur-Mer, nous protégeons vos bâtiments en hauteur contre les nuisibles. Nos
+                            : À Beaulieu-sur-Mer, nous protegeons vos bâtiments en hauteur contre les nuisibles. Nos
                             solutions :
-                            pics anti-pigeons et filets de protection, discrets et efficaces, pour préserver durablement
-                            l’esthétique de vos façades.
+                            pics anti-pigeons et filets de protection, discrets et efficaces, pour preserver durablement
+                            l’esthetique de vos façades.
                         </p>
                     </div>
                     <img src="filet-anti-pigeon.jpg.jpg"
@@ -522,41 +519,41 @@
                         loading="lazy" decoding="async">
                     <div class="pcservtext">
                         <p><a href="maintenance-eolienne-06.html"
-                                title="electricien Beaulieu-sur-Mer"><strong>AUTRES – Éolien,
+                                title="electricien Beaulieu-sur-Mer"><strong>AUTRES – Eolien,
                                     Soudure,
-                                    Électricité...</strong></a>
-                            : À Beaulieu-sur-Mer, nous intervenons en hauteur pour des travaux techniques spécifiques :
-                            maintenance éolienne, soudure, électricité, pose de phares… Des prestations sur-mesure
-                            réalisées en
-                            toute sécurité.
+                                    Electricite...</strong></a>
+                            : À Beaulieu-sur-Mer, nous intervenons en hauteur pour des travaux techniques specifiques :
+                            maintenance eolienne, soudure, electricite, pose de phares… Des prestations sur-mesure
+                            realisees en
+                            toute securite.
                         </p>
                     </div>
                 </div>
             </section>
 
             <div class="aloooooo1">
-                <h2>Des cordistes expérimentés et du matériel spécialisé à Beaulieu-sur-Mer</h2>
+                <h2>Des cordistes experimentes et du materiel specialise à Beaulieu-sur-Mer</h2>
                 <hr>
                 <p>
-                    À Beaulieu-sur-Mer, notre société de cordistes met à votre service une équipe qualifiée dans les
+                    À Beaulieu-sur-Mer, notre societe de cordistes met à votre service une equipe qualifiee dans les
                     travaux
-                    en hauteur, équipée de matériel professionnel de dernière génération. Nous intervenons sur tous
+                    en hauteur, equipee de materiel professionnel de dernière generation. Nous intervenons sur tous
                     types de
                     bâtiments, même les plus complexes d’accès, pour des prestations telles que le nettoyage de vitres,
                     le
-                    lavage de façades, la peinture extérieure ou encore la sécurisation des toitures et l’installation
+                    lavage de façades, la peinture exterieure ou encore la securisation des toitures et l’installation
                     de
                     lignes de vie. Grâce à notre maîtrise des accès par corde, nous garantissons des interventions
-                    efficaces, sécurisées et conformes aux normes en vigueur.
+                    efficaces, securisees et conformes aux normes en vigueur.
                 </p>
             </div>
             <section>
                 <div id="devis">
-                    <h2>Des tarifs adaptés à vos besoins à Beaulieu-sur-Mer</h2>
-                    <h3>Une offre transparente et compétitive</h3>
+                    <h2>Des tarifs adaptes à vos besoins à Beaulieu-sur-Mer</h2>
+                    <h3>Une offre transparente et competitive</h3>
                     <p>
-                        Nos prestations en hauteur à Beaulieu-sur-Mer sont pensées pour allier qualité, sécurité et prix
-                        maîtrisé. Que ce soit pour du nettoyage, de la peinture ou la mise en sécurité, nous vous
+                        Nos prestations en hauteur à Beaulieu-sur-Mer sont pensees pour allier qualite, securite et prix
+                        maîtrise. Que ce soit pour du nettoyage, de la peinture ou la mise en securite, nous vous
                         proposons
                         des solutions professionnelles à des tarifs avantageux. Demandez dès maintenant votre devis
                         gratuit
@@ -570,48 +567,48 @@
                 <h2>Pourquoi choisir Cordiste 06 à Beaulieu-sur-Mer ?</h2>
                 <hr>
                 <p>
-                    En faisant appel à <strong>Cordiste 06</strong> à Beaulieu-sur-Mer, vous bénéficiez d’un service
-                    sérieux, réactif et de qualité. Notre équipe est reconnue dans les Alpes-Maritimes pour son
+                    En faisant appel à <strong>Cordiste 06</strong> à Beaulieu-sur-Mer, vous beneficiez d’un service
+                    serieux, reactif et de qualite. Notre equipe est reconnue dans les Alpes-Maritimes pour son
                     expertise
-                    dans les travaux en hauteur. Chaque intervention est menée avec rigueur, qu’il s’agisse de nettoyage
+                    dans les travaux en hauteur. Chaque intervention est menee avec rigueur, qu’il s’agisse de nettoyage
                     de
-                    façade, de peinture d’accès difficile, d’entretien de vitres ou de sécurisation de toiture. De
+                    façade, de peinture d’accès difficile, d’entretien de vitres ou de securisation de toiture. De
                     l’analyse
-                    du chantier à la finition, nous vous accompagnons avec professionnalisme à chaque étape.
+                    du chantier à la finition, nous vous accompagnons avec professionnalisme à chaque etape.
                 </p>
             </div>
             <div class="aloooooo1">
-                <h2>Des contrats personnalisés pour plus de sérénité à Beaulieu-sur-Mer</h2>
+                <h2>Des contrats personnalises pour plus de serenite à Beaulieu-sur-Mer</h2>
                 <img src="note.webp" alt="cordiste travaux en hauteur Beaulieu-sur-Mer" loading="lazy" decoding="async">
                 <h3>Interventions ponctuelles</h3>
                 <img src="note.webp" alt="cordiste entretien façade Beaulieu-sur-Mer" loading="lazy" decoding="async">
-                <h3>Entretien programmé</h3>
+                <h3>Entretien programme</h3>
                 <p>
                     Pour vos besoins à Beaulieu-sur-Mer, nous proposons des contrats sur mesure, flexibles et
                     transparents.
-                    Que vous ayez besoin d’une intervention ponctuelle (peinture, nettoyage, sécurisation) ou d’un suivi
-                    régulier de vos structures en hauteur, <strong>Cordiste 06</strong> s'engage sur la qualité, les
-                    délais
-                    et les tarifs. Nos solutions vous garantissent sérénité et maîtrise budgétaire.
+                    Que vous ayez besoin d’une intervention ponctuelle (peinture, nettoyage, securisation) ou d’un suivi
+                    regulier de vos structures en hauteur, <strong>Cordiste 06</strong> s'engage sur la qualite, les
+                    delais
+                    et les tarifs. Nos solutions vous garantissent serenite et maîtrise budgetaire.
                 </p>
             </div>
             <div class="aloooooo1">
                 <h2>Votre partenaire de confiance à Beaulieu-sur-Mer pour les travaux en hauteur</h2>
                 <hr>
                 <p>
-                    Présent à Beaulieu-sur-Mer, <strong>Cordiste 06</strong> intervient pour tous types de travaux en
+                    Present à Beaulieu-sur-Mer, <strong>Cordiste 06</strong> intervient pour tous types de travaux en
                     hauteur, en urgence ou sur rendez-vous. Nous accompagnons aussi bien les particuliers que les
                     professionnels avec des prestations claires et des contrats sans surprise.
                 </p>
                 <p>
-                    Nos cordistes accèdent aux zones difficiles pour réaliser le nettoyage de vitres, le ravalement de
-                    façades, la peinture en hauteur ou encore la pose de lignes de vie et la sécurisation des toitures.
+                    Nos cordistes accèdent aux zones difficiles pour realiser le nettoyage de vitres, le ravalement de
+                    façades, la peinture en hauteur ou encore la pose de lignes de vie et la securisation des toitures.
                     Nous
-                    utilisons des techniques par corde, idéales là où les nacelles sont inutilisables.
+                    utilisons des techniques par corde, ideales là où les nacelles sont inutilisables.
                 </p>
                 <p>
-                    <strong>Disponibles 7j/7 et 24h/24, y compris les jours fériés</strong>, nos équipes assurent des
-                    interventions rapides, sécurisées et conformes aux normes. Que ce soit pour un chantier ponctuel ou
+                    <strong>Disponibles 7j/7 et 24h/24, y compris les jours feries</strong>, nos equipes assurent des
+                    interventions rapides, securisees et conformes aux normes. Que ce soit pour un chantier ponctuel ou
                     un
                     contrat d’entretien, nous sommes votre solution à Beaulieu-sur-Mer.
                 </p>
@@ -621,7 +618,7 @@
     <footer>
         <div id="contact">
 
-            <h5>NOS RÉSEAUX SOCIAUX</h5>
+            <h5>NOS RESEAUX SOCIAUX</h5>
             <div class="reseau-contact">
                 <a href="https://www.linkedin.com/company/quali-corde-sud?trk=public_post_reshare_feed-actor-image"
                     target="_blank" title="linkedin-cordiste"> Linkedin -</a>
@@ -642,8 +639,8 @@
                     title="entreprise cordiste 06">contacts@quali-corde.com</a></p>
 
             <div class="liens-wp">
-                <h6>&copy; Copyright 2025 - Site réalisé par <a href="https://webprime.fr/" target="_blank">webprime</a>
-                    - <a href="mentions-legales.html" target="_blank">mentions légales</a>.
+                <h6>&copy; Copyright 2025 - Site realise par <a href="https://webprime.fr/" target="_blank">webprime</a>
+                    - <a href="mentions-legales.html" target="_blank">mentions legales</a>.
                 </h6>
             </div>
         </div>
@@ -723,28 +720,40 @@
         });
     </script>
     <script>
-        function validateForm() {
-            var name = document.getElementById("name").value.trim();
-            var tel = document.getElementById("tel").value.trim();
-            var services = document.getElementById("services").value.trim();
-            var comments = document.getElementById("comments").value.trim();
-            if (name === "" || tel === "" || services === "" || comments === "") {
-                alert("Champs obligatoires.");
-                return false;
+        async function submitToWebPrime(e) {
+        e.preventDefault();
+        var form = document.getElementById('contactForm');
+        var btn = form.querySelector('button[type="submit"]');
+        var originalText = btn.textContent;
+
+        // Anti-spam honeypot check
+        if (form._gotcha && form._gotcha.value) return false;
+
+        btn.textContent = 'Envoi en cours...';
+        btn.disabled = true;
+
+        try {
+            var formData = new FormData(form);
+            var response = await fetch('https://webprime.app/webhook/contact/a0dbffb8afffbd140c7c09cb7d2c09e30a8e36bb44f78f4fcd0f5e49af523630', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                // Redirection apres succes
+                window.location.href = 'https://cordiste-06.com/';
+            } else {
+                alert('Erreur lors de l\'envoi. Veuillez reessayer.');
+                btn.textContent = originalText;
+                btn.disabled = false;
             }
-            var telPattern = /^((0[1679])|(\+33[1679]))\d{8}$/;
-            if (!telPattern.test(tel)) {
-                alert("Veuillez entrer un numéro de téléphone valide.");
-                return false;
-            }
-            var linkPattern = /https?:\/\/[^\s]+|<a\s+href\s*=\s*['"][^\s>]+['"]/i;
-            var scriptPattern = /<script[^>]*>[\s\S]*?<\/script>/gi;
-            if (linkPattern.test(comments) || scriptPattern.test(comments)) {
-                alert("Pas autorisé.");
-                return false;
-            }
-            return true;
+        } catch (error) {
+            alert('Erreur de connexion. Veuillez reessayer.');
+            btn.textContent = originalText;
+            btn.disabled = false;
         }
+        return false;
+    }
     </script>
 </body>
 
