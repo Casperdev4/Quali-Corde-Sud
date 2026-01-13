@@ -6,7 +6,9 @@
       "Bash(git push:*)",
       "Bash(git pull:*)",
       "Bash(git stash:*)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(git checkout:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nRefonte menu navigation desktop et mobile\n\n- Nouveau design avec animations CSS fluides\n- Menu hamburger animé en croix au clic\n- Bouton CTA stylisé pour le numéro de téléphone\n- Underline animé au hover sur les liens\n- Mise à jour sitemap date 2026-01-13\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }
