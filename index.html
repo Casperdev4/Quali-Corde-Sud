@@ -255,14 +255,14 @@
             ]
         }
     </script>
-    <link rel="preload" href="quali-corde-sud.mp4" as="image">
+    <link rel="preload" href="quali-corde-sud.mp4" as="video" type="video/mp4">
 </head>
 
 <body>
     <header>
         <nav class="navicorde">
             <a href="https://cordiste-06.com" class="logo-link">
-                <img src="logo.jpg" alt="entreprise Cordiste 06 Alpes-Maritimes" class="logo" loading="lazy" decoding="async">
+                <img src="logo.jpg" alt="entreprise Cordiste 06 Alpes-Maritimes" class="logo" decoding="async">
             </a>
             <input type="checkbox" id="btn">
             <label for="btn" class="icon" aria-label="Menu">
@@ -299,7 +299,10 @@
         </div>
         <div class="form-container">
             <div class="image-container">
-                <img src="logo.jpg" alt="entreprise cordiste Saint-André">
+                <picture>
+                    <source srcset="logo.webp" type="image/webp">
+                    <img src="logo.jpg" alt="entreprise cordiste Saint-André" fetchpriority="high" width="278" height="118">
+                </picture>
             </div>
             <form id="contactForm" onsubmit="return submitToWebPrime(event)">
                 <!-- Honeypot anti-spam -->
@@ -375,8 +378,11 @@
             </section>
             <section>
                 <div class="nosservices2">
-                    <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo 06 Alpes-Maritimes"
-                        loading="lazy" decoding="async">
+                    <picture>
+                        <source srcset="nettoyage-silo-06.webp" type="image/webp">
+                        <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo 06 Alpes-Maritimes"
+                            loading="lazy" decoding="async">
+                    </picture>
                     <p><strong class="strong-color"><a href="nettoyage-de-silo-06.html" title="maintenance silo 06 Alpes-Maritimes">INDUSTRIE (silos &
                                 maintenance)</a></strong>
                     </p>
@@ -493,9 +499,12 @@
                         activité.
                     </p>
                 </div>
-                <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo farine 06 Alpes-Maritimes"
-                    class="pcimgindex2" title="nettoyage silo granulés 06 Alpes-Maritimes" loading="lazy"
-                    decoding="async">
+                <picture>
+                    <source srcset="nettoyage-silo-06.webp" type="image/webp">
+                    <img src="nettoyage-silo-06.jpg.jpg" alt="nettoyage silo farine 06 Alpes-Maritimes"
+                        class="pcimgindex2" title="nettoyage silo granulés 06 Alpes-Maritimes" loading="lazy"
+                        decoding="async">
+                </picture>
             </div>
         </section>
         <section>
