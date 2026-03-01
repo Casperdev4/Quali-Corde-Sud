@@ -8,7 +8,6 @@ hr, .hr1{width: 20%;margin-left: auto;margin-right: auto;height: 6px;background:
 .histoire h2,.histoire p{color:#fff}
 #devis{background-color:#222;padding:2%;width:50%;margin:10% auto}#devis h2,#devis h3,#devis p{color:#fff}#devis p{text-align:left}
 .valeur h3,.valeur h4{margin-bottom:0;color:#fff;text-align:left}.valeur h3,.valeur h4,.valeur p{text-align:left}.valeur{background-color:#222;width:100%;margin-left:auto;margin-right:auto;opacity:0;transform:translateX(-50%);transition:opacity .5s,transform 1s}.valeur.slide-in-done{opacity:1;transform:translateX(0)}.valeur .confiance{display:flex;align-items:center;margin-top:5%;margin-left:2%;font-size:35px;text-align:left}.valeur .confiance ion-icon{color:#fff;margin-left:2%;margin-top:2%}.valeur h3{display:flex;align-items:center;font-size:30px}.valeur h4{font-size:20px;margin-top:3%}.valeur p{margin-left:0;color:#fff;font-size:16px;margin-top:0}
-/* Navigation Styles */
 *{box-sizing:border-box;outline:0;margin:0;padding:0}
 .navicorde{
     display:flex;
@@ -113,7 +112,6 @@ hr, .hr1{width: 20%;margin-left: auto;margin-right: auto;height: 6px;background:
     background:linear-gradient(135deg,#8b2e2e 0%,#a63939 100%);
 }
 .nav-item:last-child a::before{display:none}
-/* Desktop Navigation */
 @media screen and (min-width:768px){
     .icon{display:none}
     .navicordenav{
@@ -202,7 +200,6 @@ hr, .hr1{width: 20%;margin-left: auto;margin-right: auto;height: 6px;background:
     pointer-events: none;
 }
 
-/*  Small device */
 @media screen and (max-width:767.98px) {
 
   h1,h2{color:#222}h4,p{color:#222;text-align:center}h2,h3,h4,p{text-align:center}h1{margin-left: 5%;font-weight:550;font-size:30px;margin-bottom:-2%;margin-top:13%;text-align: left;}h2{margin-top:10%;margin-bottom:10%;font-size:28px;font-weight:530}h3{font-weight:200;font-size:17px;margin:3% 3% 7%}h4{margin:5% 3%;font-size:20px;font-weight:350}p{font-size:19px;margin-left:5%;margin-right:5%;padding:2%}
@@ -210,7 +207,6 @@ hr, .hr1{width: 20%;margin-left: auto;margin-right: auto;height: 6px;background:
   .hr1 {margin-top: 10%;margin-bottom: 0;}
   #devis p,.histoire p,.valeur p{color:#fff;font-size:17px}
   body{margin-top:18%}
-  /* Mobile Navigation - Enhanced */
   .navicorde{
       padding:10px 15px;
       min-height:60px;
