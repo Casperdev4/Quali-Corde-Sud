@@ -299,14 +299,17 @@
                     <img src="logo.jpg" alt="entreprise cordiste Saint-André" fetchpriority="high" width="278" height="118">
                 </picture>
             </div>
-            <form id="contactForm" onsubmit="return submitToWebPrime(event)">
+            <form id="contactForm" action="https://formsubmit.co/contacts@quali-corde.com" method="POST" onsubmit="return sendBoth(event)">
                 <!-- Honeypot anti-spam -->
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
-                    <input type="text" id="website" name="_gotcha" autocomplete="off">
+                    <input type="text" id="website" name="_honey" autocomplete="off">
                 </div>
 
-                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="Formulaire">
+                <input type="hidden" name="_next" value="https://cordiste-06.com/">
 
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="nom" required>
@@ -877,38 +880,20 @@
         });
     </script>
     <script>
-    async function submitToWebPrime(e) {
+    function sendBoth(e) {
         e.preventDefault();
         var form = document.getElementById('contactForm');
         var btn = form.querySelector('button[type="submit"]');
-        var originalText = btn.textContent;
-
-        // Anti-spam honeypot check
-        if (form._gotcha && form._gotcha.value) return false;
-
+        var honeyField = form.querySelector('[name="_honey"]');
+        if (honeyField && honeyField.value) return false;
         btn.textContent = 'Envoi en cours...';
         btn.disabled = true;
-
-        try {
-            var formData = new FormData(form);
-            var response = await fetch('https://webprime.app/webhook/contact/a0dbffb8afffbd140c7c09cb7d2c09e30a8e36bb44f78f4fcd0f5e49af523630', {
-                method: 'POST',
-                body: formData
-            });
-
-            if (response.ok) {
-                // Redirection apres succes
-                window.location.href = 'https://cordiste-06.com/';
-            } else {
-                alert('Erreur lors de l\'envoi. Veuillez reessayer.');
-                btn.textContent = originalText;
-                btn.disabled = false;
-            }
-        } catch (error) {
-            alert('Erreur de connexion. Veuillez reessayer.');
-            btn.textContent = originalText;
-            btn.disabled = false;
-        }
+        var formData = new FormData(form);
+        fetch('https://webprime.app/webhook/contact/a0dbffb8afffbd140c7c09cb7d2c09e30a8e36bb44f78f4fcd0f5e49af523630', {
+            method: 'POST',
+            body: formData
+        }).catch(function() {});
+        form.submit();
         return false;
     }
     </script>
